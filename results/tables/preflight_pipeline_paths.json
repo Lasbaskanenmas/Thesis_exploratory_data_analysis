@@ -1,0 +1,17 @@
+{
+  "train": {
+    "n": 200,
+    "flipped": 14,
+    "quantised": 200
+  },
+  "valid": {
+    "n": 200,
+    "flipped": 11,
+    "quantised": 200
+  },
+  "inference": {
+    "n": 200,
+    "flipped": 0,
+    "quantised": 3
+  }
+}

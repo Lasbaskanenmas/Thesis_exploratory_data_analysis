@@ -1,0 +1,374 @@
+{
+  "generated_utc": "2026-08-03T21:54:09.095638+00:00",
+  "n_tiles_scanned": 19314,
+  "n_failures": 0,
+  "failures": [],
+  "bands": [
+    {
+      "band": "rgb_R",
+      "folder": "rgb",
+      "band_index": 0,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 100.28335757429844,
+      "std": 50.678169284033984,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "rgb_G",
+      "folder": "rgb",
+      "band_index": 1,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 103.77014773998135,
+      "std": 47.522850076295974,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "rgb_B",
+      "folder": "rgb",
+      "band_index": 2,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 97.01370495775086,
+      "std": 45.96495083483042,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "cir_b0_NIR",
+      "folder": "cir",
+      "band_index": 0,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 111.66955501102827,
+      "std": 62.71177554173245,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "cir_b1_unused",
+      "folder": "cir",
+      "band_index": 1,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 100.25586964880398,
+      "std": 50.35446827642045,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "cir_b2_unused",
+      "folder": "cir",
+      "band_index": 2,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 103.823406210262,
+      "std": 47.086514520603714,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "OrtoRGB_R",
+      "folder": "OrtoRGB",
+      "band_index": 0,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 115.58886674945636,
+      "std": 53.33527861873117,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "OrtoRGB_G",
+      "folder": "OrtoRGB",
+      "band_index": 1,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 116.00616337371855,
+      "std": 46.862986892383425,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "OrtoRGB_B",
+      "folder": "OrtoRGB",
+      "band_index": 2,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 112.29977854675364,
+      "std": 41.789576548971695,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "OrtoCIR_b0_NIR",
+      "folder": "OrtoCIR",
+      "band_index": 0,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 109.07718441327535,
+      "std": 54.52487615348224,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "OrtoCIR_b1_unused",
+      "folder": "OrtoCIR",
+      "band_index": 1,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 115.18367078595837,
+      "std": 53.577775279832636,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "OrtoCIR_b2_unused",
+      "folder": "OrtoCIR",
+      "band_index": 2,
+      "pixels": 19314000000,
+      "min": 0.0,
+      "max": 255.0,
+      "mean": 115.73159708625867,
+      "std": 47.13092577387624,
+      "nodata_pixels": 0
+    },
+    {
+      "band": "DSM",
+      "folder": "DSM",
+      "band_index": 0,
+      "pixels": 19313929800,
+      "min": -7.026633262634277,
+      "max": 318.72003173828125,
+      "mean": 21.736508719471292,
+      "std": 23.707327318917905,
+      "nodata_pixels": 70200
+    },
+    {
+      "band": "DTM",
+      "folder": "DTM",
+      "band_index": 0,
+      "pixels": 19313916929,
+      "min": -4.187806606292725,
+      "max": 99.98765563964844,
+      "mean": 18.185026756762877,
+      "std": 21.814047944454945,
+      "nodata_pixels": 83071
+    }
+  ],
+  "normalisation_audit": [
+    {
+      "channel": "rgb_R",
+      "measured_mean": 100.28335757429844,
+      "measured_std": 50.678169284033984,
+      "config_mean": 0.485,
+      "config_std": 0.229,
+      "effective_mean_div255": -0.4005761182584393,
+      "effective_std_div255": 0.8678511736284611,
+      "effective_mean_no_div": 435.80068809737304,
+      "effective_std_no_div": 221.30204927525756
+    },
+    {
+      "channel": "rgb_G",
+      "measured_mean": 103.77014773998135,
+      "measured_std": 47.522850076295974,
+      "config_mean": 0.456,
+      "config_std": 0.224,
+      "effective_mean_div255": -0.21901001855774946,
+      "effective_std_div255": 0.8319826694029407,
+      "effective_mean_no_div": 461.22387383920244,
+      "effective_std_no_div": 212.15558069774988
+    },
+    {
+      "channel": "rgb_B",
+      "measured_mean": 97.01370495775086,
+      "measured_std": 45.96495083483042,
+      "config_mean": 0.406,
+      "config_std": 0.225,
+      "effective_mean_div255": -0.11357376979954943,
+      "effective_std_div255": 0.801132040694212,
+      "effective_mean_no_div": 429.3675775900038,
+      "effective_std_no_div": 204.28867037702406
+    },
+    {
+      "channel": "cir_b0_NIR",
+      "measured_mean": 111.66955501102827,
+      "measured_std": 62.71177554173245,
+      "config_mean": 0.40779021,
+      "config_std": 0.15176421,
+      "effective_mean_div255": 0.19852911020760336,
+      "effective_std_div255": 1.6204646110977396,
+      "effective_mean_no_div": 733.1225511010024,
+      "effective_std_no_div": 413.2184758299236
+    },
+    {
+      "channel": "OrtoRGB_R",
+      "measured_mean": 115.58886674945636,
+      "measured_std": 53.33527861873117,
+      "config_mean": 0.485,
+      "config_std": 0.229,
+      "effective_mean_div255": -0.1384730413655902,
+      "effective_std_div255": 0.9133535168889659,
+      "effective_mean_no_div": 502.6369727050496,
+      "effective_std_no_div": 232.9051468066863
+    },
+    {
+      "channel": "OrtoRGB_G",
+      "measured_mean": 116.00616337371855,
+      "measured_std": 46.862986892383425,
+      "config_mean": 0.456,
+      "config_std": 0.224,
+      "effective_mean_div255": -0.004794058583358827,
+      "effective_std_div255": 0.8204304427938275,
+      "effective_mean_no_div": 515.8489436326721,
+      "effective_std_no_div": 209.209762912426
+    },
+    {
+      "channel": "OrtoRGB_B",
+      "measured_mean": 112.29977854675364,
+      "measured_std": 41.789576548971695,
+      "config_mean": 0.406,
+      "config_std": 0.225,
+      "effective_mean_div255": 0.15285017074951865,
+      "effective_std_div255": 0.7283586326618161,
+      "effective_mean_no_div": 497.30568243001613,
+      "effective_std_no_div": 185.7314513287631
+    },
+    {
+      "channel": "OrtoCIR_b0_NIR",
+      "measured_mean": 109.07718441327535,
+      "measured_std": 54.52487615348224,
+      "config_mean": 0.40779021,
+      "config_std": 0.15176421,
+      "effective_mean_div255": 0.1315425709776084,
+      "effective_std_div255": 1.4089161320653008,
+      "effective_mean_no_div": 716.0409835973537,
+      "effective_std_no_div": 359.2736136766517
+    },
+    {
+      "channel": "DSM",
+      "measured_mean": 21.736508719471292,
+      "measured_std": 23.707327318917905,
+      "config_mean": 0.5,
+      "config_std": 1.0,
+      "effective_mean_div255": -0.41475878933540666,
+      "effective_std_div255": 0.09296991105458002,
+      "effective_mean_no_div": 21.236508719471292,
+      "effective_std_no_div": 23.707327318917905
+    },
+    {
+      "channel": "DTM",
+      "measured_mean": 18.185026756762877,
+      "measured_std": 21.814047944454945,
+      "config_mean": 0.5,
+      "config_std": 1.0,
+      "effective_mean_div255": -0.42868616958132205,
+      "effective_std_div255": 0.08554528605668606,
+      "effective_mean_no_div": 17.685026756762877,
+      "effective_std_no_div": 21.814047944454945
+    }
+  ],
+  "int_to_float_div": 255.0,
+  "ndsm_per_class": [
+    {
+      "class": "unknown",
+      "pixels": 7119292176,
+      "mean_m": 4.433324085169087,
+      "std_m": 9.90850985956321
+    },
+    {
+      "class": "asfalt",
+      "pixels": 818755274,
+      "mean_m": 2.4800981352491847,
+      "std_m": 10.580750852443648
+    },
+    {
+      "class": "fliser",
+      "pixels": 231901652,
+      "mean_m": 3.60770903123646,
+      "std_m": 11.907982483096887
+    },
+    {
+      "class": "grus",
+      "pixels": 206716141,
+      "mean_m": 3.2295895766921525,
+      "std_m": 10.951212098039832
+    },
+    {
+      "class": "ubefestet",
+      "pixels": 10667081946,
+      "mean_m": 3.127434277263628,
+      "std_m": 8.074078452789973
+    },
+    {
+      "class": "green_roof",
+      "pixels": 1430413,
+      "mean_m": 5.280550145236296,
+      "std_m": 4.4341082025627765
+    },
+    {
+      "class": "drivhus",
+      "pixels": 531496,
+      "mean_m": 4.105581414748988,
+      "std_m": 10.84680085628904
+    },
+    {
+      "class": "betonflade",
+      "pixels": 89260373,
+      "mean_m": 0.1905401529968952,
+      "std_m": 2.033769519699953
+    },
+    {
+      "class": "brosten",
+      "pixels": 120321684,
+      "mean_m": 0.7750730022781309,
+      "std_m": 2.992625685847937
+    },
+    {
+      "class": "unknown2",
+      "pixels": 0,
+      "mean_m": null,
+      "std_m": null
+    },
+    {
+      "class": "solceller",
+      "pixels": 58625774,
+      "mean_m": 0.2560572981554938,
+      "std_m": 0.9511266095593057
+    }
+  ],
+  "elevation_variance_decomposition": {
+    "DSM": {
+      "between_var": 542.6524207303196,
+      "within_var": 19.38461598244657,
+      "total_var": 562.0370367127662,
+      "between_sd": 23.294901174512837,
+      "within_sd": 4.402796382124271,
+      "between_share": 0.9655100736851382
+    },
+    "DTM": {
+      "between_var": 474.07334417830947,
+      "within_var": 1.779274916361346,
+      "total_var": 475.85261909467084,
+      "between_sd": 21.773225396764474,
+      "within_sd": 1.3338946421518252,
+      "between_share": 0.9962608697631075
+    },
+    "nDSM": {
+      "between_var": 63.19489754236265,
+      "within_var": 17.382831018393265,
+      "total_var": 80.57772856075592,
+      "between_sd": 7.949521843630763,
+      "within_sd": 4.169272240858501,
+      "between_share": 0.7842725114137892
+    }
+  },
+  "rgb_vs_ortorgb": {
+    "n_tiles": 19207,
+    "corr_mean": 0.43672756578906874,
+    "corr_median": 0.4624436931995265
+  }
+}

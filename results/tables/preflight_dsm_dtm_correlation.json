@@ -1,0 +1,33 @@
+{
+  "n_tiles": 19314,
+  "pooled": {
+    "DSM": {
+      "total_sd": 23.707320319107474,
+      "between_sd": 23.294901174512837,
+      "within_sd": 4.402796382124271,
+      "between_share": 0.9655100736851382
+    },
+    "DTM": {
+      "total_sd": 21.814046371424784,
+      "between_sd": 21.773225396764474,
+      "within_sd": 1.3338946421518252,
+      "between_share": 0.9962608697631075
+    },
+    "nDSM": {
+      "total_sd": 8.976509820679523,
+      "between_sd": 7.949521843630763,
+      "within_sd": 4.169272240858501,
+      "between_share": 0.7842725114137892
+    }
+  },
+  "sq1_f8_sd_reproduced": true,
+  "ndsm_unclamped_in_csv": true,
+  "n_tiles_negative_mean_ndsm": 128,
+  "r_pixel_closed_form": 0.9255604200914377,
+  "r2_pixel_closed_form": 0.8566620912398386,
+  "r_pixel_backsolved_from_sq1": 0.9255497445126062,
+  "r_pixel_raster_sample": 0.9146753512734243,
+  "r_tile_mean": 0.9399854263231159,
+  "raster_sample_tiles": 190,
+  "raster_sample_pixels": 190000000
+}

@@ -1,0 +1,38 @@
+{
+  "generated_utc": "2026-08-04T08:20:00.847340+00:00",
+  "cells": [
+    "convnext_upernet_rgb"
+  ],
+  "routes": [
+    "82-11",
+    "82-13",
+    "82-16",
+    "82-19",
+    "82-20",
+    "82-21",
+    "82-22",
+    "82-24",
+    "83-25",
+    "83-26",
+    "83-31",
+    "83-34",
+    "84-40",
+    "84-41",
+    "85-45",
+    "85-48"
+  ],
+  "n_tiles": 19314,
+  "validated_against_pooled": true,
+  "failures": [],
+  "per_cell_route_spread": [
+    {
+      "cell": "convnext_upernet_rgb",
+      "route_median_macro_iou": 0.490206561830325,
+      "route_min": 0.2369291162542489,
+      "route_max": 0.9994435601771702,
+      "route_spread": 0.7625144439229212,
+      "route_std": 0.2335814650821215,
+      "n_routes_scored": 16
+    }
+  ]
+}

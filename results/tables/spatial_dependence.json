@@ -1,0 +1,44 @@
+{
+  "n_tiles": 19314,
+  "n_tiles_with_scored_px": 19183,
+  "variable": "sealed_fraction = 1 - ubefestet / scored pixels",
+  "tile_ground_m": 100.0,
+  "sill_variance": 0.123825542497569,
+  "range_50pct_sill_m": 650.0,
+  "range_95pct_sill_m": 4231.899980249091,
+  "mean_gamma_over_sill_by_stratum": {
+    "same_parent": 0.29670907072330066,
+    "same_route_diff_parent": 0.8682572478354195,
+    "diff_route": 1.02301584100343
+  },
+  "nearest_training_tile_distance_m": {
+    "naive": {
+      "min": 61.6846809387207,
+      "median": 119.2182846069336,
+      "max": 233.2380828857422,
+      "n": 25,
+      "n_within_150m": 22
+    },
+    "fold_0": {
+      "min": 3.1622776985168457,
+      "median": 16587.314453125,
+      "max": 25390.974609375,
+      "n": 6439,
+      "n_within_150m": 217
+    },
+    "fold_1": {
+      "min": 19.72308349609375,
+      "median": 27725.9296875,
+      "max": 42328.23046875,
+      "n": 6437,
+      "n_within_150m": 311
+    },
+    "fold_2": {
+      "min": 3.1622776985168457,
+      "median": 25326.451171875,
+      "max": 51035.3984375,
+      "n": 6438,
+      "n_within_150m": 798
+    }
+  }
+}

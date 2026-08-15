@@ -1,0 +1,52 @@
+# --------------------------------------------------------------------------------------------
+# Large, mechanically regenerable intermediates. Everything here can be rebuilt by re-running
+# the scripts against the untouched source data, so none of it belongs in git.
+# --------------------------------------------------------------------------------------------
+cache/
+
+# Raw arrays and imagery. Committed artifacts are derived tables (.csv/.json) and the small
+# confusion-matrix .npz files under results/tables/, which are whitelisted below.
+*.npy
+*.tif
+*.tiff
+*.pth
+*.zip
+
+# results/tables/*.npz are small (~370 KB) and ARE tracked -- see README size guard.
+*.npz
+!results/tables/*.npz
+
+# --------------------------------------------------------------------------------------------
+# Secrets. An HF write token lives at c:\thesis\hftoken_write.txt; these patterns mirror
+# ML_sdfi_fastai2/.gitignore so a stray copy can never be committed from here either.
+# --------------------------------------------------------------------------------------------
+*hftoken*
+*_token.txt
+.env
+
+# --------------------------------------------------------------------------------------------
+# Python / editor noise
+# --------------------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+cache/
+*.npy
+*.pkl
+
+# secrets, defensive
+*token*
+*secret*
+*credential*
+.env.*
+*.env
+*.key
+*.pem
+.netrc
+.git-credentials
+*.pkl

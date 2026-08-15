@@ -1,0 +1,8 @@
+{
+  "generated_utc": "2026-08-03T13:34:00.259174+00:00",
+  "n_tiles": 19314,
+  "source_list": "c:\\thesis\\multi_channel_dataset_creation\\example_dataset\\data\\all.txt",
+  "label_dir": "c:\\thesis\\multi_channel_dataset_creation\\example_dataset\\labels\\splitted_labels",
+  "fold_assignment": "c:\\thesis\\logs_and_models\\route_class_audit\\fold_assignment.csv",
+  "validated_against_existing_audits": true
+}

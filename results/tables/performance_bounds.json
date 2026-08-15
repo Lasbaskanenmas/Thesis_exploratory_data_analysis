@@ -1,0 +1,502 @@
+{
+  "scored_pixels": 12194633781,
+  "ignore_pixels": 7119366219,
+  "bounds": {
+    "B1_constant_majority": {
+      "split": "B1_constant_majority",
+      "macro_iou": 0.09719292300173676,
+      "macro_f1": 0.1036870333582614,
+      "overall_accuracy": 0.8747363070156309,
+      "n_macro_classes_evaluated": 9,
+      "n_macro_classes_defined": 9,
+      "excluded_absent": [],
+      "ignore_index": 0,
+      "evaluated_pixels": 12194633781,
+      "per_class": {
+        "asfalt": {
+          "index": 1,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 818756115,
+          "present": true,
+          "in_macro": true
+        },
+        "fliser": {
+          "index": 2,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 231902162,
+          "present": true,
+          "in_macro": true
+        },
+        "grus": {
+          "index": 3,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 206716845,
+          "present": true,
+          "in_macro": true
+        },
+        "ubefestet": {
+          "index": 4,
+          "iou": 0.8747363070156309,
+          "f1": 0.9331833002243527,
+          "precision": 0.8747363070156309,
+          "recall": 1.0,
+          "support_pixels": 10667088919,
+          "present": true,
+          "in_macro": true
+        },
+        "green_roof": {
+          "index": 5,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 1430413,
+          "present": true,
+          "in_macro": true
+        },
+        "drivhus": {
+          "index": 6,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 531496,
+          "present": true,
+          "in_macro": true
+        },
+        "betonflade": {
+          "index": 7,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 89260373,
+          "present": true,
+          "in_macro": true
+        },
+        "brosten": {
+          "index": 8,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 120321684,
+          "present": true,
+          "in_macro": true
+        },
+        "unknown2": {
+          "index": 9,
+          "iou": null,
+          "f1": null,
+          "precision": null,
+          "recall": null,
+          "support_pixels": 0,
+          "present": false,
+          "in_macro": false
+        },
+        "solceller": {
+          "index": 10,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 58625774,
+          "present": true,
+          "in_macro": true
+        }
+      }
+    },
+    "B2_prior_matched_random": {
+      "split": "B2_prior_matched_random",
+      "macro_iou": 0.0934851651495331,
+      "macro_f1": 0.11111109381571486,
+      "overall_accuracy": 0.7704945253951297,
+      "n_macro_classes_evaluated": 9,
+      "n_macro_classes_defined": 9,
+      "excluded_absent": [],
+      "ignore_index": 0,
+      "evaluated_pixels": 12194633783,
+      "per_class": {
+        "asfalt": {
+          "index": 1,
+          "iou": 0.03473645961564659,
+          "f1": 0.06714068938587409,
+          "precision": 0.06714068938587409,
+          "recall": 0.06714068938587409,
+          "support_pixels": 818756115,
+          "present": true,
+          "in_macro": true
+        },
+        "fliser": {
+          "index": 2,
+          "iou": 0.009599646731359865,
+          "f1": 0.019016739481712983,
+          "precision": 0.019016739481712983,
+          "recall": 0.019016739481712983,
+          "support_pixels": 231902162,
+          "present": true,
+          "in_macro": true
+        },
+        "grus": {
+          "index": 3,
+          "iou": 0.008548181273046003,
+          "f1": 0.01695145840678828,
+          "precision": 0.01695145840678828,
+          "recall": 0.01695145840678828,
+          "support_pixels": 206716845,
+          "present": true,
+          "in_macro": true
+        },
+        "ubefestet": {
+          "index": 4,
+          "iou": 0.7773611753298122,
+          "f1": 0.8747363069698683,
+          "precision": 0.8747363069698683,
+          "recall": 0.8747363069698683,
+          "support_pixels": 10667088920,
+          "present": true,
+          "in_macro": true
+        },
+        "green_roof": {
+          "index": 5,
+          "iou": 5.872770619367559e-05,
+          "f1": 0.00011744851490547492,
+          "precision": 0.00011744851490547492,
+          "recall": 0.00011744851490547492,
+          "support_pixels": 1430414,
+          "present": true,
+          "in_macro": true
+        },
+        "drivhus": {
+          "index": 6,
+          "iou": 2.163754848457196e-05,
+          "f1": 4.327416062239532e-05,
+          "precision": 4.327416062239532e-05,
+          "recall": 4.327416062239532e-05,
+          "support_pixels": 531495,
+          "present": true,
+          "in_macro": true
+        },
+        "betonflade": {
+          "index": 7,
+          "iou": 0.003673264630764924,
+          "f1": 0.007319642278438608,
+          "precision": 0.007319642278438608,
+          "recall": 0.007319642278438608,
+          "support_pixels": 89260373,
+          "present": true,
+          "in_macro": true
+        },
+        "brosten": {
+          "index": 8,
+          "iou": 0.004957846505053495,
+          "f1": 0.009866775053889911,
+          "precision": 0.009866775053889911,
+          "recall": 0.009866775053889911,
+          "support_pixels": 120321685,
+          "present": true,
+          "in_macro": true
+        },
+        "unknown2": {
+          "index": 9,
+          "iou": null,
+          "f1": null,
+          "precision": null,
+          "recall": null,
+          "support_pixels": 0,
+          "present": false,
+          "in_macro": false
+        },
+        "solceller": {
+          "index": 10,
+          "iou": 0.002409547005436553,
+          "f1": 0.004807510089333746,
+          "precision": 0.004807510089333746,
+          "recall": 0.004807510089333746,
+          "support_pixels": 58625774,
+          "present": true,
+          "in_macro": true
+        }
+      }
+    },
+    "B3_per_tile_majority_oracle": {
+      "split": "B3_per_tile_majority_oracle",
+      "macro_iou": 0.39930201648078334,
+      "macro_f1": 0.5120445043047526,
+      "overall_accuracy": 0.9245402009174121,
+      "n_macro_classes_evaluated": 9,
+      "n_macro_classes_defined": 9,
+      "excluded_absent": [],
+      "ignore_index": 0,
+      "evaluated_pixels": 12194633781,
+      "per_class": {
+        "asfalt": {
+          "index": 1,
+          "iou": 0.45859984503766743,
+          "f1": 0.6288220125593451,
+          "precision": 0.654475362662244,
+          "recall": 0.6051038678349291,
+          "support_pixels": 818756115,
+          "present": true,
+          "in_macro": true
+        },
+        "fliser": {
+          "index": 2,
+          "iou": 0.25758774177525656,
+          "f1": 0.4096537095879073,
+          "precision": 0.6521252852458216,
+          "recall": 0.29862114868942014,
+          "support_pixels": 231902162,
+          "present": true,
+          "in_macro": true
+        },
+        "grus": {
+          "index": 3,
+          "iou": 0.3016849521920408,
+          "f1": 0.4635299066552203,
+          "precision": 0.6520937219491307,
+          "recall": 0.35955776124582395,
+          "support_pixels": 206716845,
+          "present": true,
+          "in_macro": true
+        },
+        "ubefestet": {
+          "index": 4,
+          "iou": 0.935768667927416,
+          "f1": 0.9668186942289158,
+          "precision": 0.9524319007923886,
+          "recall": 0.9816467880331166,
+          "support_pixels": 10667088919,
+          "present": true,
+          "in_macro": true
+        },
+        "green_roof": {
+          "index": 5,
+          "iou": 0.041249695728504156,
+          "f1": 0.07923113139474974,
+          "precision": 0.6007823331352743,
+          "recall": 0.042412226398949114,
+          "support_pixels": 1430413,
+          "present": true,
+          "in_macro": true
+        },
+        "drivhus": {
+          "index": 6,
+          "iou": 0.0,
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support_pixels": 531496,
+          "present": true,
+          "in_macro": true
+        },
+        "betonflade": {
+          "index": 7,
+          "iou": 0.6519197744768138,
+          "f1": 0.7892874515450194,
+          "precision": 0.8652221107428753,
+          "recall": 0.7256059528229845,
+          "support_pixels": 89260373,
+          "present": true,
+          "in_macro": true
+        },
+        "brosten": {
+          "index": 8,
+          "iou": 0.36704588932852134,
+          "f1": 0.5369913214966184,
+          "precision": 0.6242699165843927,
+          "recall": 0.47112392476155834,
+          "support_pixels": 120321684,
+          "present": true,
+          "in_macro": true
+        },
+        "unknown2": {
+          "index": 9,
+          "iou": null,
+          "f1": null,
+          "precision": null,
+          "recall": null,
+          "support_pixels": 0,
+          "present": false,
+          "in_macro": false
+        },
+        "solceller": {
+          "index": 10,
+          "iou": 0.5798615818608297,
+          "f1": 0.734066311274996,
+          "precision": 0.7418098596830882,
+          "recall": 0.7264827582489571,
+          "support_pixels": 58625774,
+          "present": true,
+          "in_macro": true
+        }
+      }
+    }
+  },
+  "binary_constant": {
+    "task": "binary befaestet / ubefaestet",
+    "predictor": "constant unsealed",
+    "accuracy": 0.8747363070156309,
+    "iou_unsealed": 0.8747363070156309,
+    "iou_sealed": 0.0,
+    "macro_iou_2class": 0.43736815350781544,
+    "unsealed_px": 10667088919,
+    "sealed_px": 1527544862
+  },
+  "measured_cells": [
+    {
+      "cell": "convnext_upernet_rgb",
+      "macro_iou": 0.35864188131114566,
+      "macro_f1": 0.45925813657161263,
+      "overall_accuracy": 0.9336311235306625
+    },
+    {
+      "cell": "convnext_upernet_10ch",
+      "macro_iou": 0.3446638436049828,
+      "macro_f1": 0.43476343512911486,
+      "overall_accuracy": 0.9374200568295032
+    },
+    {
+      "cell": "convnext_upernet_6ch",
+      "macro_iou": 0.3374343528628417,
+      "macro_f1": 0.4257676871295344,
+      "overall_accuracy": 0.9275252146253854
+    },
+    {
+      "cell": "convnext_upernet_rgb_unw",
+      "macro_iou": 0.33357983040412104,
+      "macro_f1": 0.42863644520879624,
+      "overall_accuracy": 0.9304994793430771
+    },
+    {
+      "cell": "convnext_upernet_10ch_unw",
+      "macro_iou": 0.33066596576859575,
+      "macro_f1": 0.4172046488264539,
+      "overall_accuracy": 0.935849365216784
+    },
+    {
+      "cell": "convnext_upernet_6ch_unw",
+      "macro_iou": 0.32076970125630416,
+      "macro_f1": 0.40207807076850555,
+      "overall_accuracy": 0.9273314288961508
+    },
+    {
+      "cell": "swin_upernet_rgb_unw",
+      "macro_iou": 0.3183258275593475,
+      "macro_f1": 0.40252083462072397,
+      "overall_accuracy": 0.9268666412607213
+    },
+    {
+      "cell": "swin_upernet_10ch",
+      "macro_iou": 0.31342432249001617,
+      "macro_f1": 0.39800232221170184,
+      "overall_accuracy": 0.9298906654882841
+    },
+    {
+      "cell": "swin_upernet_10ch_unw",
+      "macro_iou": 0.3012739439981095,
+      "macro_f1": 0.37325478057043227,
+      "overall_accuracy": 0.9268054952670497
+    },
+    {
+      "cell": "swin_upernet_rgb",
+      "macro_iou": 0.29817191814481103,
+      "macro_f1": 0.3897239180485555,
+      "overall_accuracy": 0.9174672670721673
+    },
+    {
+      "cell": "segformer_b1_rgb",
+      "macro_iou": 0.2975586407422794,
+      "macro_f1": 0.38920603540389576,
+      "overall_accuracy": 0.921323789772609
+    },
+    {
+      "cell": "swin_upernet_6ch_unw",
+      "macro_iou": 0.29702765884888394,
+      "macro_f1": 0.37163929670846396,
+      "overall_accuracy": 0.9271945561511405
+    },
+    {
+      "cell": "swin_upernet_6ch",
+      "macro_iou": 0.2955746394481357,
+      "macro_f1": 0.3692138654631217,
+      "overall_accuracy": 0.9235185398963642
+    },
+    {
+      "cell": "segformer_b1_10ch",
+      "macro_iou": 0.2923835816057869,
+      "macro_f1": 0.3668693622250563,
+      "overall_accuracy": 0.9268512248076013
+    },
+    {
+      "cell": "segformer_b1_rgb_unw",
+      "macro_iou": 0.27510195253790126,
+      "macro_f1": 0.3515769833778308,
+      "overall_accuracy": 0.915130403209605
+    },
+    {
+      "cell": "unet_resnet34_rgb",
+      "macro_iou": 0.2694505591767507,
+      "macro_f1": 0.3454182485663936,
+      "overall_accuracy": 0.897261824381145
+    },
+    {
+      "cell": "segformer_b1_6ch",
+      "macro_iou": 0.268705916556842,
+      "macro_f1": 0.346996770906184,
+      "overall_accuracy": 0.914946827873092
+    },
+    {
+      "cell": "unet_resnet34_rgb_unw",
+      "macro_iou": 0.2593475516900786,
+      "macro_f1": 0.3273566855302998,
+      "overall_accuracy": 0.9019201298309165
+    },
+    {
+      "cell": "segformer_b1_6ch_unw",
+      "macro_iou": 0.2563891020302333,
+      "macro_f1": 0.32494427991164915,
+      "overall_accuracy": 0.9177902863666161
+    },
+    {
+      "cell": "unet_resnet34_10ch",
+      "macro_iou": 0.2523049836230148,
+      "macro_f1": 0.31408465528702645,
+      "overall_accuracy": 0.9095372486118614
+    },
+    {
+      "cell": "segformer_b1_10ch_unw",
+      "macro_iou": 0.2513163313988154,
+      "macro_f1": 0.3229006517659301,
+      "overall_accuracy": 0.9237697392398635
+    },
+    {
+      "cell": "unet_resnet34_6ch",
+      "macro_iou": 0.24769933999388602,
+      "macro_f1": 0.3134093423160293,
+      "overall_accuracy": 0.8977464573029805
+    },
+    {
+      "cell": "unet_resnet34_6ch_unw",
+      "macro_iou": 0.24313710530305846,
+      "macro_f1": 0.3041150558778402,
+      "overall_accuracy": 0.9027292146445476
+    },
+    {
+      "cell": "unet_resnet34_10ch_unw",
+      "macro_iou": 0.24228081151135417,
+      "macro_f1": 0.3010378712325948,
+      "overall_accuracy": 0.9117801270361905
+    }
+  ],
+  "note": "B3 is an oracle and therefore an upper bound, not a baseline. The linear-probe floor (module E1) and the annotation ceiling (module E4) extend this table once those modules have run."
+}
