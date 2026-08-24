@@ -60,13 +60,32 @@ def discover_cells() -> list[str]:
     return sorted(cells)
 
 
+def job_dir_names(cell: str, fold: int) -> list[str]:
+    """Candidate run-directory names for a cell's fold, most likely first.
+
+    The oof_* folder is named `<prefix>_<chan>[_unw]` but the run directories put the fold BEFORE
+    the weighting suffix: `convnext_upernet_10ch_fold0_unw`, not `convnext_upernet_10ch_unw_fold0`.
+    Weighted cells are unaffected, so the plain form is tried first and the frozen
+    `convnext_upernet_rgb` routing is bit-for-bit what it was.
+    """
+    names = [f"{cell}_fold{fold}"]
+    for suffix in ("_unw",):
+        if cell.endswith(suffix):
+            names.append(f"{cell[: -len(suffix)]}_fold{fold}{suffix}")
+    return names
+
+
 def cell_fold_dirs(cell: str) -> dict[int, str]:
     out = {}
     for f in range(C.NFOLDS):
-        hits = list(C.SPATIAL_MATRIX.glob(f"*/{cell}_fold{f}/models/example_dataset"))
+        hits = []
+        for name in job_dir_names(cell, f):
+            hits = list(C.SPATIAL_MATRIX.glob(f"*/{name}/models/example_dataset"))
+            if hits:
+                break
         if len(hits) != 1:
             raise RuntimeError(f"expected exactly one prediction dir for {cell} fold {f}; "
-                               f"found {[str(h) for h in hits]}")
+                               f"tried {job_dir_names(cell, f)}; found {[str(h) for h in hits]}")
         out[f] = str(hits[0])
     return out
 

@@ -1,0 +1,176 @@
+﻿
+========================================================================================
+E6 -- 27 cells x 16 routes over 19,314 tiles
+========================================================================================
+  convnext_upernet_10ch
+  convnext_upernet_10ch_unw
+  convnext_upernet_6ch
+  convnext_upernet_6ch_corrected
+  convnext_upernet_6ch_unw
+  convnext_upernet_rgb
+  convnext_upernet_rgb_ndsm
+  convnext_upernet_rgb_unw
+  segformer_b1_10ch
+  segformer_b1_10ch_unw
+  segformer_b1_6ch
+  segformer_b1_6ch_unw
+  segformer_b1_rgb
+  segformer_b1_rgb_unw
+  swin_upernet_10ch
+  swin_upernet_10ch_unw
+  swin_upernet_6ch
+  swin_upernet_6ch_unw
+  swin_upernet_rgb
+  swin_upernet_rgb_unw
+  unet_resnet34_10ch
+  unet_resnet34_10ch_unw
+  unet_resnet34_6ch
+  unet_resnet34_6ch_corrected
+  unet_resnet34_6ch_unw
+  unet_resnet34_rgb
+  unet_resnet34_rgb_unw
+
+reads about 541 GB; tile-outer/cell-inner so
+each label is read once. 32 processes.
+
+  500 / 19,314
+  1,000 / 19,314
+  1,500 / 19,314
+  2,000 / 19,314
+  2,500 / 19,314
+  3,000 / 19,314
+  3,500 / 19,314
+  4,000 / 19,314
+  4,500 / 19,314
+  5,000 / 19,314
+  5,500 / 19,314
+  6,000 / 19,314
+  6,500 / 19,314
+  7,000 / 19,314
+  7,500 / 19,314
+  8,000 / 19,314
+  8,500 / 19,314
+  9,000 / 19,314
+  9,500 / 19,314
+  10,000 / 19,314
+  10,500 / 19,314
+  11,000 / 19,314
+  11,500 / 19,314
+  12,000 / 19,314
+  12,500 / 19,314
+  13,000 / 19,314
+  13,500 / 19,314
+  14,000 / 19,314
+  14,500 / 19,314
+  15,000 / 19,314
+  15,500 / 19,314
+  16,000 / 19,314
+  16,500 / 19,314
+  17,000 / 19,314
+  17,500 / 19,314
+  18,000 / 19,314
+  18,500 / 19,314
+  19,000 / 19,314
+
+========================================================================================
+VALIDATION vs the existing pooled_oof_metrics.json
+========================================================================================
+convnext_upernet_10ch              EXACT MATCH  (19,314,000,000 px)
+convnext_upernet_10ch_unw          EXACT MATCH  (19,314,000,000 px)
+convnext_upernet_6ch               EXACT MATCH  (19,314,000,000 px)
+convnext_upernet_6ch_corrected     EXACT MATCH  (19,314,000,000 px)
+convnext_upernet_6ch_unw           EXACT MATCH  (19,314,000,000 px)
+convnext_upernet_rgb               EXACT MATCH  (19,314,000,000 px)
+convnext_upernet_rgb_ndsm          EXACT MATCH  (19,314,000,000 px)
+convnext_upernet_rgb_unw           EXACT MATCH  (19,314,000,000 px)
+segformer_b1_10ch                  EXACT MATCH  (19,314,000,000 px)
+segformer_b1_10ch_unw              EXACT MATCH  (19,314,000,000 px)
+segformer_b1_6ch                   EXACT MATCH  (19,314,000,000 px)
+segformer_b1_6ch_unw               EXACT MATCH  (19,314,000,000 px)
+segformer_b1_rgb                   EXACT MATCH  (19,314,000,000 px)
+segformer_b1_rgb_unw               EXACT MATCH  (19,314,000,000 px)
+swin_upernet_10ch                  EXACT MATCH  (19,314,000,000 px)
+swin_upernet_10ch_unw              EXACT MATCH  (19,314,000,000 px)
+swin_upernet_6ch                   EXACT MATCH  (19,314,000,000 px)
+swin_upernet_6ch_unw               EXACT MATCH  (19,314,000,000 px)
+swin_upernet_rgb                   EXACT MATCH  (19,314,000,000 px)
+swin_upernet_rgb_unw               EXACT MATCH  (19,314,000,000 px)
+unet_resnet34_10ch                 EXACT MATCH  (19,314,000,000 px)
+unet_resnet34_10ch_unw             EXACT MATCH  (19,314,000,000 px)
+unet_resnet34_6ch                  EXACT MATCH  (19,314,000,000 px)
+unet_resnet34_6ch_corrected        EXACT MATCH  (19,314,000,000 px)
+unet_resnet34_6ch_unw              EXACT MATCH  (19,314,000,000 px)
+unet_resnet34_rgb                  EXACT MATCH  (19,314,000,000 px)
+unet_resnet34_rgb_unw              EXACT MATCH  (19,314,000,000 px)
+
+========================================================================================
+PER-ROUTE PERFORMANCE
+========================================================================================
+cell                                 median      min      max   spread   route-level macro-IoU
+convnext_upernet_10ch                0.4797   0.2222   0.9996   0.7774
+convnext_upernet_10ch_unw            0.4807   0.2208   0.9995   0.7787
+convnext_upernet_6ch                 0.4842   0.2043   0.9996   0.7953
+convnext_upernet_6ch_corrected       0.4982   0.1726   0.9997   0.8271
+convnext_upernet_6ch_unw             0.4713   0.2098   0.9996   0.7899
+convnext_upernet_rgb                 0.4902   0.2369   0.9994   0.7625
+convnext_upernet_rgb_ndsm            0.5073   0.2453   0.9994   0.7541
+convnext_upernet_rgb_unw             0.4963   0.2230   0.9995   0.7765
+segformer_b1_10ch                    0.3874   0.2048   0.9997   0.7949
+segformer_b1_10ch_unw                0.3764   0.2051   0.9995   0.7944
+segformer_b1_6ch                     0.3741   0.1676   0.9998   0.8322
+segformer_b1_6ch_unw                 0.3777   0.1708   0.9997   0.8290
+segformer_b1_rgb                     0.4432   0.2263   0.9994   0.7731
+segformer_b1_rgb_unw                 0.4365   0.1927   0.9977   0.8050
+swin_upernet_10ch                    0.4169   0.2102   0.9992   0.7890
+swin_upernet_10ch_unw                0.4034   0.1953   0.9991   0.8038
+swin_upernet_6ch                     0.4364   0.1979   0.9997   0.8018
+swin_upernet_6ch_unw                 0.4722   0.1988   0.9996   0.8008
+swin_upernet_rgb                     0.4782   0.2143   0.9956   0.7814
+swin_upernet_rgb_unw                 0.4992   0.2246   0.9976   0.7730
+unet_resnet34_10ch                   0.3569   0.1813   0.9991   0.8178
+unet_resnet34_10ch_unw               0.2990   0.1580   0.9976   0.8395
+unet_resnet34_6ch                    0.3379   0.1743   0.9997   0.8254
+unet_resnet34_6ch_corrected          0.3908   0.1419   0.9997   0.8578
+unet_resnet34_6ch_unw                0.3447   0.1772   0.9996   0.8224
+unet_resnet34_rgb                    0.3889   0.2010   0.9986   0.7976
+unet_resnet34_rgb_unw                0.3922   0.1634   0.9991   0.8357
+
+The spread is the point. A wide range across routes means the pooled headline is an
+average over places that behave very differently, which is precisely what a single
+national accuracy figure conceals.
+
+========================================================================================
+WHICH ROUTES ARE HARD  (averaged over all cells)
+========================================================================================
+route     fold   tiles   mean macro-IoU   mean acc  classes
+82-11        1    1441           0.6182     0.9909        2
+82-13        1    1043           0.4487     0.9660        4
+82-16        2     378           0.5570     0.9750        2
+82-19        2     591           0.2678     0.9007        8
+82-20        2     608           0.2992     0.8216        8
+82-21        1     313           0.3745     0.9063        8
+82-22        2    1360           0.2575     0.9191        7
+82-24        2    1529           0.2068     0.7738        8
+83-25        1    3630           0.2764     0.9618        6
+83-26        2    1228           0.4925     0.9864        3
+83-31        0    1020           0.9991     0.9991        1
+83-34        1      10           0.4010     0.5323        2
+84-40        0    5269           0.2098     0.7991        9
+84-41        2     343           0.4811     0.9381        5
+85-45        2     401           0.7815     0.8989        3
+85-48        0     150           0.9525     0.9746        3
+
+Route-level scores are averaged over the classes PRESENT in that route, so routes
+are not directly comparable to each other; they are comparable BETWEEN MODELS,
+paired route by route, which is exactly what the Wilcoxon test needs.
+
+========================================================================================
+WRITING ARTIFACTS
+========================================================================================
+wrote C:\thesis\exploratory_data_analysis\results\tables\route_cell_cms.npz  (68 KB)  shape (27, 16, 11, 11)
+  -> this is the durable asset: Part B's route-level Wilcoxon, Holm-Bonferroni and
+     block-bootstrap all read from here instead of the 463,536 prediction tiles.
+wrote C:\thesis\exploratory_data_analysis\results\tables\route_cell_metrics.csv  (432 rows)
+wrote C:\thesis\exploratory_data_analysis\results\tables\cross_cell_summary.csv  (27 cells)
+
+VALIDATION PASSED -- route matrices sum exactly to the existing pooled matrices

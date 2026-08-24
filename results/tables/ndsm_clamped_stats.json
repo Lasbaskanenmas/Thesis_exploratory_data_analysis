@@ -1,0 +1,20 @@
+{
+  "generated_utc": "2026-08-16T07:05:35.011796+00:00",
+  "n_tiles": 19314,
+  "clamp": "floor at 0, no ceiling",
+  "measured_on": "clamped rasters",
+  "pooled_mean_m": 2.569503174222929,
+  "pooled_sd_m": 5.67679810330767,
+  "between_tile_sd_m": 3.9316309247937578,
+  "within_tile_sd_m": 4.094913305177894,
+  "between_share": 0.4796656154137658,
+  "global_min_m": 0.0,
+  "global_max_m": 298.3267822265625,
+  "int_to_float_div": 255.0,
+  "config_mean": 0.010076483036168348,
+  "config_std": 0.022261953346304587,
+  "normalised_range": [
+    -0.4526324747617447,
+    52.09931261779633
+  ]
+}

@@ -1,0 +1,755 @@
+22:05:42  nDSM build start | 19,314 tiles | workers=12
+22:05:42  destination c:\thesis\multi_channel_dataset_creation\example_dataset\data\splitted\nDSM
+22:05:42  free disk 5482.3 GB | budget 40 GB
+22:05:43  already present 0 -> 19,314 to create (idempotent restart)
+22:05:57    FAIL O2021_83_25_1_0027_00001529_3000_2000.tif: geotransform_mismatch
+22:05:58    FAIL O2021_82_11_1_0026_00002615_10000_3000.tif: geotransform_mismatch
+22:05:58    FAIL O2021_82_22_1_0029_00002082_5000_4000.tif: geotransform_mismatch
+22:05:58    FAIL O2021_82_20_1_0024_00005078_11000_1000.tif: geotransform_mismatch
+22:05:58    FAIL O2021_82_11_1_0025_00003594_10000_3000.tif: geotransform_mismatch
+22:05:58    FAIL O2021_82_20_1_0024_00005079_10000_11000.tif: geotransform_mismatch
+22:05:58    FAIL O2021_82_16_1_0025_00005219_10cm_7460_3000.tif: geotransform_mismatch
+22:05:59    FAIL O2021_82_13_1_0024_00141742_4000_2000.tif: geotransform_mismatch
+22:05:59    FAIL O2021_82_20_1_0024_00005080_13000_11000.tif: geotransform_mismatch
+22:06:13    FAIL O2021_82_21_1_0005_00001869_5000_1000.tif: geotransform_mismatch
+22:06:13    FAIL O2021_82_19_1_0024_00005012_2000_0.tif: geotransform_mismatch
+22:06:13       250/19,314  created 239  skipped 0  failed 11    8.1 tiles/s  written  0.03 GB  projected  2.55 GB
+22:06:27    FAIL O2021_82_11_1_0027_00002539_5000_0.tif: geotransform_mismatch
+22:06:29    FAIL O2021_82_19_1_0024_00005008_2000_2000.tif: geotransform_mismatch
+22:06:29    FAIL O2021_82_20_1_0024_00005079_0_9000.tif: geotransform_mismatch
+22:06:29    FAIL O2021_82_22_1_0030_00000256_3000_0.tif: geotransform_mismatch
+22:06:30    FAIL O2021_82_20_1_0024_00005078_5000_1000.tif: geotransform_mismatch
+22:06:30       500/19,314  created 484  skipped 0  failed 16   10.6 tiles/s  written  0.07 GB  projected  2.66 GB
+22:06:30    FAIL O2021_82_21_1_0004_00002039_16000_2000.tif: geotransform_mismatch
+22:06:45    FAIL O2021_82_19_1_0023_00005470_8000_3000.tif: geotransform_mismatch
+22:06:45    FAIL O2021_82_20_1_0024_00005078_7000_3000.tif: geotransform_mismatch
+22:06:45    FAIL O2021_82_11_1_0025_00003597_4000_2000.tif: geotransform_mismatch
+22:06:46    FAIL O2021_83_31_1_0041_00093603_3000_2000.tif: geotransform_mismatch
+22:06:46    FAIL O2021_82_11_1_0025_00003595_1000_1000.tif: geotransform_mismatch
+22:06:48       750/19,314  created 728  skipped 0  failed 22   11.5 tiles/s  written  0.11 GB  projected  2.72 GB
+22:06:48    FAIL O2021_82_20_1_0024_00005078_8000_3000.tif: geotransform_mismatch
+22:06:48    FAIL O2021_82_22_1_0031_00000384_5000_6000.tif: geotransform_mismatch
+22:06:59    FAIL O2021_83_26_1_0012_00001782_4000_3000.tif: geotransform_mismatch
+22:06:59    FAIL O2021_82_21_1_0005_00001869_9000_2000.tif: geotransform_mismatch
+22:07:00    FAIL O2021_82_21_1_0005_00001869_6000_2000.tif: geotransform_mismatch
+22:07:00    FAIL O2021_83_26_1_0013_00001592_3000_1000.tif: geotransform_mismatch
+22:07:00    FAIL O2021_82_20_1_0024_00005078_12000_2000.tif: geotransform_mismatch
+22:07:01    FAIL O2021_82_11_1_0026_00002616_5000_3000.tif: geotransform_mismatch
+22:07:02    FAIL O2021_82_20_1_0024_00005080_12000_11000.tif: geotransform_mismatch
+22:07:02    FAIL O2021_82_20_1_0024_00005078_13000_3000.tif: geotransform_mismatch
+22:07:02    FAIL O2021_82_20_1_0024_00005079_4000_3000.tif: geotransform_mismatch
+22:07:03    FAIL O2021_82_21_1_0004_00002039_15000_0.tif: geotransform_mismatch
+22:07:15     1,000/19,314  created 966  skipped 0  failed 34   10.8 tiles/s  written  0.14 GB  projected  2.71 GB
+22:07:15    FAIL O2021_82_11_1_0024_00002866_5000_0.tif: geotransform_mismatch
+22:07:16    FAIL O2021_82_11_1_0024_00002866_1000_1000.tif: geotransform_mismatch
+22:07:16    FAIL O2021_82_20_1_0024_00005079_0_4000.tif: geotransform_mismatch
+22:07:17    FAIL O2021_82_22_1_0030_00000257_8000_4000.tif: geotransform_mismatch
+22:07:18    FAIL O2021_82_20_1_0024_00005078_9000_2000.tif: geotransform_mismatch
+22:07:19    FAIL O2021_82_20_1_0024_00005079_11000_11000.tif: geotransform_mismatch
+22:07:30    FAIL O2021_82_11_1_0024_00002864_4000_2000.tif: geotransform_mismatch
+22:07:30    FAIL O2021_82_20_1_0024_00005078_6000_2000.tif: geotransform_mismatch
+22:07:31    FAIL O2021_82_20_1_0024_00005080_5000_9000.tif: geotransform_mismatch
+22:07:31    FAIL O2021_82_13_1_0025_00144221_2000_1000.tif: geotransform_mismatch
+22:07:31    FAIL O2021_82_22_1_0030_00000261_3000_2000.tif: geotransform_mismatch
+22:07:31    FAIL O2021_82_20_1_0024_00005080_8000_10000.tif: geotransform_mismatch
+22:07:32    FAIL O2021_82_13_1_0024_00141759_6000_2000.tif: geotransform_mismatch
+22:07:32     1,250/19,314  created 1,203  skipped 0  failed 47   11.4 tiles/s  written  0.17 GB  projected  2.67 GB
+22:07:32    FAIL O2021_83_25_1_0027_00001530_4000_1000.tif: geotransform_mismatch
+22:07:32    FAIL O2021_82_22_1_0032_00000908_5000_3000.tif: geotransform_mismatch
+22:07:34    FAIL O2021_82_11_1_0025_00003595_8000_0.tif: geotransform_mismatch
+22:07:34    FAIL O2021_82_21_1_0004_00002040_3000_7000.tif: geotransform_mismatch
+22:07:35    FAIL O2021_83_31_1_0043_00091125_1000_4000.tif: geotransform_mismatch
+22:07:35    FAIL O2021_82_20_1_0024_00005078_1000_8000.tif: geotransform_mismatch
+22:07:45    FAIL O2021_82_20_1_0024_00005079_3000_9000.tif: geotransform_mismatch
+22:07:45    FAIL O2021_82_20_1_0024_00005077_10000_1000.tif: geotransform_mismatch
+22:07:45    FAIL O2021_82_11_1_0023_00003029_9000_7000.tif: geotransform_mismatch
+22:07:45    FAIL O2021_82_22_1_0031_00000385_2000_2000.tif: geotransform_mismatch
+22:07:45    FAIL O2021_82_20_1_0024_00005077_8000_1000.tif: geotransform_mismatch
+22:07:45    FAIL O2021_82_20_1_0024_00005077_7000_1000.tif: geotransform_mismatch
+22:07:46    FAIL O2021_82_13_1_0026_00144925_3000_0.tif: geotransform_mismatch
+22:07:46    FAIL O2021_82_20_1_0024_00005078_2000_6000.tif: geotransform_mismatch
+22:07:48     1,500/19,314  created 1,439  skipped 0  failed 61   12.0 tiles/s  written  0.21 GB  projected  2.71 GB
+22:07:50    FAIL O2021_82_16_1_0024_00004782_10cm_6000_1000.tif: geotransform_mismatch
+22:08:00    FAIL O2021_82_20_1_0024_00005078_3000_7000.tif: geotransform_mismatch
+22:08:01    FAIL O2021_82_20_1_0024_00005079_13000_11000.tif: geotransform_mismatch
+22:08:01    FAIL O2021_82_20_1_0024_00005079_2000_8000.tif: geotransform_mismatch
+22:08:02    FAIL O2021_82_11_1_0023_00003031_4000_2000.tif: geotransform_mismatch
+22:08:05    FAIL O2021_82_20_1_0024_00005079_8000_10000.tif: geotransform_mismatch
+22:08:06    FAIL O2021_82_21_1_0005_00001869_11000_1000.tif: geotransform_mismatch
+22:08:15    FAIL O2021_82_20_1_0024_00005077_1000_0.tif: geotransform_mismatch
+22:08:15     1,750/19,314  created 1,681  skipped 0  failed 69   11.5 tiles/s  written  0.24 GB  projected  2.70 GB
+22:08:15    FAIL O2021_82_20_1_0024_00005080_10000_11000.tif: geotransform_mismatch
+22:08:16    FAIL O2021_82_20_1_0024_00005079_1000_6000.tif: geotransform_mismatch
+22:08:17    FAIL O2021_83_25_1_0016_00002735_5000_2000.tif: geotransform_mismatch
+22:08:18    FAIL O2021_82_20_1_0024_00005079_0_10000.tif: geotransform_mismatch
+22:08:20    FAIL O2021_82_20_1_0024_00005079_10000_3000.tif: geotransform_mismatch
+22:08:22    FAIL O2021_82_20_1_0024_00005079_12000_11000.tif: geotransform_mismatch
+22:08:31    FAIL O2021_83_25_1_0027_00001532_2000_1000.tif: geotransform_mismatch
+22:08:32    FAIL O2021_82_20_1_0024_00005079_3000_4000.tif: geotransform_mismatch
+22:08:33     2,000/19,314  created 1,923  skipped 0  failed 77   11.8 tiles/s  written  0.28 GB  projected  2.69 GB
+22:08:34    FAIL O2021_82_20_1_0024_00005078_1000_5000.tif: geotransform_mismatch
+22:08:34    FAIL O2021_82_24_1_0023_00001728_10cm_6000_0.tif: geotransform_mismatch
+22:08:34    FAIL O2021_82_20_1_0024_00005080_11000_11000.tif: geotransform_mismatch
+22:08:37    FAIL O2021_82_16_1_0026_00005227_10cm_3000_1000.tif: geotransform_mismatch
+22:08:39    FAIL O2021_82_20_1_0024_00005079_9000_10000.tif: geotransform_mismatch
+22:08:46    FAIL O2021_82_21_1_0005_00001869_6000_0.tif: geotransform_mismatch
+22:08:47    FAIL O2021_82_13_1_0026_00144908_5000_4000.tif: geotransform_mismatch
+22:08:49    FAIL O2021_82_20_1_0024_00005077_12000_3000.tif: geotransform_mismatch
+22:08:49    FAIL O2021_83_26_1_0014_00001455_4000_3000.tif: geotransform_mismatch
+22:08:50    FAIL O2021_82_21_1_0005_00001869_9000_0.tif: geotransform_mismatch
+22:08:50    FAIL O2021_82_20_1_0024_00005077_5000_3000.tif: geotransform_mismatch
+22:08:51     2,250/19,314  created 2,162  skipped 0  failed 88   12.0 tiles/s  written  0.31 GB  projected  2.70 GB
+22:08:52    FAIL O2021_82_19_1_0024_00005009_5000_6000.tif: geotransform_mismatch
+22:08:52    FAIL O2021_82_21_1_0005_00001869_10000_0.tif: geotransform_mismatch
+22:08:52    FAIL O2021_82_20_1_0024_00005080_9000_10000.tif: geotransform_mismatch
+22:08:52    FAIL O2021_82_22_1_0030_00000257_1000_2000.tif: geotransform_mismatch
+22:08:55    FAIL O2021_83_25_1_0026_00001212_9000_2000.tif: geotransform_mismatch
+22:09:01    FAIL O2021_82_22_1_0031_00000389_2000_5000.tif: geotransform_mismatch
+22:09:03    FAIL O2021_82_20_1_0024_00005079_2000_5000.tif: geotransform_mismatch
+22:09:05    FAIL O2021_82_22_1_0031_00000391_1000_1000.tif: geotransform_mismatch
+22:09:05    FAIL O2021_82_20_1_0024_00005078_0_7000.tif: geotransform_mismatch
+22:09:06    FAIL O2021_83_26_1_0014_00001454_6000_2000.tif: geotransform_mismatch
+22:09:08    FAIL O2021_82_22_1_0032_00000904_5000_0.tif: geotransform_mismatch
+22:09:18     2,500/19,314  created 2,401  skipped 0  failed 99   11.6 tiles/s  written  0.35 GB  projected  2.71 GB
+22:09:18    FAIL O2021_82_20_1_0024_00005078_5000_3000.tif: geotransform_mismatch
+22:09:20    FAIL O2021_82_21_1_0005_00001869_4000_2000.tif: geotransform_mismatch
+22:09:20    FAIL O2021_82_20_1_0024_00005078_10000_2000.tif: geotransform_mismatch
+22:09:22    FAIL O2021_82_21_1_0005_00001869_0_2000.tif: geotransform_mismatch
+22:09:24    FAIL O2021_82_11_1_0025_00003599_1000_4000.tif: geotransform_mismatch
+22:09:25    FAIL O2021_82_22_1_0032_00000907_7000_1000.tif: geotransform_mismatch
+22:09:35    FAIL O2021_82_20_1_0024_00005079_9000_3000.tif: geotransform_mismatch
+22:09:37     2,750/19,314  created 2,644  skipped 0  failed 106   11.7 tiles/s  written  0.39 GB  projected  2.71 GB
+22:09:39    FAIL O2021_82_21_1_0004_00002039_12000_0.tif: geotransform_mismatch
+22:09:40    FAIL O2021_82_20_1_0024_00005078_11000_3000.tif: geotransform_mismatch
+22:09:41    FAIL O2021_82_13_1_0025_00144226_6000_1000.tif: geotransform_mismatch
+22:09:45    FAIL O2021_82_16_1_0028_00005676_10cm_0_4000.tif: geotransform_mismatch
+22:09:45    FAIL O2021_82_20_1_0024_00005080_7000_9000.tif: geotransform_mismatch
+22:09:45    FAIL O2021_82_20_1_0024_00005078_4000_2000.tif: geotransform_mismatch
+22:09:55    FAIL O2021_82_11_1_0027_00002535_5000_0.tif: geotransform_mismatch
+22:09:55    FAIL O2021_82_20_1_0024_00005080_8000_9000.tif: geotransform_mismatch
+22:09:55     3,000/19,314  created 2,886  skipped 0  failed 114   11.9 tiles/s  written  0.42 GB  projected  2.69 GB
+22:10:05    FAIL O2021_82_11_1_0026_00002617_6000_1000.tif: geotransform_mismatch
+22:10:05    FAIL O2021_82_20_1_0024_00005079_0_6000.tif: geotransform_mismatch
+22:10:08    FAIL O2021_82_21_1_0004_00002039_15000_3000.tif: geotransform_mismatch
+22:10:10    FAIL O2021_82_24_1_0023_00001727_10cm_2000_1000.tif: geotransform_mismatch
+22:10:11    FAIL O2021_82_11_1_0023_00003032_9000_7000.tif: geotransform_mismatch
+22:10:11    FAIL O2021_82_21_1_0005_00001869_8000_1000.tif: geotransform_mismatch
+22:10:16     3,250/19,314  created 3,130  skipped 0  failed 120   11.9 tiles/s  written  0.45 GB  projected  2.69 GB
+22:10:16    FAIL O2021_82_20_1_0024_00005078_13000_1000.tif: geotransform_mismatch
+22:10:16    FAIL O2021_82_21_1_0005_00001869_7000_1000.tif: geotransform_mismatch
+22:10:21    FAIL O2021_83_25_1_0015_00003912_7000_4000.tif: geotransform_mismatch
+22:10:24    FAIL O2021_82_19_1_0023_00005476_9000_5000.tif: geotransform_mismatch
+22:10:25    FAIL O2021_82_13_1_0024_00141755_4000_0.tif: geotransform_mismatch
+22:10:25    FAIL O2021_82_11_1_0025_00003596_6000_1000.tif: geotransform_mismatch
+22:10:26    FAIL O2021_82_20_1_0024_00005080_0_10000.tif: geotransform_mismatch
+22:10:38    FAIL O2021_82_20_1_0024_00005078_8000_1000.tif: geotransform_mismatch
+22:10:39     3,500/19,314  created 3,372  skipped 0  failed 128   11.8 tiles/s  written  0.49 GB  projected  2.70 GB
+22:10:41    FAIL O2021_82_21_1_0004_00002039_14000_2000.tif: geotransform_mismatch
+22:10:42    FAIL O2021_82_13_1_0024_00141805_8160_1000.tif: geotransform_mismatch
+22:10:42    FAIL O2021_82_20_1_0024_00005078_7000_1000.tif: geotransform_mismatch
+22:10:47    FAIL O2021_82_20_1_0024_00005079_1000_4000.tif: geotransform_mismatch
+22:10:53    FAIL O2021_82_24_1_0021_00002048_2000_1000.tif: geotransform_mismatch
+22:10:57    FAIL O2021_82_20_1_0024_00005079_12000_3000.tif: geotransform_mismatch
+22:10:58     3,750/19,314  created 3,616  skipped 0  failed 134   11.9 tiles/s  written  0.52 GB  projected  2.70 GB
+22:11:02    FAIL O2021_82_11_1_0023_00003029_8000_4000.tif: geotransform_mismatch
+22:11:03    FAIL O2021_82_21_1_0004_00002039_5000_0.tif: geotransform_mismatch
+22:11:03    FAIL O2021_82_20_1_0024_00005078_3000_5000.tif: geotransform_mismatch
+22:11:08    FAIL O2021_82_20_1_0024_00005078_0_8000.tif: geotransform_mismatch
+22:11:09    FAIL O2021_82_16_1_0025_00005218_10cm_1000_3000.tif: geotransform_mismatch
+22:11:10    FAIL O2021_82_11_1_0026_00002617_3000_4000.tif: geotransform_mismatch
+22:11:12    FAIL O2021_82_20_1_0024_00005078_2000_4000.tif: geotransform_mismatch
+22:11:13    FAIL O2021_82_16_1_0029_00006117_10cm_0_1000.tif: geotransform_mismatch
+22:11:13    FAIL O2021_83_25_1_0015_00003911_10000_2000.tif: geotransform_mismatch
+22:11:15    FAIL O2021_82_20_1_0024_00005077_10000_3000.tif: geotransform_mismatch
+22:11:16    FAIL O2021_82_20_1_0024_00005077_7000_3000.tif: geotransform_mismatch
+22:11:16     4,000/19,314  created 3,855  skipped 0  failed 145   12.0 tiles/s  written  0.56 GB  projected  2.70 GB
+22:11:17    FAIL O2021_82_21_1_0005_00001869_1000_0.tif: geotransform_mismatch
+22:11:25    FAIL O2021_82_20_1_0024_00005077_8000_3000.tif: geotransform_mismatch
+22:11:26    FAIL O2021_82_21_1_0005_00001869_10000_2000.tif: geotransform_mismatch
+22:11:34    FAIL O2021_82_20_1_0024_00005078_0_5000.tif: geotransform_mismatch
+22:11:40    FAIL O2021_82_20_1_0024_00005078_3000_8000.tif: geotransform_mismatch
+22:11:41     4,250/19,314  created 4,100  skipped 0  failed 150   11.9 tiles/s  written  0.60 GB  projected  2.71 GB
+22:11:41    FAIL O2021_82_21_1_0004_00002039_3000_2000.tif: geotransform_mismatch
+22:11:43    FAIL O2021_82_20_1_0024_00005079_2000_7000.tif: geotransform_mismatch
+22:11:46    FAIL O2021_82_21_1_0005_00001868_3000_6000.tif: geotransform_mismatch
+22:11:47    FAIL O2021_82_22_1_0030_00000260_3000_3000.tif: geotransform_mismatch
+22:11:50    FAIL O2021_82_20_1_0024_00005077_5000_1000.tif: geotransform_mismatch
+22:11:56    FAIL O2021_82_20_1_0024_00005077_12000_1000.tif: geotransform_mismatch
+22:11:56    FAIL O2021_82_20_1_0024_00005079_1000_9000.tif: geotransform_mismatch
+22:12:01     4,500/19,314  created 4,343  skipped 0  failed 157   11.9 tiles/s  written  0.64 GB  projected  2.73 GB
+22:12:02    FAIL O2021_82_11_1_0024_00002866_6000_4000.tif: geotransform_mismatch
+22:12:02    FAIL O2021_83_25_1_0027_00001535_1000_0.tif: geotransform_mismatch
+22:12:06    FAIL O2021_82_20_1_0024_00005078_1000_7000.tif: geotransform_mismatch
+22:12:15    FAIL O2021_82_20_1_0024_00005079_3000_6000.tif: geotransform_mismatch
+22:12:16    FAIL O2021_82_20_1_0024_00005077_9000_0.tif: geotransform_mismatch
+22:12:16    FAIL O2021_82_20_1_0024_00005077_10000_0.tif: geotransform_mismatch
+22:12:19     4,750/19,314  created 4,587  skipped 0  failed 163   12.0 tiles/s  written  0.67 GB  projected  2.73 GB
+22:12:21    FAIL O2021_82_20_1_0024_00005077_6000_0.tif: geotransform_mismatch
+22:12:29    FAIL O2021_82_20_1_0024_00005077_3000_1000.tif: geotransform_mismatch
+22:12:31    FAIL O2021_82_20_1_0024_00005078_6000_6000.tif: geotransform_mismatch
+22:12:31    FAIL O2021_82_20_1_0024_00005079_8000_9000.tif: geotransform_mismatch
+22:12:35    FAIL O2021_82_20_1_0024_00005078_9000_6000.tif: geotransform_mismatch
+22:12:35    FAIL O2021_82_20_1_0024_00005079_7000_9000.tif: geotransform_mismatch
+22:12:37    FAIL O2021_82_20_1_0024_00005079_5000_10000.tif: geotransform_mismatch
+22:12:37    FAIL O2021_82_22_1_0031_00000386_0_4000.tif: geotransform_mismatch
+22:12:37    FAIL O2021_82_21_1_0004_00002039_5000_2000.tif: geotransform_mismatch
+22:12:38    FAIL O2021_82_19_1_0024_00005010_2000_1000.tif: geotransform_mismatch
+22:12:44     5,000/19,314  created 4,827  skipped 0  failed 173   11.9 tiles/s  written  0.71 GB  projected  2.73 GB
+22:12:44    FAIL O2021_82_20_1_0024_00005078_5000_8000.tif: geotransform_mismatch
+22:12:48    FAIL O2021_82_22_1_0031_00000391_8000_3000.tif: geotransform_mismatch
+22:12:48    FAIL O2021_82_11_1_0026_00002619_1000_1000.tif: geotransform_mismatch
+22:12:49    FAIL O2021_82_20_1_0024_00005079_4000_7000.tif: geotransform_mismatch
+22:12:49    FAIL O2021_82_20_1_0024_00005078_13000_7000.tif: geotransform_mismatch
+22:12:50    FAIL O2021_82_20_1_0024_00005080_5000_10000.tif: geotransform_mismatch
+22:12:51    FAIL O2021_83_25_1_0016_00002732_3000_6000.tif: geotransform_mismatch
+22:12:53    FAIL O2021_82_20_1_0024_00005078_12000_6000.tif: geotransform_mismatch
+22:12:53    FAIL O2021_82_20_1_0024_00005079_5000_6000.tif: geotransform_mismatch
+22:12:55    FAIL O2021_83_31_1_0041_00093609_0_4000.tif: geotransform_mismatch
+22:12:55    FAIL O2021_82_21_1_0004_00002039_4000_3000.tif: geotransform_mismatch
+22:13:01    FAIL O2021_82_11_1_0024_00002868_7000_2000.tif: geotransform_mismatch
+22:13:05     5,250/19,314  created 5,065  skipped 0  failed 185   11.9 tiles/s  written  0.74 GB  projected  2.73 GB
+22:13:05    FAIL O2021_82_11_1_0026_00002618_2000_0.tif: geotransform_mismatch
+22:13:05    FAIL O2023_84_41_1_0114_00141417_4000_3000.tif: geotransform_mismatch
+22:13:05    FAIL O2021_82_20_1_0024_00005079_6000_8000.tif: geotransform_mismatch
+22:13:05    FAIL O2021_82_20_1_0024_00005078_11000_8000.tif: geotransform_mismatch
+22:13:05    FAIL O2021_82_20_1_0024_00005078_8000_7000.tif: geotransform_mismatch
+22:13:07    FAIL O2021_83_26_1_0013_00001589_7000_3000.tif: geotransform_mismatch
+22:13:12    FAIL O2021_82_20_1_0024_00005079_9000_8000.tif: geotransform_mismatch
+22:13:12    FAIL O2021_82_20_1_0024_00005078_7000_7000.tif: geotransform_mismatch
+22:13:17    FAIL O2021_82_11_1_0024_00002868_10000_3000.tif: geotransform_mismatch
+22:13:19    FAIL O2021_82_13_1_0025_00144235_1000_0.tif: geotransform_mismatch
+22:13:22    FAIL O2021_82_21_1_0004_00002039_3000_0.tif: geotransform_mismatch
+22:13:22     5,500/19,314  created 5,304  skipped 0  failed 196   12.0 tiles/s  written  0.78 GB  projected  2.73 GB
+22:13:22    FAIL O2021_82_20_1_0024_00005078_5000_5000.tif: geotransform_mismatch
+22:13:22    FAIL O2021_82_11_1_0025_00003597_6000_4000.tif: geotransform_mismatch
+22:13:24    FAIL O2021_82_20_1_0024_00005080_4000_10000.tif: geotransform_mismatch
+22:13:32    FAIL O2021_82_22_1_0031_00000386_2000_3000.tif: geotransform_mismatch
+22:13:33    FAIL O2021_83_26_1_0014_00001461_4000_3000.tif: geotransform_mismatch
+22:13:33    FAIL O2021_82_20_1_0024_00005079_7000_4000.tif: geotransform_mismatch
+22:13:33    FAIL O2021_82_20_1_0024_00005078_10000_4000.tif: geotransform_mismatch
+22:13:38    FAIL O2021_82_20_1_0024_00005079_8000_4000.tif: geotransform_mismatch
+22:13:40    FAIL O2021_82_20_1_0024_00005079_9000_5000.tif: geotransform_mismatch
+22:13:44     5,750/19,314  created 5,545  skipped 0  failed 205   11.9 tiles/s  written  0.81 GB  projected  2.73 GB
+22:13:50    FAIL O2021_83_31_1_0043_00091125_8000_6000.tif: geotransform_mismatch
+22:13:50    FAIL O2021_82_20_1_0024_00005078_11000_5000.tif: geotransform_mismatch
+22:13:50    FAIL O2021_82_20_1_0024_00005079_6000_5000.tif: geotransform_mismatch
+22:13:53    FAIL O2021_82_22_1_0032_00000911_0_2000.tif: geotransform_mismatch
+22:13:53    FAIL O2021_82_20_1_0024_00005077_1000_3000.tif: geotransform_mismatch
+22:13:54    FAIL O2021_82_21_1_0005_00001869_11000_0.tif: geotransform_mismatch
+22:13:54    FAIL O2021_82_20_1_0024_00005078_4000_4000.tif: geotransform_mismatch
+22:13:55    FAIL O2021_82_21_1_0005_00001869_8000_0.tif: geotransform_mismatch
+22:14:00    FAIL O2021_82_21_1_0005_00001868_8000_4000.tif: geotransform_mismatch
+22:14:00    FAIL O2021_82_20_1_0023_00004975_9000_4000.tif: geotransform_mismatch
+22:14:04    FAIL O2021_82_20_1_0024_00005079_4000_10000.tif: geotransform_mismatch
+22:14:04    FAIL O2021_82_21_1_0005_00001869_7000_0.tif: geotransform_mismatch
+22:14:06    FAIL O2021_82_11_1_0027_00002535_0_5000.tif: geotransform_mismatch
+22:14:06     6,000/19,314  created 5,782  skipped 0  failed 218   11.9 tiles/s  written  0.85 GB  projected  2.73 GB
+22:14:06    FAIL O2021_82_11_1_0026_00002614_10810_3000.tif: geotransform_mismatch
+22:14:08    FAIL O2021_82_20_1_0024_00005080_0_9000.tif: geotransform_mismatch
+22:14:08    FAIL O2021_82_20_1_0024_00005078_0_3000.tif: geotransform_mismatch
+22:14:09    FAIL O2021_82_20_1_0024_00005079_11000_6000.tif: geotransform_mismatch
+22:14:13    FAIL O2021_82_22_1_0031_00000386_7000_6000.tif: geotransform_mismatch
+22:14:14    FAIL O2021_82_21_1_0005_00001869_1000_1000.tif: geotransform_mismatch
+22:14:21    FAIL O2021_82_16_1_0025_00005219_10cm_5000_2000.tif: geotransform_mismatch
+22:14:22    FAIL O2021_82_20_1_0024_00005080_6000_10000.tif: geotransform_mismatch
+22:14:22    FAIL O2021_83_25_1_0016_00002734_4000_4000.tif: geotransform_mismatch
+22:14:23    FAIL O2021_82_20_1_0024_00005079_12000_8000.tif: geotransform_mismatch
+22:14:23    FAIL O2021_82_21_1_0004_00002039_13000_3000.tif: geotransform_mismatch
+22:14:25    FAIL O2021_82_19_1_0023_00005474_10000_6000.tif: geotransform_mismatch
+22:14:26     6,250/19,314  created 6,020  skipped 0  failed 230   11.9 tiles/s  written  0.88 GB  projected  2.72 GB
+22:14:28    FAIL O2021_82_20_1_0024_00005080_13000_9000.tif: geotransform_mismatch
+22:14:28    FAIL O2021_82_21_1_0004_00002039_12000_2000.tif: geotransform_mismatch
+22:14:29    FAIL O2021_82_20_1_0023_00004975_16000_0.tif: geotransform_mismatch
+22:14:29    FAIL O2021_82_20_1_0023_00004976_15000_0.tif: geotransform_mismatch
+22:14:30    FAIL O2021_82_20_1_0024_00005079_6000_10000.tif: geotransform_mismatch
+22:14:32    FAIL O2021_82_13_1_0025_00144218_2000_0.tif: geotransform_mismatch
+22:14:38    FAIL O2021_82_20_1_0024_00005078_1000_1000.tif: geotransform_mismatch
+22:14:38    FAIL O2021_82_20_1_0024_00005079_13000_9000.tif: geotransform_mismatch
+22:14:39    FAIL O2021_82_13_1_0025_00144218_4000_3000.tif: geotransform_mismatch
+22:14:40    FAIL O2021_82_16_1_0029_00006117_10cm_2000_1000.tif: geotransform_mismatch
+22:14:43    FAIL O2021_82_21_1_0004_00002040_15000_0.tif: geotransform_mismatch
+22:14:46     6,500/19,314  created 6,259  skipped 0  failed 241   12.0 tiles/s  written  0.92 GB  projected  2.72 GB
+22:14:48    FAIL O2021_82_22_1_0030_00000260_5000_0.tif: geotransform_mismatch
+22:14:48    FAIL O2021_82_20_1_0024_00005079_10000_7000.tif: geotransform_mismatch
+22:14:56    FAIL O2021_82_21_1_0005_00001869_2000_2000.tif: geotransform_mismatch
+22:14:59    FAIL O2021_82_11_1_0023_00003032_3000_4000.tif: geotransform_mismatch
+22:15:02    FAIL O2021_82_20_1_0024_00005079_12000_5000.tif: geotransform_mismatch
+22:15:02    FAIL O2021_82_20_1_0024_00005079_7000_10000.tif: geotransform_mismatch
+22:15:10    FAIL O2021_82_22_1_0032_00000904_3000_0.tif: geotransform_mismatch
+22:15:10     6,750/19,314  created 6,502  skipped 0  failed 248   11.9 tiles/s  written  0.95 GB  projected  2.73 GB
+22:15:10    FAIL O2021_82_22_1_0029_00002080_7000_4000.tif: geotransform_mismatch
+22:15:10    FAIL O2021_82_19_1_0024_00005011_5000_5000.tif: geotransform_mismatch
+22:15:17    FAIL O2021_82_20_1_0024_00005078_3000_3000.tif: geotransform_mismatch
+22:15:19    FAIL O2021_82_11_1_0027_00002539_1000_1000.tif: geotransform_mismatch
+22:15:25    FAIL O2021_83_25_1_0027_00001533_3000_7000.tif: geotransform_mismatch
+22:15:25    FAIL O2021_82_20_1_0024_00005078_2000_2000.tif: geotransform_mismatch
+22:15:25    FAIL O2021_82_20_1_0024_00005080_1000_9000.tif: geotransform_mismatch
+22:15:28    FAIL O2021_83_31_1_0040_00094626_1000_4000.tif: geotransform_mismatch
+22:15:29     7,000/19,314  created 6,744  skipped 0  failed 256   11.9 tiles/s  written  0.99 GB  projected  2.73 GB
+22:15:29    FAIL O2021_83_26_1_0013_00001596_3000_6000.tif: geotransform_mismatch
+22:15:32    FAIL O2021_83_31_1_0042_00092138_2000_0.tif: geotransform_mismatch
+22:15:33    FAIL O2021_82_11_1_0027_00002535_3000_4000.tif: geotransform_mismatch
+22:15:34    FAIL O2021_82_20_1_0024_00005079_13000_4000.tif: geotransform_mismatch
+22:15:42    FAIL O2021_82_21_1_0004_00002039_14000_0.tif: geotransform_mismatch
+22:15:42    FAIL O2021_82_20_1_0024_00005080_7000_10000.tif: geotransform_mismatch
+22:15:44    FAIL O2021_82_20_1_0024_00005078_7000_5000.tif: geotransform_mismatch
+22:15:47    FAIL O2021_82_21_1_0004_00002039_4000_0.tif: geotransform_mismatch
+22:15:48     7,250/19,314  created 6,986  skipped 0  failed 264   12.0 tiles/s  written  1.03 GB  projected  2.73 GB
+22:15:48    FAIL O2021_82_20_1_0024_00005078_8000_5000.tif: geotransform_mismatch
+22:15:57    FAIL O2021_82_20_1_0023_00004974_8000_4000.tif: geotransform_mismatch
+22:16:00    FAIL O2021_82_20_1_0024_00005079_2000_10000.tif: geotransform_mismatch
+22:16:01    FAIL O2021_82_20_1_0024_00005078_12000_4000.tif: geotransform_mismatch
+22:16:01    FAIL O2021_82_20_1_0024_00005079_5000_4000.tif: geotransform_mismatch
+22:16:01    FAIL O2021_82_13_1_0024_00141749_8000_6000.tif: geotransform_mismatch
+22:16:01    FAIL O2021_83_31_1_0039_00123154_6000_3000.tif: geotransform_mismatch
+22:16:07    FAIL O2021_82_20_1_0024_00005079_4000_5000.tif: geotransform_mismatch
+22:16:07    FAIL O2021_82_20_1_0024_00005078_13000_5000.tif: geotransform_mismatch
+22:16:12     7,500/19,314  created 7,227  skipped 0  failed 273   11.9 tiles/s  written  1.06 GB  projected  2.73 GB
+22:16:14    FAIL O2021_82_20_1_0024_00005080_2000_10000.tif: geotransform_mismatch
+22:16:16    FAIL O2021_82_19_1_0023_00005471_4000_5000.tif: geotransform_mismatch
+22:16:17    FAIL O2021_82_13_1_0025_00144235_8000_2000.tif: geotransform_mismatch
+22:16:17    FAIL O2021_82_20_1_0024_00005078_9000_4000.tif: geotransform_mismatch
+22:16:22    FAIL O2021_82_21_1_0004_00002040_8000_0.tif: geotransform_mismatch
+22:16:28    FAIL O2021_82_20_1_0024_00005078_6000_4000.tif: geotransform_mismatch
+22:16:30    FAIL O2021_82_20_1_0024_00005077_3000_3000.tif: geotransform_mismatch
+22:16:31    FAIL O2021_83_25_1_0027_00001534_5000_5000.tif: geotransform_mismatch
+22:16:32     7,750/19,314  created 7,469  skipped 0  failed 281   11.9 tiles/s  written  1.10 GB  projected  2.74 GB
+22:16:33    FAIL O2021_82_20_1_0024_00005079_5000_9000.tif: geotransform_mismatch
+22:16:37    FAIL O2021_82_13_1_0026_00144938_1000_1000.tif: geotransform_mismatch
+22:16:37    FAIL O2021_82_20_1_0024_00005080_3000_10000.tif: geotransform_mismatch
+22:16:39    FAIL O2021_82_20_1_0024_00005078_4000_6000.tif: geotransform_mismatch
+22:16:46    FAIL O2021_83_25_1_0026_00001209_9000_6000.tif: geotransform_mismatch
+22:16:46    FAIL O2021_82_24_1_0024_00005672_10cm_7800_2000.tif: geotransform_mismatch
+22:16:46    FAIL O2021_82_20_1_0024_00005077_1000_1000.tif: geotransform_mismatch
+22:16:49    FAIL O2021_82_20_1_0024_00005078_11000_7000.tif: geotransform_mismatch
+22:16:49    FAIL O2021_82_20_1_0024_00005078_8000_8000.tif: geotransform_mismatch
+22:16:49    FAIL O2021_82_20_1_0024_00005079_6000_7000.tif: geotransform_mismatch
+22:16:50    FAIL O2021_82_21_1_0004_00002039_8000_2000.tif: geotransform_mismatch
+22:16:50     8,000/19,314  created 7,708  skipped 0  failed 292   12.0 tiles/s  written  1.14 GB  projected  2.74 GB
+22:16:53    FAIL O2021_82_20_1_0024_00005078_7000_8000.tif: geotransform_mismatch
+22:16:53    FAIL O2021_82_20_1_0024_00005079_9000_7000.tif: geotransform_mismatch
+22:17:01    FAIL O2021_82_21_1_0004_00002039_7000_2000.tif: geotransform_mismatch
+22:17:03    FAIL O2021_82_20_1_0024_00005079_8000_6000.tif: geotransform_mismatch
+22:17:03    FAIL O2021_82_20_1_0024_00005077_7000_0.tif: geotransform_mismatch
+22:17:05    FAIL O2021_82_21_1_0004_00002039_6000_3000.tif: geotransform_mismatch
+22:17:06    FAIL O2021_82_20_1_0024_00005079_7000_6000.tif: geotransform_mismatch
+22:17:06    FAIL O2021_82_20_1_0024_00005078_10000_6000.tif: geotransform_mismatch
+22:17:06    FAIL O2021_82_20_1_0024_00005077_8000_0.tif: geotransform_mismatch
+22:17:06    FAIL O2021_82_20_1_0024_00005077_11000_0.tif: geotransform_mismatch
+22:17:10    FAIL O2021_82_21_1_0004_00002039_9000_3000.tif: geotransform_mismatch
+22:17:11    FAIL O2021_82_20_1_0024_00005078_5000_7000.tif: geotransform_mismatch
+22:17:11     8,250/19,314  created 7,946  skipped 0  failed 304   12.0 tiles/s  written  1.17 GB  projected  2.75 GB
+22:17:18    FAIL O2021_82_20_1_0024_00005079_3000_10000.tif: geotransform_mismatch
+22:17:18    FAIL O2021_82_11_1_0027_00002539_6000_4000.tif: geotransform_mismatch
+22:17:20    FAIL O2021_82_20_1_0024_00005078_13000_8000.tif: geotransform_mismatch
+22:17:20    FAIL O2021_82_20_1_0024_00005079_4000_8000.tif: geotransform_mismatch
+22:17:25    FAIL O2021_82_20_1_0024_00005079_10000_5000.tif: geotransform_mismatch
+22:17:32    FAIL O2021_83_25_1_0017_00002704_11000_0.tif: geotransform_mismatch
+22:17:33    FAIL O2021_82_22_1_0029_00002078_5000_1000.tif: geotransform_mismatch
+22:17:35     8,500/19,314  created 8,189  skipped 0  failed 311   11.9 tiles/s  written  1.21 GB  projected  2.75 GB
+22:17:35    FAIL O2021_82_11_1_0027_00002537_5000_6000.tif: geotransform_mismatch
+22:17:38    FAIL O2021_82_20_1_0024_00005080_2000_8000.tif: geotransform_mismatch
+22:17:38    FAIL O2021_82_11_1_0025_00003594_2000_0.tif: geotransform_mismatch
+22:17:38    FAIL O2021_82_19_1_0024_00005009_4000_1000.tif: geotransform_mismatch
+22:17:42    FAIL O2021_82_20_1_0024_00005078_1000_3000.tif: geotransform_mismatch
+22:17:42    FAIL O2021_83_31_1_0043_00091116_5000_4000.tif: geotransform_mismatch
+22:17:42    FAIL O2021_82_20_1_0023_00004975_11000_7000.tif: geotransform_mismatch
+22:17:43    FAIL O2021_83_25_1_0026_00001209_3000_3000.tif: geotransform_mismatch
+22:17:48    FAIL O2021_82_20_1_0024_00005080_1000_10000.tif: geotransform_mismatch
+22:17:53     8,750/19,314  created 8,430  skipped 0  failed 320   12.0 tiles/s  written  1.24 GB  projected  2.75 GB
+22:17:54    FAIL O2021_82_22_1_0031_00000387_0_5000.tif: geotransform_mismatch
+22:17:57    FAIL O2021_82_20_1_0024_00005079_1000_10000.tif: geotransform_mismatch
+22:17:58    FAIL O2021_82_20_1_0024_00005080_3000_9000.tif: geotransform_mismatch
+22:17:59    FAIL O2021_82_11_1_0024_00002866_0_5000.tif: geotransform_mismatch
+22:18:04    FAIL O2021_82_20_1_0024_00005079_2000_3000.tif: geotransform_mismatch
+22:18:09    FAIL O2021_82_21_1_0004_00002039_13000_0.tif: geotransform_mismatch
+22:18:09    FAIL O2021_82_20_1_0024_00005079_11000_4000.tif: geotransform_mismatch
+22:18:10    FAIL O2021_82_20_1_0024_00005078_0_1000.tif: geotransform_mismatch
+22:18:14     9,000/19,314  created 8,672  skipped 0  failed 328   12.0 tiles/s  written  1.28 GB  projected  2.74 GB
+22:18:14    FAIL O2021_82_21_1_0005_00001869_3000_1000.tif: geotransform_mismatch
+22:18:24    FAIL O2021_82_20_1_0024_00005079_13000_6000.tif: geotransform_mismatch
+22:18:31    FAIL O2021_82_11_1_0026_00002615_7000_2000.tif: geotransform_mismatch
+22:18:31    FAIL O2021_82_20_1_0024_00005080_11000_9000.tif: geotransform_mismatch
+22:18:33    FAIL O2021_82_21_1_0004_00002039_11000_3000.tif: geotransform_mismatch
+22:18:39    FAIL O2021_82_20_1_0024_00005079_10000_8000.tif: geotransform_mismatch
+22:18:41     9,250/19,314  created 8,916  skipped 0  failed 334   11.9 tiles/s  written  1.31 GB  projected  2.74 GB
+22:18:44    FAIL O2021_82_20_1_0024_00005079_11000_9000.tif: geotransform_mismatch
+22:18:44    FAIL O2021_82_20_1_0024_00005078_3000_1000.tif: geotransform_mismatch
+22:18:55    FAIL O2021_82_11_1_0027_00002539_0_5000.tif: geotransform_mismatch
+22:18:55    FAIL O2021_82_21_1_0004_00002039_10000_2000.tif: geotransform_mismatch
+22:18:58    FAIL O2021_83_26_1_0013_00001594_2000_0.tif: geotransform_mismatch
+22:19:00    FAIL O2021_82_20_1_0024_00005079_12000_7000.tif: geotransform_mismatch
+22:19:00    FAIL O2021_82_24_1_0024_00005686_10cm_0_0.tif: geotransform_mismatch
+22:19:00    FAIL O2021_83_26_1_0013_00001591_4000_0.tif: geotransform_mismatch
+22:19:00     9,500/19,314  created 9,158  skipped 0  failed 342   11.9 tiles/s  written  1.35 GB  projected  2.74 GB
+22:19:01    FAIL O2021_82_24_1_0021_00002045_2000_1000.tif: geotransform_mismatch
+22:19:11    FAIL O2021_82_20_1_0023_00004976_9000_3000.tif: geotransform_mismatch
+22:19:11    FAIL O2021_82_22_1_0030_00000259_5000_1000.tif: geotransform_mismatch
+22:19:14    FAIL O2021_83_25_1_0017_00002700_0_4000.tif: geotransform_mismatch
+22:19:15    FAIL O2021_82_16_1_0026_00005230_10cm_1000_3000.tif: geotransform_mismatch
+22:19:15    FAIL O2021_82_22_1_0030_00000258_8000_3000.tif: geotransform_mismatch
+22:19:16    FAIL O2021_82_20_1_0024_00005078_3000_2000.tif: geotransform_mismatch
+22:19:22     9,750/19,314  created 9,401  skipped 0  failed 349   11.9 tiles/s  written  1.38 GB  projected  2.74 GB
+22:19:23    FAIL O2021_82_20_1_0024_00005079_1000_3000.tif: geotransform_mismatch
+22:19:27    FAIL O2021_82_11_1_0023_00003032_5000_0.tif: geotransform_mismatch
+22:19:32    FAIL O2021_82_21_1_0004_00002039_10000_0.tif: geotransform_mismatch
+22:19:32    FAIL O2021_82_20_1_0024_00005079_7000_11000.tif: geotransform_mismatch
+22:19:33    FAIL O2021_82_20_1_0024_00005079_12000_4000.tif: geotransform_mismatch
+22:19:38    FAIL O2021_82_20_1_0024_00005079_13000_5000.tif: geotransform_mismatch
+22:19:39    FAIL O2021_83_26_1_0013_00001596_9980_2000.tif: geotransform_mismatch
+22:19:39    FAIL O2021_82_13_1_0025_00144247_1000_1000.tif: geotransform_mismatch
+22:19:43    10,000/19,314  created 9,643  skipped 0  failed 357   11.9 tiles/s  written  1.42 GB  projected  2.74 GB
+22:19:46    FAIL O2021_82_20_1_0024_00005080_7000_11000.tif: geotransform_mismatch
+22:19:48    FAIL O2021_82_21_1_0005_00001869_3000_2000.tif: geotransform_mismatch
+22:19:52    FAIL O2021_82_20_1_0024_00005080_1000_8000.tif: geotransform_mismatch
+22:19:52    FAIL O2021_82_20_1_0024_00005078_2000_3000.tif: geotransform_mismatch
+22:20:04    10,250/19,314  created 9,889  skipped 0  failed 361   11.9 tiles/s  written  1.45 GB  projected  2.74 GB
+22:20:04    FAIL O2021_82_20_1_0024_00005079_12000_9000.tif: geotransform_mismatch
+22:20:06    FAIL O2021_82_20_1_0024_00005080_6000_11000.tif: geotransform_mismatch
+22:20:09    FAIL O2021_82_16_1_0024_00004783_10cm_7000_0.tif: geotransform_mismatch
+22:20:10    FAIL O2021_82_21_1_0004_00002039_13000_2000.tif: geotransform_mismatch
+22:20:15    FAIL O2021_82_13_1_0025_00144241_3000_6000.tif: geotransform_mismatch
+22:20:17    FAIL O2021_82_20_1_0024_00005079_11000_7000.tif: geotransform_mismatch
+22:20:18    FAIL O2021_82_20_1_0024_00005078_0_2000.tif: geotransform_mismatch
+22:20:18    FAIL O2021_82_20_1_0024_00005080_0_8000.tif: geotransform_mismatch
+22:20:24    10,500/19,314  created 10,131  skipped 0  failed 369   11.9 tiles/s  written  1.49 GB  projected  2.73 GB
+22:20:25    FAIL O2021_82_22_1_0030_00000261_1000_5000.tif: geotransform_mismatch
+22:20:26    FAIL O2021_83_31_1_0043_00091110_5000_2000.tif: geotransform_mismatch
+22:20:34    FAIL O2021_82_19_1_0023_00005473_6000_2000.tif: geotransform_mismatch
+22:20:36    FAIL O2021_82_20_1_0024_00005079_10000_6000.tif: geotransform_mismatch
+22:20:41    FAIL O2021_82_20_1_0024_00005080_12000_9000.tif: geotransform_mismatch
+22:20:42    FAIL O2021_82_21_1_0004_00002039_12000_3000.tif: geotransform_mismatch
+22:20:42    10,750/19,314  created 10,375  skipped 0  failed 375   12.0 tiles/s  written  1.52 GB  projected  2.74 GB
+22:20:47    FAIL O2021_83_25_1_0017_00002705_10000_4000.tif: geotransform_mismatch
+22:20:47    FAIL O2021_82_22_1_0030_00000262_8000_6000.tif: geotransform_mismatch
+22:20:48    FAIL O2021_82_20_1_0024_00005079_6000_11000.tif: geotransform_mismatch
+22:20:50    FAIL O2021_82_20_1_0024_00005079_13000_8000.tif: geotransform_mismatch
+22:20:54    FAIL O2021_82_11_1_0026_00002619_2000_3000.tif: geotransform_mismatch
+22:20:55    FAIL O2021_82_20_1_0024_00005078_10000_5000.tif: geotransform_mismatch
+22:20:55    FAIL O2021_82_20_1_0024_00005079_7000_5000.tif: geotransform_mismatch
+22:20:57    FAIL O2021_82_22_1_0030_00000254_8000_0.tif: geotransform_mismatch
+22:20:59    FAIL O2021_82_22_1_0031_00000383_5000_5000.tif: geotransform_mismatch
+22:20:59    FAIL O2021_82_20_1_0024_00005079_8000_5000.tif: geotransform_mismatch
+22:21:05    FAIL O2021_82_13_1_0025_00144229_6000_0.tif: geotransform_mismatch
+22:21:07    FAIL O2021_82_20_1_0023_00004975_8000_4000.tif: geotransform_mismatch
+22:21:07    11,000/19,314  created 10,613  skipped 0  failed 387   11.9 tiles/s  written  1.56 GB  projected  2.73 GB
+22:21:07    FAIL O2021_82_21_1_0005_00001869_0_0.tif: geotransform_mismatch
+22:21:08    FAIL O2021_82_13_1_0024_00141752_1000_1000.tif: geotransform_mismatch
+22:21:08    FAIL O2021_82_21_1_0005_00001869_3000_0.tif: geotransform_mismatch
+22:21:08    FAIL O2021_82_20_1_0023_00004974_11000_7000.tif: geotransform_mismatch
+22:21:11    FAIL O2021_82_20_1_0024_00005078_5000_4000.tif: geotransform_mismatch
+22:21:13    FAIL O2021_82_20_1_0024_00005080_4000_11000.tif: geotransform_mismatch
+22:21:16    FAIL O2021_82_20_1_0024_00005078_4000_5000.tif: geotransform_mismatch
+22:21:16    FAIL O2021_82_22_1_0029_00002085_7000_5000.tif: geotransform_mismatch
+22:21:23    FAIL O2021_82_21_1_0004_00002039_7000_0.tif: geotransform_mismatch
+22:21:23    FAIL O2021_82_11_1_0025_00003598_2000_3000.tif: geotransform_mismatch
+22:21:27    FAIL O2021_82_20_1_0024_00005079_4000_11000.tif: geotransform_mismatch
+22:21:27    11,250/19,314  created 10,852  skipped 0  failed 398   11.9 tiles/s  written  1.59 GB  projected  2.73 GB
+22:21:29    FAIL O2021_82_21_1_0004_00002039_8000_0.tif: geotransform_mismatch
+22:21:32    FAIL O2021_82_20_1_0024_00005079_9000_4000.tif: geotransform_mismatch
+22:21:37    FAIL O2021_83_26_1_0013_00001590_5000_4000.tif: geotransform_mismatch
+22:21:39    FAIL O2021_82_13_1_0025_00144223_5000_0.tif: geotransform_mismatch
+22:21:39    FAIL O2021_82_20_1_0024_00005079_6000_4000.tif: geotransform_mismatch
+22:21:39    FAIL O2021_82_20_1_0024_00005078_11000_4000.tif: geotransform_mismatch
+22:21:41    FAIL O2021_82_13_1_0024_00141735_1000_4000.tif: geotransform_mismatch
+22:21:43    FAIL O2021_82_20_1_0024_00005077_4000_0.tif: geotransform_mismatch
+22:21:45    FAIL O2021_82_20_1_0024_00005079_5000_11000.tif: geotransform_mismatch
+22:21:46    FAIL O2021_82_21_1_0004_00002039_5000_3000.tif: geotransform_mismatch
+22:21:47    11,500/19,314  created 11,092  skipped 0  failed 408   11.9 tiles/s  written  1.63 GB  projected  2.73 GB
+22:21:48    FAIL O2021_82_20_1_0024_00005078_13000_6000.tif: geotransform_mismatch
+22:21:48    FAIL O2021_82_20_1_0024_00005079_4000_6000.tif: geotransform_mismatch
+22:21:53    FAIL O2021_82_20_1_0024_00005077_12000_0.tif: geotransform_mismatch
+22:21:54    FAIL O2021_82_24_1_0022_00001738_10cm_7000_2000.tif: geotransform_mismatch
+22:21:56    FAIL O2021_82_20_1_0024_00005079_8000_8000.tif: geotransform_mismatch
+22:21:56    FAIL O2021_82_20_1_0024_00005078_6000_7000.tif: geotransform_mismatch
+22:21:59    FAIL O2021_82_24_1_0025_00001380_10cm_7000_2000.tif: geotransform_mismatch
+22:22:00    FAIL O2021_82_20_1_0024_00005079_7000_8000.tif: geotransform_mismatch
+22:22:00    FAIL O2021_82_20_1_0024_00005078_9000_7000.tif: geotransform_mismatch
+22:22:00    FAIL O2021_82_20_1_0024_00005078_10000_8000.tif: geotransform_mismatch
+22:22:01    FAIL O2021_82_16_1_0024_00004782_10cm_3000_1000.tif: geotransform_mismatch
+22:22:04    FAIL O2021_83_25_1_0026_00001211_8000_3000.tif: geotransform_mismatch
+22:22:10    FAIL O2021_82_20_1_0024_00005078_8000_6000.tif: geotransform_mismatch
+22:22:10    FAIL O2021_82_20_1_0024_00005079_6000_9000.tif: geotransform_mismatch
+22:22:11    11,750/19,314  created 11,328  skipped 0  failed 422   11.9 tiles/s  written  1.66 GB  projected  2.74 GB
+22:22:15    FAIL O2021_82_11_1_0024_00002864_5000_6000.tif: geotransform_mismatch
+22:22:15    FAIL O2021_82_20_1_0024_00005078_7000_6000.tif: geotransform_mismatch
+22:22:17    FAIL O2021_82_20_1_0024_00005079_9000_9000.tif: geotransform_mismatch
+22:22:19    FAIL O2021_82_20_1_0024_00005077_2000_1000.tif: geotransform_mismatch
+22:22:19    FAIL O2021_82_13_1_0026_00144925_6000_0.tif: geotransform_mismatch
+22:22:26    FAIL O2021_82_13_1_0024_00141759_3000_2000.tif: geotransform_mismatch
+22:22:26    FAIL O2021_82_20_1_0024_00005079_5000_7000.tif: geotransform_mismatch
+22:22:26    FAIL O2021_82_20_1_0024_00005078_12000_7000.tif: geotransform_mismatch
+22:22:27    FAIL O2021_82_20_1_0024_00005080_5000_11000.tif: geotransform_mismatch
+22:22:31    FAIL O2021_82_20_1_0024_00005078_4000_8000.tif: geotransform_mismatch
+22:22:31    12,000/19,314  created 11,568  skipped 0  failed 432   11.9 tiles/s  written  1.70 GB  projected  2.74 GB
+22:22:32    FAIL O2021_82_13_1_0025_00144223_2000_2000.tif: geotransform_mismatch
+22:22:33    FAIL O2021_82_22_1_0031_00000391_6000_3000.tif: geotransform_mismatch
+22:22:33    FAIL O2021_82_21_1_0004_00002039_4000_2000.tif: geotransform_mismatch
+22:22:36    FAIL O2021_82_20_1_0023_00004975_15000_0.tif: geotransform_mismatch
+22:22:36    FAIL O2021_82_21_1_0004_00002039_11000_2000.tif: geotransform_mismatch
+22:22:37    FAIL O2021_82_19_1_0023_00005472_8000_2000.tif: geotransform_mismatch
+22:22:44    FAIL O2021_82_24_1_0021_00002046_4000_3000.tif: geotransform_mismatch
+22:22:46    FAIL O2021_82_24_1_0022_00001737_10cm_3000_3000.tif: geotransform_mismatch
+22:22:48    FAIL O2021_82_20_1_0024_00005079_10000_9000.tif: geotransform_mismatch
+22:22:48    FAIL O2021_82_20_1_0024_00005078_2000_1000.tif: geotransform_mismatch
+22:22:53    12,250/19,314  created 11,808  skipped 0  failed 442   11.9 tiles/s  written  1.74 GB  projected  2.74 GB
+22:23:03    FAIL O2021_82_20_1_0024_00005079_13000_7000.tif: geotransform_mismatch
+22:23:03    FAIL O2021_83_31_1_0040_00094620_1000_2000.tif: geotransform_mismatch
+22:23:07    FAIL O2021_82_13_1_0024_00141749_3000_3000.tif: geotransform_mismatch
+22:23:07    FAIL O2021_82_20_1_0024_00005079_12000_6000.tif: geotransform_mismatch
+22:23:08    FAIL O2021_82_19_1_0023_00005474_9000_6000.tif: geotransform_mismatch
+22:23:08    FAIL O2021_82_22_1_0029_00002081_5000_6000.tif: geotransform_mismatch
+22:23:13    FAIL O2021_82_21_1_0005_00001869_2000_1000.tif: geotransform_mismatch
+22:23:18    12,500/19,314  created 12,051  skipped 0  failed 449   11.8 tiles/s  written  1.77 GB  projected  2.73 GB
+22:23:23    FAIL O2021_82_20_1_0024_00005079_11000_8000.tif: geotransform_mismatch
+22:23:24    FAIL O2021_82_21_1_0004_00002039_10000_3000.tif: geotransform_mismatch
+22:23:30    FAIL O2021_82_20_1_0024_00005080_10000_9000.tif: geotransform_mismatch
+22:23:36    FAIL O2021_83_25_1_0017_00002703_3000_3000.tif: geotransform_mismatch
+22:23:37    FAIL O2021_82_20_1_0024_00005078_1000_2000.tif: geotransform_mismatch
+22:23:38    FAIL O2021_82_20_1_0024_00005080_2000_9000.tif: geotransform_mismatch
+22:23:38    12,750/19,314  created 12,295  skipped 0  failed 455   11.9 tiles/s  written  1.80 GB  projected  2.73 GB
+22:23:41    FAIL O2021_83_26_1_0013_00001599_5000_1000.tif: geotransform_mismatch
+22:23:44    FAIL O2021_82_20_1_0024_00005080_1000_11000.tif: geotransform_mismatch
+22:23:50    FAIL O2021_82_20_1_0024_00005079_10000_4000.tif: geotransform_mismatch
+22:23:52    FAIL O2021_82_11_1_0024_00002868_1000_7000.tif: geotransform_mismatch
+22:23:52    FAIL O2021_82_13_1_0025_00144226_3000_1000.tif: geotransform_mismatch
+22:23:55    FAIL O2021_82_20_1_0024_00005079_3000_3000.tif: geotransform_mismatch
+22:23:56    FAIL O2021_82_11_1_0026_00002614_9000_1000.tif: geotransform_mismatch
+22:23:57    13,000/19,314  created 12,538  skipped 0  failed 462   11.9 tiles/s  written  1.84 GB  projected  2.73 GB
+22:24:02    FAIL O2021_82_21_1_0005_00001869_1000_2000.tif: geotransform_mismatch
+22:24:08    FAIL O2021_82_20_1_0024_00005079_11000_5000.tif: geotransform_mismatch
+22:24:12    FAIL O2021_83_25_1_0017_00002701_7000_1000.tif: geotransform_mismatch
+22:24:12    FAIL O2021_82_11_1_0026_00002616_8000_0.tif: geotransform_mismatch
+22:24:22    13,250/19,314  created 12,784  skipped 0  failed 466   11.8 tiles/s  written  1.87 GB  projected  2.73 GB
+22:24:22    FAIL O2021_82_20_1_0024_00005079_1000_11000.tif: geotransform_mismatch
+22:24:23    FAIL O2021_83_31_1_0042_00092138_8150_3000.tif: geotransform_mismatch
+22:24:25    FAIL O2021_82_21_1_0004_00002039_8000_3000.tif: geotransform_mismatch
+22:24:26    FAIL O2021_82_20_1_0024_00005079_6000_6000.tif: geotransform_mismatch
+22:24:26    FAIL O2021_82_20_1_0024_00005078_11000_6000.tif: geotransform_mismatch
+22:24:28    FAIL O2021_82_20_1_0024_00005077_3000_0.tif: geotransform_mismatch
+22:24:29    FAIL O2021_82_21_1_0004_00002039_7000_3000.tif: geotransform_mismatch
+22:24:33    FAIL O2021_82_20_1_0024_00005079_9000_6000.tif: geotransform_mismatch
+22:24:38    FAIL O2021_82_20_1_0024_00005080_3000_11000.tif: geotransform_mismatch
+22:24:38    FAIL O2021_82_20_1_0024_00005078_12000_8000.tif: geotransform_mismatch
+22:24:38    FAIL O2021_82_20_1_0024_00005079_5000_8000.tif: geotransform_mismatch
+22:24:41    13,500/19,314  created 13,023  skipped 0  failed 477   11.9 tiles/s  written  1.91 GB  projected  2.73 GB
+22:24:43    FAIL O2021_82_20_1_0024_00005078_4000_7000.tif: geotransform_mismatch
+22:24:50    FAIL O2021_82_20_1_0024_00005079_3000_11000.tif: geotransform_mismatch
+22:24:53    FAIL O2021_82_20_1_0024_00005078_5000_6000.tif: geotransform_mismatch
+22:24:57    FAIL O2021_82_20_1_0024_00005079_4000_9000.tif: geotransform_mismatch
+22:24:57    FAIL O2021_83_31_1_0042_00092144_6000_4000.tif: geotransform_mismatch
+22:24:59    13,750/19,314  created 13,268  skipped 0  failed 482   11.9 tiles/s  written  1.95 GB  projected  2.74 GB
+22:24:59    FAIL O2021_82_13_1_0026_00144908_0_1000.tif: geotransform_mismatch
+22:25:00    FAIL O2021_82_21_1_0004_00002039_6000_2000.tif: geotransform_mismatch
+22:25:03    FAIL O2021_82_20_1_0024_00005078_6000_8000.tif: geotransform_mismatch
+22:25:03    FAIL O2021_82_20_1_0024_00005079_8000_7000.tif: geotransform_mismatch
+22:25:09    FAIL O2021_82_21_1_0004_00002039_9000_2000.tif: geotransform_mismatch
+22:25:09    FAIL O2023_82_24_1_0014_00000747_8000_12000.tif: geotransform_mismatch
+22:25:11    FAIL O2021_82_20_1_0024_00005078_9000_8000.tif: geotransform_mismatch
+22:25:12    FAIL O2021_82_20_1_0024_00005078_10000_7000.tif: geotransform_mismatch
+22:25:12    FAIL O2021_82_20_1_0024_00005079_7000_7000.tif: geotransform_mismatch
+22:25:19    FAIL O2021_82_20_1_0024_00005079_2000_11000.tif: geotransform_mismatch
+22:25:19    14,000/19,314  created 13,508  skipped 0  failed 492   11.9 tiles/s  written  1.98 GB  projected  2.74 GB
+22:25:24    FAIL O2021_82_20_1_0024_00005079_5000_5000.tif: geotransform_mismatch
+22:25:24    FAIL O2021_82_20_1_0024_00005078_12000_5000.tif: geotransform_mismatch
+22:25:28    FAIL O2021_82_20_1_0024_00005077_2000_3000.tif: geotransform_mismatch
+22:25:28    FAIL O2021_82_20_1_0024_00005078_7000_4000.tif: geotransform_mismatch
+22:25:31    FAIL O2021_82_20_1_0024_00005078_8000_4000.tif: geotransform_mismatch
+22:25:35    FAIL O2021_82_21_1_0005_00001869_4000_0.tif: geotransform_mismatch
+22:25:40    FAIL O2021_82_21_1_0004_00002040_14000_4000.tif: geotransform_mismatch
+22:25:41    FAIL O2021_82_20_1_0024_00005078_9000_5000.tif: geotransform_mismatch
+22:25:41    14,250/19,314  created 13,750  skipped 0  failed 500   11.9 tiles/s  written  2.02 GB  projected  2.74 GB
+22:25:43    FAIL O2021_82_20_1_0024_00005079_0_3000.tif: geotransform_mismatch
+22:25:46    FAIL O2021_82_16_1_0025_00005218_10cm_4000_3000.tif: geotransform_mismatch
+22:25:46    FAIL O2021_82_20_1_0024_00005078_6000_5000.tif: geotransform_mismatch
+22:25:50    FAIL O2021_82_22_1_0031_00000389_4000_4000.tif: geotransform_mismatch
+22:25:55    FAIL O2021_83_34_1_0024_00002341_7000_1000.tif: geotransform_mismatch
+22:25:56    FAIL O2021_82_21_1_0004_00002040_8000_4000.tif: geotransform_mismatch
+22:25:56    FAIL O2021_82_20_1_0024_00005078_13000_4000.tif: geotransform_mismatch
+22:25:56    FAIL O2021_82_20_1_0024_00005079_4000_4000.tif: geotransform_mismatch
+22:26:00    FAIL O2021_83_26_1_0012_00001773_8000_0.tif: geotransform_mismatch
+22:26:01    FAIL O2021_82_20_1_0024_00005080_2000_11000.tif: geotransform_mismatch
+22:26:01    FAIL O2021_82_20_1_0023_00004974_9000_4000.tif: geotransform_mismatch
+22:26:01    FAIL O2021_82_24_1_0020_00004288_3000_5000.tif: geotransform_mismatch
+22:26:01    14,500/19,314  created 13,988  skipped 0  failed 512   11.9 tiles/s  written  2.06 GB  projected  2.74 GB
+22:26:01    FAIL O2021_82_11_1_0026_00002618_4000_2000.tif: geotransform_mismatch
+22:26:02    FAIL O2021_82_20_1_0024_00005078_1000_4000.tif: geotransform_mismatch
+22:26:05    FAIL O2021_82_20_1_0024_00005080_11000_10000.tif: geotransform_mismatch
+22:26:06    FAIL O2021_82_22_1_0032_00000911_7000_4000.tif: geotransform_mismatch
+22:26:11    FAIL O2021_82_11_1_0023_00003031_9000_1000.tif: geotransform_mismatch
+22:26:11    FAIL O2021_82_20_1_0024_00005077_4000_3000.tif: geotransform_mismatch
+22:26:12    FAIL O2021_82_20_1_0024_00005077_13000_3000.tif: geotransform_mismatch
+22:26:12    FAIL O2021_82_20_1_0024_00005079_9000_11000.tif: geotransform_mismatch
+22:26:12    FAIL O2021_82_21_1_0005_00001869_2000_0.tif: geotransform_mismatch
+22:26:16    FAIL O2021_82_22_1_0029_00002081_7000_2000.tif: geotransform_mismatch
+22:26:17    FAIL O2021_82_13_1_0025_00144247_2000_6000.tif: geotransform_mismatch
+22:26:18    FAIL O2021_82_20_1_0024_00005079_0_11000.tif: geotransform_mismatch
+22:26:21    FAIL O2021_82_24_1_0021_00002048_0_0.tif: geotransform_mismatch
+22:26:21    14,750/19,314  created 14,225  skipped 0  failed 525   11.9 tiles/s  written  2.09 GB  projected  2.74 GB
+22:26:27    FAIL O2021_82_20_1_0024_00005079_3000_5000.tif: geotransform_mismatch
+22:26:27    FAIL O2021_82_20_1_0024_00005079_12000_10000.tif: geotransform_mismatch
+22:26:33    FAIL O2021_82_20_1_0024_00005079_2000_4000.tif: geotransform_mismatch
+22:26:34    FAIL O2021_82_22_1_0030_00000259_6000_5000.tif: geotransform_mismatch
+22:26:34    FAIL O2021_82_20_1_0024_00005078_0_6000.tif: geotransform_mismatch
+22:26:34    FAIL O2021_82_20_1_0024_00005079_11000_3000.tif: geotransform_mismatch
+22:26:43    FAIL O2021_82_21_1_0004_00002039_9000_0.tif: geotransform_mismatch
+22:26:43    FAIL O2021_82_13_1_0025_00144215_3000_0.tif: geotransform_mismatch
+22:26:43    15,000/19,314  created 14,467  skipped 0  failed 533   11.9 tiles/s  written  2.13 GB  projected  2.74 GB
+22:26:47    FAIL O2021_83_31_1_0042_00092132_4000_5000.tif: geotransform_mismatch
+22:26:49    FAIL O2021_82_20_1_0024_00005080_9000_11000.tif: geotransform_mismatch
+22:26:49    FAIL O2021_83_25_1_0015_00003911_9000_3000.tif: geotransform_mismatch
+22:26:49    FAIL O2021_82_21_1_0004_00002039_6000_0.tif: geotransform_mismatch
+22:26:51    FAIL O2021_82_20_1_0024_00005079_3000_8000.tif: geotransform_mismatch
+22:27:00    FAIL O2021_82_20_1_0024_00005078_2000_7000.tif: geotransform_mismatch
+22:27:00    FAIL O2021_82_21_1_0005_00001868_1000_7000.tif: geotransform_mismatch
+22:27:05    FAIL O2021_83_26_1_0013_00001600_3000_2000.tif: geotransform_mismatch
+22:27:05    15,250/19,314  created 14,709  skipped 0  failed 541   11.9 tiles/s  written  2.16 GB  projected  2.74 GB
+22:27:06    FAIL O2021_82_22_1_0030_00000258_6000_6000.tif: geotransform_mismatch
+22:27:07    FAIL O2021_82_20_1_0024_00005077_13000_0.tif: geotransform_mismatch
+22:27:11    FAIL O2021_82_11_1_0025_00003594_9000_4000.tif: geotransform_mismatch
+22:27:14    FAIL O2021_82_20_1_0024_00005080_8000_11000.tif: geotransform_mismatch
+22:27:15    FAIL O2021_82_21_1_0005_00001869_10000_1000.tif: geotransform_mismatch
+22:27:15    FAIL O2021_82_19_1_0023_00005474_8000_1000.tif: geotransform_mismatch
+22:27:18    FAIL O2021_82_20_1_0024_00005077_5000_0.tif: geotransform_mismatch
+22:27:18    FAIL O2021_82_13_1_0026_00144921_0_1000.tif: geotransform_mismatch
+22:27:18    FAIL O2021_82_13_1_0024_00141735_8000_6000.tif: geotransform_mismatch
+22:27:23    FAIL O2021_82_20_1_0024_00005079_8000_11000.tif: geotransform_mismatch
+22:27:23    15,500/19,314  created 14,949  skipped 0  failed 551   11.9 tiles/s  written  2.20 GB  projected  2.74 GB
+22:27:24    FAIL O2021_82_20_1_0024_00005079_1000_7000.tif: geotransform_mismatch
+22:27:24    FAIL O2021_82_16_1_0028_00005674_10cm_1000_1000.tif: geotransform_mismatch
+22:27:27    FAIL O2021_82_20_1_0024_00005080_10000_10000.tif: geotransform_mismatch
+22:27:29    FAIL O2021_83_25_1_0016_00002734_0_1000.tif: geotransform_mismatch
+22:27:30    FAIL O2021_82_19_1_0023_00005473_4000_4000.tif: geotransform_mismatch
+22:27:30    FAIL O2021_82_20_1_0024_00005078_3000_6000.tif: geotransform_mismatch
+22:27:30    FAIL O2021_83_25_1_0015_00003910_10030_2000.tif: geotransform_mismatch
+22:27:30    FAIL O2021_82_11_1_0026_00002615_9000_4000.tif: geotransform_mismatch
+22:27:32    FAIL O2021_82_22_1_0031_00000387_6000_1000.tif: geotransform_mismatch
+22:27:34    FAIL O2021_82_20_1_0024_00005079_13000_10000.tif: geotransform_mismatch
+22:27:36    FAIL O2021_82_20_1_0024_00005079_2000_9000.tif: geotransform_mismatch
+22:27:37    FAIL O2021_82_20_1_0024_00005077_6000_1000.tif: geotransform_mismatch
+22:27:37    FAIL O2021_83_25_1_0015_00002817_1000_3000.tif: geotransform_mismatch
+22:27:37    FAIL O2021_82_20_1_0024_00005077_11000_1000.tif: geotransform_mismatch
+22:27:40    FAIL O2021_82_20_1_0024_00005077_9000_1000.tif: geotransform_mismatch
+22:27:46    15,750/19,314  created 15,184  skipped 0  failed 566   11.9 tiles/s  written  2.23 GB  projected  2.74 GB
+22:27:49    FAIL O2021_82_24_1_0020_00004289_7000_2000.tif: geotransform_mismatch
+22:27:49    FAIL O2021_82_20_1_0024_00005078_12000_3000.tif: geotransform_mismatch
+22:27:49    FAIL O2021_82_20_1_0024_00005079_5000_3000.tif: geotransform_mismatch
+22:27:49    FAIL O2021_82_21_1_0004_00002039_11000_0.tif: geotransform_mismatch
+22:27:55    FAIL O2021_82_20_1_0024_00005080_4000_9000.tif: geotransform_mismatch
+22:27:57    FAIL O2021_82_20_1_0024_00005078_7000_2000.tif: geotransform_mismatch
+22:27:57    FAIL O2021_82_13_1_0025_00144235_6000_4000.tif: geotransform_mismatch
+22:28:02    FAIL O2021_82_20_1_0024_00005078_8000_2000.tif: geotransform_mismatch
+22:28:04    FAIL O2021_82_22_1_0030_00000262_1000_4000.tif: geotransform_mismatch
+22:28:04    16,000/19,314  created 15,425  skipped 0  failed 575   11.9 tiles/s  written  2.27 GB  projected  2.74 GB
+22:28:07    FAIL O2021_82_20_1_0024_00005079_0_5000.tif: geotransform_mismatch
+22:28:08    FAIL O2021_82_20_1_0024_00005078_9000_3000.tif: geotransform_mismatch
+22:28:11    FAIL O2021_83_31_1_0043_00091113_5000_3000.tif: geotransform_mismatch
+22:28:11    FAIL O2021_82_13_1_0025_00144241_5000_4000.tif: geotransform_mismatch
+22:28:17    FAIL O2021_82_20_1_0024_00005078_6000_3000.tif: geotransform_mismatch
+22:28:18    FAIL O2021_82_20_1_0024_00005079_11000_10000.tif: geotransform_mismatch
+22:28:18    FAIL O2021_82_20_1_0024_00005078_13000_2000.tif: geotransform_mismatch
+22:28:18    FAIL O2021_82_20_1_0024_00005080_12000_10000.tif: geotransform_mismatch
+22:28:18    FAIL O2021_82_21_1_0005_00001869_7000_2000.tif: geotransform_mismatch
+22:28:25    16,250/19,314  created 15,666  skipped 0  failed 584   11.9 tiles/s  written  2.30 GB  projected  2.73 GB
+22:28:26    FAIL O2021_82_11_1_0025_00003596_8000_3000.tif: geotransform_mismatch
+22:28:31    FAIL O2021_82_21_1_0005_00001869_8000_2000.tif: geotransform_mismatch
+22:28:33    FAIL O2021_83_25_1_0017_00002700_9000_0.tif: geotransform_mismatch
+22:28:33    FAIL O2021_82_20_1_0024_00005079_10000_10000.tif: geotransform_mismatch
+22:28:34    FAIL O2021_83_25_1_0027_00001531_0_4000.tif: geotransform_mismatch
+22:28:34    FAIL O2021_82_13_1_0025_00144247_8000_3000.tif: geotransform_mismatch
+22:28:39    FAIL O2021_83_26_1_0012_00001776_5000_1000.tif: geotransform_mismatch
+22:28:40    FAIL O2021_83_26_1_0014_00001453_0_0.tif: geotransform_mismatch
+22:28:48    FAIL O2021_82_13_1_0025_00144232_8000_3000.tif: geotransform_mismatch
+22:28:48    16,500/19,314  created 15,907  skipped 0  failed 593   11.9 tiles/s  written  2.33 GB  projected  2.73 GB
+22:28:49    FAIL O2021_82_20_1_0024_00005077_0_3000.tif: geotransform_mismatch
+22:28:54    FAIL O2021_82_20_1_0024_00005078_4000_1000.tif: geotransform_mismatch
+22:28:54    FAIL O2021_82_11_1_0025_00003596_0_2000.tif: geotransform_mismatch
+22:28:54    FAIL O2021_82_20_1_0024_00005080_13000_10000.tif: geotransform_mismatch
+22:28:57    FAIL O2021_82_13_1_0026_00144935_1000_2000.tif: geotransform_mismatch
+22:29:03    FAIL O2021_82_22_1_0030_00000258_1000_1000.tif: geotransform_mismatch
+22:29:06    FAIL O2021_82_21_1_0004_00002039_16000_3000.tif: geotransform_mismatch
+22:29:06    16,750/19,314  created 16,150  skipped 0  failed 600   11.9 tiles/s  written  2.37 GB  projected  2.73 GB
+22:29:06    FAIL O2021_83_25_1_0015_00002815_6000_0.tif: geotransform_mismatch
+22:29:11    FAIL O2021_83_26_1_0013_00001598_7000_0.tif: geotransform_mismatch
+22:29:19    FAIL O2021_82_21_1_0005_00001869_4000_1000.tif: geotransform_mismatch
+22:29:19    FAIL O2021_82_21_1_0005_00001869_0_1000.tif: geotransform_mismatch
+22:29:19    FAIL O2021_82_19_1_0024_00005011_4000_0.tif: geotransform_mismatch
+22:29:19    FAIL O2021_82_20_1_0024_00005078_10000_1000.tif: geotransform_mismatch
+22:29:21    FAIL O2021_82_20_1_0024_00005079_0_8000.tif: geotransform_mismatch
+22:29:27    17,000/19,314  created 16,393  skipped 0  failed 607   11.9 tiles/s  written  2.41 GB  projected  2.73 GB
+22:29:35    FAIL O2021_82_20_1_0024_00005079_1000_8000.tif: geotransform_mismatch
+22:29:36    FAIL O2021_83_26_1_0012_00001784_10040_1000.tif: geotransform_mismatch
+22:29:36    FAIL O2021_82_21_1_0004_00002039_3000_3000.tif: geotransform_mismatch
+22:29:36    FAIL O2021_82_20_1_0024_00005078_0_4000.tif: geotransform_mismatch
+22:29:40    FAIL O2021_82_20_1_0024_00005077_2000_0.tif: geotransform_mismatch
+22:29:42    FAIL O2021_82_11_1_0027_00002537_4000_2000.tif: geotransform_mismatch
+22:29:42    FAIL O2021_82_24_1_0021_00002045_1000_0.tif: geotransform_mismatch
+22:29:45    FAIL O2021_82_20_1_0024_00005079_2000_6000.tif: geotransform_mismatch
+22:29:49    17,250/19,314  created 16,635  skipped 0  failed 615   11.9 tiles/s  written  2.44 GB  projected  2.73 GB
+22:29:52    FAIL O2021_82_20_1_0024_00005079_3000_7000.tif: geotransform_mismatch
+22:29:52    FAIL O2021_83_26_1_0012_00001780_8000_5000.tif: geotransform_mismatch
+22:29:52    FAIL O2021_82_16_1_0028_00005674_10cm_3000_1000.tif: geotransform_mismatch
+22:29:59    FAIL O2021_82_20_1_0024_00005078_2000_8000.tif: geotransform_mismatch
+22:30:05    FAIL O2021_82_20_1_0024_00005077_13000_1000.tif: geotransform_mismatch
+22:30:06    FAIL O2021_82_20_1_0024_00005077_4000_1000.tif: geotransform_mismatch
+22:30:08    FAIL O2021_82_20_1_0024_00005078_1000_6000.tif: geotransform_mismatch
+22:30:08    17,500/19,314  created 16,878  skipped 0  failed 622   11.9 tiles/s  written  2.48 GB  projected  2.74 GB
+22:30:14    FAIL O2021_82_21_1_0005_00001869_5000_0.tif: geotransform_mismatch
+22:30:14    FAIL O2021_82_20_1_0024_00005077_9000_3000.tif: geotransform_mismatch
+22:30:14    FAIL O2021_82_20_1_0024_00005077_11000_3000.tif: geotransform_mismatch
+22:30:20    FAIL O2021_82_20_1_0024_00005077_6000_3000.tif: geotransform_mismatch
+22:30:21    FAIL O2021_82_20_1_0024_00005078_3000_4000.tif: geotransform_mismatch
+22:30:22    FAIL O2021_82_19_1_0023_00005475_4000_3000.tif: geotransform_mismatch
+22:30:30    FAIL O2021_83_31_1_0040_00094632_1000_3000.tif: geotransform_mismatch
+22:30:30    17,750/19,314  created 17,121  skipped 0  failed 629   11.9 tiles/s  written  2.51 GB  projected  2.73 GB
+22:30:30    FAIL O2021_82_20_1_0024_00005079_1000_5000.tif: geotransform_mismatch
+22:30:34    FAIL O2021_82_21_1_0005_00001869_11000_2000.tif: geotransform_mismatch
+22:30:37    FAIL O2021_82_20_1_0024_00005079_13000_3000.tif: geotransform_mismatch
+22:30:39    FAIL O2021_83_31_1_0041_00093557_6000_0.tif: geotransform_mismatch
+22:30:41    FAIL O2021_83_26_1_0012_00001774_9000_6000.tif: geotransform_mismatch
+22:30:48    18,000/19,314  created 17,366  skipped 0  failed 634   12.0 tiles/s  written  2.55 GB  projected  2.74 GB
+22:30:49    FAIL O2021_82_20_1_0024_00005078_2000_5000.tif: geotransform_mismatch
+22:30:56    FAIL O2021_82_16_1_0028_00005676_10cm_2000_4000.tif: geotransform_mismatch
+22:31:07    FAIL O2021_82_20_1_0024_00005077_0_0.tif: geotransform_mismatch
+22:31:10    18,250/19,314  created 17,613  skipped 0  failed 637   11.9 tiles/s  written  2.59 GB  projected  2.74 GB
+22:31:12    FAIL O2021_82_19_1_0024_00005013_5000_4000.tif: geotransform_mismatch
+22:31:17    FAIL O2021_82_20_1_0024_00005078_6000_1000.tif: geotransform_mismatch
+22:31:17    FAIL O2021_82_22_1_0032_00000909_3000_5000.tif: geotransform_mismatch
+22:31:17    FAIL O2021_82_21_1_0004_00002039_15000_2000.tif: geotransform_mismatch
+22:31:19    FAIL O2021_82_20_1_0024_00005079_0_7000.tif: geotransform_mismatch
+22:31:23    FAIL O2021_83_26_1_0012_00001778_6000_0.tif: geotransform_mismatch
+22:31:23    FAIL O2021_82_20_1_0024_00005078_9000_1000.tif: geotransform_mismatch
+22:31:23    FAIL O2021_82_21_1_0004_00002039_14000_3000.tif: geotransform_mismatch
+22:31:30    18,500/19,314  created 17,855  skipped 0  failed 645   12.0 tiles/s  written  2.62 GB  projected  2.74 GB
+22:31:39    FAIL O2021_82_21_1_0005_00001869_6000_1000.tif: geotransform_mismatch
+22:31:39    FAIL O2021_82_20_1_0024_00005078_12000_1000.tif: geotransform_mismatch
+22:31:41    FAIL O2021_83_26_1_0012_00001785_6000_4000.tif: geotransform_mismatch
+22:31:41    FAIL O2021_82_20_1_0024_00005080_0_11000.tif: geotransform_mismatch
+22:31:45    FAIL O2021_82_21_1_0005_00001869_9000_1000.tif: geotransform_mismatch
+22:31:48    FAIL O2021_83_25_1_0017_00002702_5000_2000.tif: geotransform_mismatch
+22:31:48    FAIL O2021_83_31_1_0039_00123148_8150_2000.tif: geotransform_mismatch
+22:31:48    FAIL O2021_82_21_1_0004_00002039_16000_0.tif: geotransform_mismatch
+22:31:50    FAIL O2021_83_31_1_0040_00094632_8000_5000.tif: geotransform_mismatch
+22:31:51    FAIL O2021_82_20_1_0024_00005078_10000_3000.tif: geotransform_mismatch
+22:31:51    18,750/19,314  created 18,095  skipped 0  failed 655   12.0 tiles/s  written  2.66 GB  projected  2.74 GB
+22:31:55    FAIL O2021_82_20_1_0024_00005079_8000_3000.tif: geotransform_mismatch
+22:32:01    FAIL O2021_82_11_1_0023_00003032_0_5000.tif: geotransform_mismatch
+22:32:01    FAIL O2021_82_11_1_0023_00003031_2000_7000.tif: geotransform_mismatch
+22:32:04    FAIL O2021_82_20_1_0024_00005080_9000_9000.tif: geotransform_mismatch
+22:32:05    FAIL O2021_83_31_1_0040_00094623_1000_3000.tif: geotransform_mismatch
+22:32:11    FAIL O2021_82_20_1_0024_00005080_6000_9000.tif: geotransform_mismatch
+22:32:11    FAIL O2021_82_20_1_0024_00005078_5000_2000.tif: geotransform_mismatch
+22:32:12    FAIL O2021_83_31_1_0043_00091119_4000_2000.tif: geotransform_mismatch
+22:32:13    FAIL O2021_82_13_1_0026_00144928_5000_3000.tif: geotransform_mismatch
+22:32:13    19,000/19,314  created 18,336  skipped 0  failed 664   11.9 tiles/s  written  2.69 GB  projected  2.74 GB
+22:32:14    FAIL O2021_82_19_1_0023_00005476_10000_5000.tif: geotransform_mismatch
+22:32:17    FAIL O2021_82_20_1_0024_00005077_0_1000.tif: geotransform_mismatch
+22:32:17    FAIL O2021_82_20_1_0024_00005078_4000_3000.tif: geotransform_mismatch
+22:32:23    FAIL O2021_83_25_1_0015_00002817_6000_6000.tif: geotransform_mismatch
+22:32:31    19,250/19,314  created 18,582  skipped 0  failed 668   12.0 tiles/s  written  2.73 GB  projected  2.74 GB
+22:32:31    FAIL O2021_82_20_1_0024_00005078_11000_2000.tif: geotransform_mismatch
+22:32:32    FAIL O2021_82_13_1_0025_00144221_4000_4000.tif: geotransform_mismatch
+22:32:32    FAIL O2021_82_21_1_0005_00001869_5000_2000.tif: geotransform_mismatch
+22:32:33    19,314/19,314  created 18,643  skipped 0  failed 671   12.0 tiles/s  written  2.74 GB  projected  2.74 GB
+22:32:33  done in 26.8 min | created 18,643 skipped 0 failed 671 | 2.74 GB
+22:32:33  log written to C:\thesis\exploratory_data_analysis\logs\ndsm_build_20260815T220542Z.log

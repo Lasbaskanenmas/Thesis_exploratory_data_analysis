@@ -151,6 +151,44 @@ A **19x spread** between the weakest and strongest channel, and the ranking is i
 not the `/255` step is applied, so the conclusion does not depend on resolving where fastai's
 `IntToFloatTensor` acts.
 
+> **RESOLVED 2026-08-15.** The hedge above is left as written, for the audit trail. It is now
+> settled by measurement rather than left open.
+>
+> **The `/255` does apply, to every channel including the float32 elevation bands.** Measured at the
+> tensor the model receives, by rebuilding it from the source rasters: the four uint8 bands
+> reconstruct under `(raw/255 - mean)/std` with a maximum absolute error of **0.000e+00**, and the
+> implied divisor is exactly **255.0000**. `eda_common.INT_TO_FLOAT_DIV = 255.0` is confirmed.
+> See `2026-08-14_preflight_ndsm.md`, P0.1.
+>
+> **Two further defects surfaced while measuring it, both worse than the constants.**
+>
+> 1. **The elevation bands were cast to uint8** before every augmentation
+>    (`sdfi_transforms.py`, `np.array(img, dtype=np.uint8)`), truncating metres to integers. One
+>    tile's DSM went from **48,698 distinct values to 18**, DTM to **3**. This hit training but not
+>    inference, so the models were trained on integer-metre elevation and then served float32.
+> 2. **`SegmentationAlbumentationsHorizontalFlip` never called `ItemTransform.__init__`**, so its
+>    `split_idx` was discarded and a 5% horizontal flip ran on the **validation** pass (11 of 200
+>    tiles measured). Inference was unaffected.
+>
+> Both fixed 2026-08-15 and re-verified by the same measurement; DSM now reconstructs at
+> 0.000e+00 and 0 tiles are quantised by the pipeline. Pre-fix source preserved at commit
+> `1a26408` and in `exploratory_data_analysis/provenance/`.
+>
+> **A third defect, found while building nDSM:** for **671 of 19,314 tiles (3.47%)** the DSM and DTM
+> rasters sharing a filename are georeferenced to **different ground**, 669 of them >= 100 m apart
+> when a tile is only 100 m across. `load_all_datasources_for_image` stacks channels by filename and
+> never compares georeferencing, so those tiles carried an elevation channel from the wrong place in
+> every 6ch and 10ch run. The imagery bands are clean (rgb and cir 0 misaligned, OrtoRGB 1,
+> OrtoCIR 4). See `channel_georeferencing_audit.csv`.
+>
+> **What survives all three defects: the 10ch - 6ch contrast.** All three affect 6ch and 10ch
+> **identically** -- same constants, same uint8 cast, same misregistered tiles -- and the Orto bands
+> that distinguish the two configs are uint8 imagery, which the cast leaves untouched and which the
+> audit found essentially perfectly aligned. So the 10ch - 6ch difference still isolates the oblique
+> source with the defects held constant, and remains usable. F1, F2 and everything resting on RGB
+> are likewise unaffected. What is **not** usable is any statement of the form "the auxiliary
+> channels do not earn their keep".
+
 The DSM and DTM configuration constants (`mean 0.5, std 1.0`) are placeholders, not measured
 statistics, while the tiles hold **raw metres above sea level**. The NIR constant is documented in
 `sdfi_dataset.py:146` as *"based on a sample size of 1! OBS! UNKNOWN"* and propagated into every 6ch

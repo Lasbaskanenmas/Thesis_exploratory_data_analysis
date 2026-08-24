@@ -7,6 +7,11 @@ checkpoints and logs; all outputs under `exploratory_data_analysis/`.
 
 **Status: STAGE 0 COMPLETE. Nothing has been built. The nDSM folder has NOT been written.**
 
+> **Superseded in part, 2026-08-15.** Stage 1 has since run. Both defects below are **fixed and
+> re-verified by the same measurements**, the nDSM channel is built, and a **third** defect
+> (channel misregistration on 3.47 % of tiles) was found while building it. This document is left
+> as written, for the audit trail. See **`2026-08-15_stage1_ndsm_arms.md`** for what changed.
+
 > **Headline.** P0.1 confirmed the ÷255 — and in doing so exposed **two defects nobody was looking
 > for**. The elevation channels are cast to **uint8** before every augmentation, so the models were
 > trained on elevation truncated to **integer metres**. And the horizontal-flip transform silently
