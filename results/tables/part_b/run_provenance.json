@@ -1,0 +1,218 @@
+{
+  "generated_utc": "2026-08-25T10:02:10.688279+00:00",
+  "declaration_version": "2026-08-25",
+  "declaration_status": "LOCKED",
+  "per_route_metric": "macro_iou_present_classes",
+  "alpha": 0.05,
+  "near_tie_delta": 0.001,
+  "routes_primary": [
+    "82-11",
+    "82-13",
+    "82-16",
+    "82-19",
+    "82-20",
+    "82-21",
+    "82-22",
+    "82-24",
+    "83-25",
+    "83-26",
+    "83-31",
+    "83-34",
+    "84-40",
+    "84-41",
+    "85-45",
+    "85-48"
+  ],
+  "routes_sensitivity_A": [
+    "82-11",
+    "82-13",
+    "82-16",
+    "82-19",
+    "82-20",
+    "82-21",
+    "82-22",
+    "82-24",
+    "83-25",
+    "83-26",
+    "83-31",
+    "84-40",
+    "84-41",
+    "85-45"
+  ],
+  "families": {
+    "F1_model_ranking_rgb_weighted": [
+      [
+        "convnext_upernet_rgb",
+        "swin_upernet_rgb"
+      ],
+      [
+        "convnext_upernet_rgb",
+        "segformer_b1_rgb"
+      ],
+      [
+        "convnext_upernet_rgb",
+        "unet_resnet34_rgb"
+      ],
+      [
+        "swin_upernet_rgb",
+        "segformer_b1_rgb"
+      ],
+      [
+        "swin_upernet_rgb",
+        "unet_resnet34_rgb"
+      ],
+      [
+        "segformer_b1_rgb",
+        "unet_resnet34_rgb"
+      ]
+    ],
+    "F2_channel_within_convnext_weighted": [
+      [
+        "convnext_upernet_rgb",
+        "convnext_upernet_6ch"
+      ],
+      [
+        "convnext_upernet_rgb",
+        "convnext_upernet_10ch"
+      ],
+      [
+        "convnext_upernet_6ch",
+        "convnext_upernet_10ch"
+      ]
+    ],
+    "F3_weighting_within_convnext_rgb": [
+      [
+        "convnext_upernet_rgb",
+        "convnext_upernet_rgb_unw"
+      ]
+    ]
+  },
+  "descriptive_cells_scored": [
+    "convnext_upernet_rgb_ndsm",
+    "convnext_upernet_6ch_corrected",
+    "unet_resnet34_6ch_corrected"
+  ],
+  "descriptive_cells_skipped_not_yet_scored": [
+    "convnext_upernet_ortorgb",
+    "convnext_upernet_rgb_dsm_dtm_corrected",
+    "segformer_b1_6ch_corrected",
+    "segformer_b1_ortorgb",
+    "segformer_b1_rgb_dsm_dtm_corrected",
+    "swin_upernet_6ch_corrected",
+    "swin_upernet_ortorgb",
+    "swin_upernet_rgb_dsm_dtm_corrected",
+    "unet_resnet34_ortorgb",
+    "unet_resnet34_rgb_dsm_dtm_corrected"
+  ],
+  "descriptive_contrasts_run": [
+    [
+      "convnext_upernet_rgb_ndsm",
+      "convnext_upernet_rgb"
+    ],
+    [
+      "convnext_upernet_6ch_corrected",
+      "convnext_upernet_6ch"
+    ],
+    [
+      "convnext_upernet_6ch_corrected",
+      "convnext_upernet_rgb"
+    ],
+    [
+      "unet_resnet34_6ch_corrected",
+      "unet_resnet34_6ch"
+    ],
+    [
+      "unet_resnet34_6ch_corrected",
+      "unet_resnet34_rgb"
+    ]
+  ],
+  "descriptive_contrasts_skipped": [
+    [
+      "swin_upernet_6ch_corrected",
+      "swin_upernet_6ch"
+    ],
+    [
+      "swin_upernet_6ch_corrected",
+      "swin_upernet_rgb"
+    ],
+    [
+      "segformer_b1_6ch_corrected",
+      "segformer_b1_6ch"
+    ],
+    [
+      "segformer_b1_6ch_corrected",
+      "segformer_b1_rgb"
+    ],
+    [
+      "convnext_upernet_ortorgb",
+      "convnext_upernet_rgb"
+    ],
+    [
+      "swin_upernet_ortorgb",
+      "swin_upernet_rgb"
+    ],
+    [
+      "segformer_b1_ortorgb",
+      "segformer_b1_rgb"
+    ],
+    [
+      "unet_resnet34_ortorgb",
+      "unet_resnet34_rgb"
+    ],
+    [
+      "convnext_upernet_rgb_dsm_dtm_corrected",
+      "convnext_upernet_6ch_corrected"
+    ],
+    [
+      "convnext_upernet_rgb_dsm_dtm_corrected",
+      "convnext_upernet_rgb"
+    ],
+    [
+      "swin_upernet_rgb_dsm_dtm_corrected",
+      "swin_upernet_6ch_corrected"
+    ],
+    [
+      "swin_upernet_rgb_dsm_dtm_corrected",
+      "swin_upernet_rgb"
+    ],
+    [
+      "segformer_b1_rgb_dsm_dtm_corrected",
+      "segformer_b1_6ch_corrected"
+    ],
+    [
+      "segformer_b1_rgb_dsm_dtm_corrected",
+      "segformer_b1_rgb"
+    ],
+    [
+      "unet_resnet34_rgb_dsm_dtm_corrected",
+      "unet_resnet34_6ch_corrected"
+    ],
+    [
+      "unet_resnet34_rgb_dsm_dtm_corrected",
+      "unet_resnet34_rgb"
+    ]
+  ],
+  "friedman": {
+    "F1_model_ranking_rgb_weighted": {
+      "chi2": 15.075,
+      "df": 3,
+      "p_value": 0.0017536650789896802,
+      "kendalls_w": 0.31406249999999997,
+      "rejects_at_alpha": true
+    },
+    "F2_channel_within_convnext_weighted": {
+      "chi2": 2.375,
+      "df": 2,
+      "p_value": 0.30498276871105934,
+      "kendalls_w": 0.07421875,
+      "rejects_at_alpha": false
+    }
+  },
+  "excluded_tests": [
+    "secondary_metric_significance",
+    "per_class_significance",
+    "tost_equivalence",
+    "bayesian_reanalysis"
+  ],
+  "source": "c:\\thesis\\exploratory_data_analysis\\results\\tables\\route_cell_metrics.csv"
+}

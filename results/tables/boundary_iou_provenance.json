@@ -1,0 +1,19 @@
+{
+  "generated_utc": "2026-08-24T22:48:28.441755+00:00",
+  "definition": "Cheng et al. 2021: |Gd AND Pd| / |Gd OR Pd|, Md = M minus erosion(M, disc d)",
+  "citation_status": "formula implemented from the project gap analysis (G3.2/L4); the paper itself is not on this machine -- verify d convention on the reference-canon day before attributing specifics",
+  "d_px": 28,
+  "d_metres": 2.8000000000000003,
+  "diag_fraction": 0.02,
+  "mode": "sample of 600 tiles per fold, seed 20260824",
+  "seed": 20260824,
+  "tiles_scored_per_cell": 1800,
+  "cells": [
+    "unet_resnet34_rgb",
+    "convnext_upernet_rgb",
+    "convnext_upernet_rgb_ndsm",
+    "convnext_upernet_6ch_corrected"
+  ],
+  "ignore_index": 0,
+  "note": "mask_iou_sampled is the plain IoU over the SAME tiles, so the two columns are directly comparable; on a sample it will not equal the pooled figure."
+}

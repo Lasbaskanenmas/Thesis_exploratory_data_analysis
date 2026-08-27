@@ -1,0 +1,209 @@
+{
+  "generated_utc": "2026-08-24T21:58:49.288468+00:00",
+  "parent_scan": {
+    "n_parents": 799,
+    "pixels": 54106685500,
+    "sentinel_15_px": 39012182311,
+    "explicit_class0_px": 2401273039,
+    "annotated_px": 12693230150,
+    "counts_by_value": {
+      "0": 2401273039,
+      "1": 885066351,
+      "2": 265365444,
+      "3": 634572736,
+      "4": 10611182217,
+      "5": 1582940,
+      "6": 638599,
+      "7": 80894452,
+      "8": 119140178,
+      "9": 39539761,
+      "10": 55247472,
+      "15": 39012182311
+    },
+    "failures": []
+  },
+  "gpkg": {
+    "n_polygons": 17791,
+    "annotated_area_m2": 56425554.96942891,
+    "tile_footprint_area_m2": 193140000.0,
+    "coverage_ratio": 0.2921484672746656
+  },
+  "ignore_bias": {
+    "per_route": [
+      {
+        "route": "82-11",
+        "fold": 1,
+        "tiles": 1441,
+        "unknown_share": 0.11796155239417072,
+        "scored_px": 1271017403
+      },
+      {
+        "route": "82-13",
+        "fold": 1,
+        "tiles": 1043,
+        "unknown_share": 0.17163067497603068,
+        "scored_px": 863989206
+      },
+      {
+        "route": "82-16",
+        "fold": 2,
+        "tiles": 378,
+        "unknown_share": 0.18828212433862435,
+        "scored_px": 306829357
+      },
+      {
+        "route": "82-19",
+        "fold": 2,
+        "tiles": 591,
+        "unknown_share": 0.2669665837563452,
+        "scored_px": 433222749
+      },
+      {
+        "route": "82-20",
+        "fold": 2,
+        "tiles": 608,
+        "unknown_share": 0.47964217105263157,
+        "scored_px": 316377560
+      },
+      {
+        "route": "82-21",
+        "fold": 1,
+        "tiles": 313,
+        "unknown_share": 0.3778781629392971,
+        "scored_px": 194724135
+      },
+      {
+        "route": "82-22",
+        "fold": 2,
+        "tiles": 1360,
+        "unknown_share": 0.25434783382352943,
+        "scored_px": 1014086946
+      },
+      {
+        "route": "82-24",
+        "fold": 2,
+        "tiles": 1529,
+        "unknown_share": 0.5795215323741008,
+        "scored_px": 642911577
+      },
+      {
+        "route": "83-25",
+        "fold": 1,
+        "tiles": 3630,
+        "unknown_share": 0.20454753112947657,
+        "scored_px": 2887492462
+      },
+      {
+        "route": "83-26",
+        "fold": 2,
+        "tiles": 1228,
+        "unknown_share": 0.22962112540716612,
+        "scored_px": 946025258
+      },
+      {
+        "route": "83-31",
+        "fold": 0,
+        "tiles": 1020,
+        "unknown_share": 0.17963047254901962,
+        "scored_px": 836776918
+      },
+      {
+        "route": "83-34",
+        "fold": 1,
+        "tiles": 10,
+        "unknown_share": 0.8932804,
+        "scored_px": 1067196
+      },
+      {
+        "route": "84-40",
+        "fold": 0,
+        "tiles": 5269,
+        "unknown_share": 0.5774970464983868,
+        "scored_px": 2226168062
+      },
+      {
+        "route": "84-41",
+        "fold": 2,
+        "tiles": 343,
+        "unknown_share": 0.4718491311953353,
+        "scored_px": 181155748
+      },
+      {
+        "route": "85-45",
+        "fold": 2,
+        "tiles": 401,
+        "unknown_share": 0.8730483092269327,
+        "scored_px": 50907628
+      },
+      {
+        "route": "85-48",
+        "fold": 0,
+        "tiles": 150,
+        "unknown_share": 0.8541228266666666,
+        "scored_px": 21881576
+      }
+    ],
+    "per_fold": {
+      "0": 0.520915273179065,
+      "1": 0.18932881746155042,
+      "2": 0.39553948073936007
+    }
+  },
+  "selection": {
+    "label_tiles_on_disk": 60123,
+    "tiles_in_pool": 19314,
+    "parents_on_disk": 799,
+    "parents_in_pool": 757
+  },
+  "boundary": {
+    "cell": "convnext_upernet_rgb",
+    "tiles_sampled": 600,
+    "bin_edges_px": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20,
+      50
+    ],
+    "labels": [
+      "0 (on boundary)",
+      "[1,2)",
+      "[2,3)",
+      "[3,5)",
+      "[5,10)",
+      "[10,20)",
+      "[20,50)",
+      ">=50"
+    ],
+    "pixels": [
+      2190173,
+      2907920,
+      2872664,
+      4211273,
+      10822307,
+      15672765,
+      27824913,
+      303649403
+    ],
+    "errors": [
+      923652,
+      1172945,
+      1100601,
+      1502146,
+      3358317,
+      3745643,
+      4402705,
+      7359200
+    ],
+    "overall_error_rate": 0.06366370045892948,
+    "share_of_error_within_2px": 0.08897001507603858,
+    "share_of_pixels_within_2px": 0.013772993299731192
+  },
+  "churn_limitation": {
+    "old_tiles": 16,
+    "name_overlap": 1,
+    "measurable": false
+  }
+}

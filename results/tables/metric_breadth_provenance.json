@@ -1,0 +1,61 @@
+{
+  "generated_utc": "2026-08-24T22:04:41.832936+00:00",
+  "n_cells": 27,
+  "cells": [
+    "convnext_upernet_10ch",
+    "convnext_upernet_10ch_unw",
+    "convnext_upernet_6ch",
+    "convnext_upernet_6ch_corrected",
+    "convnext_upernet_6ch_unw",
+    "convnext_upernet_rgb",
+    "convnext_upernet_rgb_ndsm",
+    "convnext_upernet_rgb_unw",
+    "segformer_b1_10ch",
+    "segformer_b1_10ch_unw",
+    "segformer_b1_6ch",
+    "segformer_b1_6ch_unw",
+    "segformer_b1_rgb",
+    "segformer_b1_rgb_unw",
+    "swin_upernet_10ch",
+    "swin_upernet_10ch_unw",
+    "swin_upernet_6ch",
+    "swin_upernet_6ch_unw",
+    "swin_upernet_rgb",
+    "swin_upernet_rgb_unw",
+    "unet_resnet34_10ch",
+    "unet_resnet34_10ch_unw",
+    "unet_resnet34_6ch",
+    "unet_resnet34_6ch_corrected",
+    "unet_resnet34_6ch_unw",
+    "unet_resnet34_rgb",
+    "unet_resnet34_rgb_unw"
+  ],
+  "source": "each cell's global_confusion_matrix in pooled_oof_metrics.json",
+  "ignore_index": 0,
+  "report_only_classes": [
+    9
+  ],
+  "freq_weighted_iou_definition": "sum_c (support_c / evaluated_px) * IoU_c over macro classes",
+  "worst_case_definition": "min single-class IoU and the mean of the k worst macro classes, k in 1,2,3 -- the operational definition recorded in this project's gap analysis for G3.3. NOT yet checked against Wang Z. et al. 2023; verify on the reference-canon day before attributing the definition to that paper.",
+  "binary_collapse": {
+    "sealed": [
+      "asfalt",
+      "betonflade",
+      "brosten",
+      "drivhus",
+      "fliser",
+      "green_roof",
+      "grus",
+      "solceller"
+    ],
+    "unsealed": [
+      "ubefestet"
+    ],
+    "dropped": [
+      "unknown (ignore index)",
+      "unknown2 (report-only)"
+    ],
+    "status": "MAPPING AWAITS THE AUTHOR'S CONFIRMATION"
+  },
+  "cross_check": "macro_iou / macro_f1 / overall_accuracy / evaluated_pixels reproduce the stored pooled values exactly on every cell"
+}

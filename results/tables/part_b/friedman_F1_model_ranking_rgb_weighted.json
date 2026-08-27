@@ -1,0 +1,24 @@
+{
+  "n_blocks": 16,
+  "k_treatments": 4,
+  "chi2": 15.075,
+  "df": 3,
+  "p_value": 0.0017536650789896802,
+  "mean_ranks": [
+    3.5,
+    1.9375,
+    2.5625,
+    2.0
+  ],
+  "kendalls_w": 0.31406249999999997,
+  "family": "F1_model_ranking_rgb_weighted",
+  "cells": [
+    "convnext_upernet_rgb",
+    "segformer_b1_rgb",
+    "swin_upernet_rgb",
+    "unet_resnet34_rgb"
+  ],
+  "route_set": "primary",
+  "rejects_at_alpha": true,
+  "narrative_downgraded_to_descriptive": false
+}
