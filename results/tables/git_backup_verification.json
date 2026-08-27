@@ -1,0 +1,183 @@
+{
+  "generated_utc": "2026-08-27T23:01:42.704100+00:00",
+  "repos": {
+    "exploratory_data_analysis": {
+      "path": "c:\\thesis\\exploratory_data_analysis",
+      "refs": {
+        "branch": "main",
+        "local": "851a0f3eca745032a53b4b721d00075a28b55f5f",
+        "remote_origin": "851a0f3eca745032a53b4b721d00075a28b55f5f",
+        "origin_url": "https://github.com/Lasbaskanenmas/Thesis_exploratory_data_analysis.git",
+        "in_sync": true
+      },
+      "tracked_files": 126,
+      "required": [
+        {
+          "path": "results/tables/part_b/wilcoxon_by_family.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/part_b/pooled_macro_iou_route_bootstrap.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/part_b/descriptive_contrast_paired_bootstrap.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/part_b/run_provenance.json",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/findings/2026-08-25_part_b_route_level_statistics.md",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/metric_breadth_by_cell.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/metric_breadth_per_class.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/metric_breadth_binary_collapse.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/label_quality.json",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/boundary_error_profile.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/learning_curve/lc100_per_class.json",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/learning_curve/learning_curve_per_class.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/cross_cell_summary.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/route_cell_metrics.csv",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/route_cell_cms.npz",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "2026-08-25_pre_declarations.md",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        }
+      ]
+    },
+    "logs_and_models": {
+      "path": "c:\\thesis\\logs_and_models",
+      "refs": {
+        "branch": "main",
+        "local": "adc81bf26fa6c17a25ea374cb57f7107e810f201",
+        "remote_origin": "adc81bf26fa6c17a25ea374cb57f7107e810f201",
+        "origin_url": "https://github.com/Lasbaskanenmas/Thesis_logs_and_models.git",
+        "in_sync": true
+      },
+      "tracked_files": 2108,
+      "required": [
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_6ch_corrected/pooled_oof_metrics.json",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_6ch_corrected/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_ortorgb/pooled_oof_metrics.json",
+          "state": "ABSENT",
+          "detail": "not on disk and not tracked",
+          "on_disk": false,
+          "tracked": false
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb_dsm_dtm_corrected/pooled_oof_metrics.json",
+          "state": "ABSENT",
+          "detail": "not on disk and not tracked",
+          "on_disk": false,
+          "tracked": false
+        }
+      ]
+    },
+    "ML_sdfi_fastai2": {
+      "path": "c:\\thesis\\ML_sdfi_fastai2",
+      "refs": {
+        "branch": "thesis/spatial-matrix-2026",
+        "local": "f466a69c6b9bb1690d68fec0fa729c1f8beaccfd",
+        "remote_origin": "f466a69c6b9bb1690d68fec0fa729c1f8beaccfd",
+        "origin_url": "https://github.com/Lasbaskanenmas/Thesis_ML_sdfi_fastai2.git",
+        "in_sync": true
+      },
+      "tracked_files": 298,
+      "required": []
+    }
+  }
+}

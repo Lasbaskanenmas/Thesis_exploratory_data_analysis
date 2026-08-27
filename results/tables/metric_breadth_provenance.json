@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-24T22:04:41.832936+00:00",
-  "n_cells": 27,
+  "generated_utc": "2026-08-27T23:03:37.433422+00:00",
+  "n_cells": 29,
   "cells": [
     "convnext_upernet_10ch",
     "convnext_upernet_10ch_unw",
@@ -13,12 +13,14 @@
     "segformer_b1_10ch",
     "segformer_b1_10ch_unw",
     "segformer_b1_6ch",
+    "segformer_b1_6ch_corrected",
     "segformer_b1_6ch_unw",
     "segformer_b1_rgb",
     "segformer_b1_rgb_unw",
     "swin_upernet_10ch",
     "swin_upernet_10ch_unw",
     "swin_upernet_6ch",
+    "swin_upernet_6ch_corrected",
     "swin_upernet_6ch_unw",
     "swin_upernet_rgb",
     "swin_upernet_rgb_unw",
