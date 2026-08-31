@@ -8,4 +8,8 @@ macro_iou,ci_low,ci_high,B,n_resamples_valid,seed,ci,unit,cell,role
 0.2694505591767507,0.19622427643094167,0.3297586749701013,10000,10000,20260825,0.95,route (whole-route block bootstrap),unet_resnet34_rgb,family
 0.3625495330327985,0.3139740856782399,0.4658549602124388,10000,10000,20260825,0.95,route (whole-route block bootstrap),convnext_upernet_rgb_ndsm,descriptive
 0.31104006631493875,0.2426688361202694,0.45756394588006927,10000,10000,20260825,0.95,route (whole-route block bootstrap),convnext_upernet_6ch_corrected,descriptive
+0.2955358483633255,0.2432067272315012,0.3988776133543638,10000,10000,20260825,0.95,route (whole-route block bootstrap),swin_upernet_6ch_corrected,descriptive
+0.2638026286201338,0.19804202307558944,0.35267257492908577,10000,10000,20260825,0.95,route (whole-route block bootstrap),segformer_b1_6ch_corrected,descriptive
 0.20251861006969976,0.16469369606188985,0.27217431952564597,10000,10000,20260825,0.95,route (whole-route block bootstrap),unet_resnet34_6ch_corrected,descriptive
+0.3574001520930216,0.2848247769106028,0.5152152729274265,10000,10000,20260825,0.95,route (whole-route block bootstrap),convnext_upernet_ortorgb,descriptive
+0.35086823540900053,0.29992160228050646,0.48276958860484703,10000,10000,20260825,0.95,route (whole-route block bootstrap),convnext_upernet_rgb_dsm_dtm_corrected,descriptive

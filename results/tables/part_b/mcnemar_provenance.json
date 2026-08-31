@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-08-28T03:30:56.809840+00:00",
+  "declaration_version": "2026-08-25",
+  "declaration_status": "LOCKED",
+  "cells": [
+    "convnext_upernet_10ch",
+    "convnext_upernet_6ch",
+    "convnext_upernet_rgb",
+    "convnext_upernet_rgb_unw",
+    "segformer_b1_rgb",
+    "swin_upernet_rgb",
+    "unet_resnet34_rgb"
+  ],
+  "n_pairs": 10,
+  "scored_pixels": 12194633781,
+  "tiles": 19314,
+  "tiles_empty": 131,
+  "failures": [],
+  "ignore_convention": "label==ignore_index dropped; predicting ignore on a real pixel is wrong",
+  "role": "context only; the declaration explicitly does not interpret the p-value"
+}

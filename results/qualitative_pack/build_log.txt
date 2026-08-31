@@ -1,0 +1,27 @@
+﻿declaration 2026-08-25  status LOCKED
+D4: n=96 tiles, 32/fold, cells ['unet_resnet34_rgb', 'convnext_upernet_rgb'], seed 20260825, 9 modes, 12 double-scored
+
+weak-class stratum defined as any pixel of ['green_roof', 'drivhus', 'betonflade', 'brosten']
+  fold 0: 6,439 held-out tiles -> weak-present 1,719, complement 4,720
+  fold 1: 6,437 held-out tiles -> weak-present 239, complement 6,198
+  fold 2: 6,438 held-out tiles -> weak-present 713, complement 5,725
+
+wrote C:\thesis\exploratory_data_analysis\results\qualitative_pack\sample_tiles.csv  (96 tiles)  -- persisted BEFORE any rendering
+192 items shuffled. Adjacent same-tile pairs: 2 (a plain shuffle is what D4 declares; reported, not engineered away)
+wrote c:\thesis\exploratory_data_analysis\results\qualitative_pack\scoring_sheet.csv  (192 rows)  pass 1
+wrote c:\thesis\exploratory_data_analysis\results\qualitative_pack\scoring_sheet_pass2.csv  (24 rows)  pass 2, self-consistency, score at least 24 h after pass 1
+
+rendering pass 1: 192 panels, 4 processes -> c:\thesis\exploratory_data_analysis\results\qualitative_pack\panels
+  48 / 192
+  96 / 192
+  144 / 192
+  192 / 192
+  192 panels written, 0 failures
+
+rendering pass 2: 24 panels, 4 processes -> c:\thesis\exploratory_data_analysis\results\qualitative_pack\panels_pass2
+  24 panels written, 0 failures
+
+wrote C:\thesis\exploratory_data_analysis\results\qualitative_pack\pack_provenance.json
+
+PACK READY: c:\thesis\exploratory_data_analysis\results\qualitative_pack
+SEALED_item_key.csv and SEALED_item_key_pass2.csv must not be opened until scoring ends.

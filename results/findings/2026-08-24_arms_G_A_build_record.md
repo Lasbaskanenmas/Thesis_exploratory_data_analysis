@@ -953,3 +953,480 @@ the `--arms-roster-2026-08-25` dispatch; `_imagenet_from_frozen_rgb()` gained an
 path and is backward compatible), `validate_matrix_configs.py` (+`_frozen_rgb_constants()`,
 per-model constant assertions), `partb_statistics.py` (declaration schema, near-tie sensitivity,
 paired pooled-difference bootstrap, fragility rule, skip-with-notice, `--validate-schema`).
+
+---
+
+# Addendum, 2026-08-27 — post-run handling for the 6ch_corrected cells
+
+**Nothing was launched by this session and CUDA was never touched. Every job was CPU-capped at 6–8
+processes so the training dataloaders were not starved.** The author's Launch Block 1 started
+during this session (`convnext_upernet_ortorgb_fold0` created 16:21, 22 GB resident on the GPU).
+
+## 1. Trailing dot — Windows stripped it, no action needed
+
+The Swin scoring command was issued with a stray trailing dot on `--out`. Read literally from the
+filesystem, the folder is `oof_swin_upernet_6ch_corrected`, length 30, `EndsWith(".")` false. Windows
+discards trailing dots in path components, so the dot never reached disk. **No debris folder exists
+and no scoring line was re-run.**
+
+## 2. The two ConvNeXt arms had not been trained — Blocks 1 and 2 were never pasted
+
+The work order's post-run handling assumed `convnext_upernet_ortorgb` and
+`convnext_upernet_rgb_dsm_dtm_corrected` were "trained and inferred days ago". They were not, and
+this is recorded because it changes the queue arithmetic rather than because it is anyone's error.
+
+Evidence, at the time of checking: no job folders for either cell under `convnext_upernet/` (newest
+were `6ch_corrected`, 17–18/8, and `rgb_ndsm`, 16/8); no `.pth`; no `logs/*.csv`; no
+`models/example_dataset/`; and no arm-A entry in `_smoke/`, which held only the 16/8 `rgb_ndsm`
+smoke and a 27/6 resnet smoke. What the GPU had actually been doing was the 17/8 blocks:
+`swin_upernet_6ch_corrected` finishing into 26/8 07:44 and `segformer_b1_6ch_corrected` fold 2 at
+27/8 03:10.
+
+Consequence: **`cross_cell_summary.csv` lands at 29 rows, not the 31 the work order anticipated**,
+and 12 of the 21 declared descriptive contrasts remain unrunnable. Block 1 is now under way.
+
+## 3. cross_cell_summary.csv — 29 rows, and the append proved additive
+
+E6 writes `route_cell_cms.npz`, `route_cell_metrics.csv` and `cross_cell_summary.csv` in `"w"` mode
+over **only the cells it is given**, so running it on the two new cells alone would have destroyed
+the 27-cell cache. It was therefore run as a full 29-cell sweep, with all four artifacts snapshotted
+to `results/tables/pre_e6_2026-08-27/` first.
+
+The sweep was then verified to be additive *in effect* rather than assumed to be:
+
+```
+cells before 27  after 29  added ['segformer_b1_6ch_corrected', 'swin_upernet_6ch_corrected']
+route_cell_metrics.csv : 432 pre-existing rows compared, 0 differences
+route_cell_cms.npz     : 27 pre-existing cell tensors compared, 0 changed
+                         old shape (27,16,11,11) -> new (29,16,11,11); route order identical
+cross_cell_summary.csv : 27 -> 29 rows, 0 field differences among pre-existing rows
+```
+
+**Row count: 29.** Pending in the GPU queue, and therefore absent: the eight remaining declared
+descriptive cells — `ortorgb` and `rgb_dsm_dtm_corrected` for each of ConvNeXt, Swin, SegFormer and
+resnet34.
+
+## 4. E6 — validation passed on all 29 cells
+
+```
+E6 -- 29 cells x 16 routes over 19,314 tiles
+wrote route_cell_cms.npz  (73 KB)  shape (29, 16, 11, 11)
+wrote route_cell_metrics.csv  (464 rows)
+wrote cross_cell_summary.csv  (29 cells)
+VALIDATION PASSED -- route matrices sum exactly to the existing pooled matrices
+```
+
+Each cell's 16 route matrices reproduce that cell's `global_confusion_matrix` element by element.
+The two new cells pass, and re-running the sweep re-validated the 27 already on record.
+
+## 5. Part B re-run — confirmatory families byte-identical
+
+**The confirmatory layer is unchanged. `wilcoxon_by_family.csv` is byte-identical to the pre-re-run
+version, sha256 `21ab09d5d08132ee` before and after.** Adding two descriptive cells perturbed no
+family, no p-value, no Holm decision and no fragility flag, exactly as the declaration's separation
+of families from descriptive cells requires. Every conclusion in
+`2026-08-25_part_b_route_level_statistics.md` §§1–4 stands verbatim.
+
+**Descriptive contrasts: 9 of 21 runnable** (was 5), all paired whole-route bootstraps, no p-values.
+
+| contrast | A | B | difference | 95 % CI | excludes 0 |
+|---|---:|---:|---:|---|:--:|
+| cnx `rgb_ndsm` − `rgb` | 0.3625 | 0.3586 | +0.0039 | [−0.0050, +0.0184] | — |
+| cnx `6ch_corrected` − `6ch` | 0.3110 | 0.3374 | −0.0264 | [−0.0661, +0.0423] | — |
+| cnx `6ch_corrected` − `rgb` | 0.3110 | 0.3586 | −0.0476 | [−0.0739, +0.0166] | — |
+| **swin `6ch_corrected` − `6ch`** | 0.2955 | 0.2956 | **−0.0000** | [−0.0254, +0.0456] | — |
+| swin `6ch_corrected` − `rgb` | 0.2955 | 0.2982 | −0.0026 | [−0.0376, +0.0556] | — |
+| **segf `6ch_corrected` − `6ch`** | 0.2638 | 0.2687 | **−0.0049** | [−0.0293, +0.0122] | — |
+| segf `6ch_corrected` − `rgb` | 0.2638 | 0.2976 | −0.0338 | [−0.0511, +0.0087] | — |
+| **rn34 `6ch_corrected` − `6ch`** | 0.2025 | 0.2477 | **−0.0452** | [−0.0758, −0.0032] | **yes** |
+| **rn34 `6ch_corrected` − `rgb`** | 0.2025 | 0.2695 | **−0.0669** | [−0.1031, −0.0009] | **yes** |
+
+Both stated expectations hold: Swin's contrasts straddle zero and SegFormer's lean negative.
+
+### The surprise, and it is a substantive one
+
+`2026-08-19_channel_axis_findings.md` §5 justified not running these two arms on the grounds that
+ConvNeXt and resnet34 "sit at opposite ends of the capacity range", both dropped in the same
+direction, and Swin and SegFormer "would place two more points *between* two replications that
+already agree". **The full roster shows the effect does not interpolate.**
+
+| model | `6ch_corrected` − `6ch` |
+|---|---:|
+| ConvNeXt | −0.0264 |
+| resnet34 | −0.0452 |
+| **Swin** | **−0.0000** |
+| **SegFormer** | **−0.0049** |
+
+The correction harm is concentrated in ConvNeXt and resnet34 and is **absent in the middle of the
+roster** — Swin is zero to four decimal places. Only resnet34's intervals exclude zero. The §4
+mechanism (absolute elevation as a location code) is untouched by this, because it was measured
+independently of any run, but the claim that the harm is a general property of correcting the
+encoding is not supported across the roster. The honest statement becomes architecture-conditional:
+correcting the constants degrades the two models that were able to exploit the location code, and
+does nothing to the two that were not.
+
+**This vindicates the Option 2 decision on its own terms.** The dropped arms were not interpolation;
+they carried a result that changes how the channel chapter must be written.
+
+## 6. McNemar — run, context only
+
+The one declared item outstanding after 25/8. It needs per-pixel agreement, which confusion
+matrices marginalise away, so it streams the label plus the seven distinct cells appearing in the
+ten declared family pairs, each read from the fold in which that tile was held out. Ignore
+convention is the frozen one: label-ignore pixels dropped, a predicted ignore on a real pixel counts
+as wrong.
+
+**A naming trap caught by an explicit existence check:** job folders put the fold *before* the
+weighting suffix, so cell `convnext_upernet_rgb_unw` trained as
+`convnext_upernet_rgb_fold0_unw`, not `convnext_upernet_rgb_unw_fold0`. The first version of the
+script built the wrong path and stopped with a named error rather than silently scoring nothing.
+
+Results and the disclaimer live in `part_b/mcnemar_family_pairs.csv` and
+`part_b/mcnemar_provenance.json`, with `role` on every row reading "CONTEXT ONLY -- p-value not
+interpreted, per declaration section 4".
+
+**Independent cross-check worth recording:** the streaming pass counted **12,194,633,781 scored
+pixels**, which reproduces the pooled `evaluated_pixels` figure on record exactly. Two entirely
+different code paths — the pooled accumulator and this per-tile agreement scan — agree to the pixel.
+131 tiles carry no scored pixel at all (label entirely ignore-index) and contribute nothing.
+
+| pair | b (A right, B wrong) | c (A wrong, B right) | favours | ratio |
+|---|---:|---:|---|---:|
+| cnx − swin | 334,940,275 | 137,827,965 | cnx | 2.4 : 1 |
+| cnx − segf | 361,458,174 | 211,374,746 | cnx | 1.7 : 1 |
+| cnx − rn34 | 614,587,294 | 171,077,010 | cnx | 3.6 : 1 |
+| swin − segf | 275,673,131 | 322,702,013 | **segf** | 1.2 : 1 |
+| swin − rn34 | 452,551,277 | 206,153,303 | swin | 2.2 : 1 |
+| segf − rn34 | 555,476,734 | 262,049,878 | **segf** | 2.1 : 1 |
+| cnx rgb − 6ch | 268,983,224 | 194,523,901 | rgb | 1.4 : 1 |
+| cnx rgb − 10ch | 201,924,496 | 248,129,150 | **10ch** | 1.2 : 1 |
+| cnx 6ch − 10ch | 142,713,654 | 263,377,631 | **10ch** | 1.8 : 1 |
+| cnx rgb − rgb_unw | 159,334,465 | 121,145,211 | rgb (weighted) | 1.3 : 1 |
+
+**All ten p-values are 0.000e+00 to double precision.** That is the declaration's prediction
+realised, not a finding: at 1.2 × 10¹⁰ spatially autocorrelated pixels, significance is automatic
+and carries no information. The direction and the discordant magnitude are the only usable columns.
+
+**Two pairs invert against the route-level macro-IoU verdict, and the inversions are the useful
+part.** `segf − rn34` is the cleanest null in the entire Wilcoxon family — 8 of 16 routes,
+p = 1.0000, rank-biserial +0.06 — yet at pixel level SegFormer is right on 555 M pixels where
+resnet34 is wrong against 262 M the other way, a 2.1 : 1 margin. `swin − segf` flips sign the same
+way. Nothing is contradictory here: pooled pixel agreement is dominated by `ubefestet`, which is
+75 % of the evaluated mass, while macro-IoU weights all nine classes equally. **This is the thesis's
+own metric argument demonstrated on its own data**, and it belongs beside the F1 trivial-baseline
+exhibit rather than being buried as a context table.
+
+The channel pairs agree with the route-level direction: both `rgb − 10ch` and `6ch − 10ch` favour
+the second acquisition at pixel level, matching the route-level rank-biserial signs (−0.22 and
+−0.56) even though neither reached Holm significance there.
+
+## 7. Metric breadth — extended to 29 cells
+
+`metric_breadth_by_cell.csv` (29), `metric_breadth_per_class.csv` (290), and
+`metric_breadth_binary_collapse.csv` (29), all regenerated. Cross-check against
+`pooled_oof_metrics.py`'s stored values is **exact on all 29 cells** for macro-IoU, macro-F1,
+overall accuracy and evaluated pixels. The binary sealed/unsealed mapping remains the flagged
+judgement awaiting the author's confirmation (Plan 3.1 §9-H).
+
+The two new cells: `swin_upernet_6ch_corrected` 0.2955 macro-IoU / 0.9580 binary accuracy;
+`segformer_b1_6ch_corrected` 0.2638 / 0.9542.
+
+## 8. Backup verification — read from `.git` directly, because git is not installed
+
+`git` is unavailable on this machine: `C:\Program Files\Git\cmd` is on `PATH` but does not exist,
+and neither `dulwich` nor `pygit2` is in the environment. `verify_git_backup.py` therefore parses
+`.git/index` for tracked paths and staged blob SHA-1s, hashes each required file as a git blob to
+detect drift, and compares `refs/heads/<branch>` against `refs/remotes/origin/<branch>`.
+
+**What that proves and does not:** it proves a path is tracked, that its on-disk bytes match what is
+staged, and that the local tip equals the last known origin tip. It does not walk the pushed
+commit's tree. Anything untracked, modified-since-staged, or absent is listed rather than assumed
+safe.
+
+All three repos are pushed at their current tips — `exploratory_data_analysis` `851a0f3`,
+`logs_and_models` `adc81bf`, `ML_sdfi_fastai2` `f466a69`, each equal to `origin/<branch>`. But the
+**pushed commits predate this session's and the 24–25/8 outputs**, so most required artifacts are
+newer on disk than in the backup. Full list in `results/tables/git_backup_verification.json` and in
+§9 of the reply that accompanied this addendum.
+
+`.gitignore` accounts for none of the gaps: `logs_and_models` excludes `**/models/`, `*.pth`,
+`*.tif`, `*.npz` and secrets, and `exploratory_data_analysis` excludes `*.npz` but re-admits
+`results/tables/*.npz` by negation, which is why `route_cell_cms.npz` is tracked. **JSON and CSV are
+excluded by nothing**, so `oof_segformer_b1_6ch_corrected/pooled_oof_metrics.json` being untracked
+is a missing `git add`, not a rule.
+
+**This session cannot commit or push.** That action is the author's.
+
+## Files created, 2026-08-27
+
+```
+exploratory_data_analysis/scripts/partb_mcnemar.py
+exploratory_data_analysis/scripts/verify_git_backup.py
+exploratory_data_analysis/results/tables/part_b/mcnemar_family_pairs.csv
+exploratory_data_analysis/results/tables/part_b/mcnemar_provenance.json
+exploratory_data_analysis/results/tables/part_b/mcnemar_run_2026-08-27.log
+exploratory_data_analysis/results/tables/git_backup_verification.json
+exploratory_data_analysis/results/tables/e6_sweep_2026-08-27.log
+exploratory_data_analysis/results/tables/pre_e6_2026-08-27/{cross_cell_summary.csv,
+    route_cell_metrics.csv, route_cell_cms.npz, route_cell_provenance.json}   (pre-sweep snapshot)
+```
+
+**Regenerated (additively in effect, verified):** `route_cell_cms.npz` (29 cells),
+`route_cell_metrics.csv` (464 rows), `cross_cell_summary.csv` (29 rows),
+`route_cell_provenance.json`, the three `metric_breadth_*` tables plus their provenance, and the
+four `part_b/` outputs.
+
+**Modified:** `partb_statistics.py` (`default=str` on the provenance dump — YAML parses an unquoted
+`2026-08-25` as a `datetime.date`, which `json` cannot serialise; coerced in the runner rather than
+by editing the locked declaration), `hf_sync_batch.py` (`part_b/` added to the synced subtrees).
+
+---
+
+# Addendum, 2026-08-31 — both ConvNeXt arms scored; 31-cell sweep; WO-2 pack built
+
+**Arms G and A were launched by the author on 27/8 and completed 30/8. Both are now scored, and the
+declarations were locked on 25/8, so reading these against the frozen cells is permitted.** Nothing
+in this session touched CUDA; every job ran CPU-capped (E6 at 5 processes, panel rendering at 4)
+alongside the roster training.
+
+## Arm G — `convnext_upernet_ortorgb`: the base swap is a dead heat
+
+**Macro-IoU 0.3574 against `convnext_upernet_rgb`'s 0.3586 — a difference of −0.0012, paired
+whole-route CI [−0.0346, +0.0736], comfortably straddling zero.** Overall accuracy is *higher*,
+0.9409 against 0.9336, the highest of any cell in the matrix.
+
+It wins on every fold:
+
+| | fold 0 | fold 1 | fold 2 |
+|---|---:|---:|---:|
+| `rgb` | 0.3302 | 0.3307 | 0.3750 |
+| `ortorgb` | **0.3406** | **0.4393** | **0.3881** |
+
+and on seven of nine classes — asfalt 0.6237/0.5755, grus 0.3077/0.2159, fliser 0.2768/0.2425,
+drivhus 0.2939/0.2414, brosten 0.1086/0.0809, green_roof 0.0187/0.0083, ubefestet 0.9686/0.9582 —
+while losing heavily on exactly two: **betonflade 0.0210 against 0.1526** and **solceller 0.5977
+against 0.7525**. Those two losses are what pull a per-fold sweep back to pooled parity.
+
+**This is the strongest KDS-facing result in the channel investigation and it points against the
+current recommendation.** §4.8 readmitted this arm precisely because "carrying both acquisitions
+earns its keep" silently assumes the skråfoto-derived base is load-bearing. On this evidence it is
+not: the spring leaf-off orthophoto alone matches it pooled, beats it on accuracy, on all three
+folds, and on seven of nine classes. The honest framing becomes "the spring orthophoto may suffice
+as the base", with the betonflade and solceller exception stated rather than smoothed — both are
+flat, ground-level surfaces whose appearance is season- and illumination-sensitive, which is a
+hypothesis for the discussion, not a measured mechanism.
+
+The §4.8 scoping sentence still applies in full: this swap bundles product, season, acquisition year
+and world-state drift into one variable, so what is measured is the bundled product contrast.
+
+## Arm A — `convnext_upernet_rgb_dsm_dtm_corrected`: the decomposition lands on the surprising branch
+
+| contrast | difference | 95 % CI | excludes 0 |
+|---|---:|---|:--:|
+| armA − `rgb` | **−0.0078** | [−0.0249, +0.0440] | no |
+| armA − `6ch_corrected` | **+0.0398** | **[+0.0074, +0.0765]** | **yes** |
+
+§4.2 pre-committed to the reading: reproduce the fold-0 collapse and the betonflade zero and the
+attribution is proven single-variable; fail to and "NIR is implicated and that is a genuine surprise
+worth a paragraph". **It fails on both counts.**
+
+| | pooled | fold 0 | fold 1 | fold 2 |
+|---|---:|---:|---:|---:|
+| betonflade `rgb` | 0.1526 | 0.1955 | 0.0601 | 0.0110 |
+| betonflade `6ch_corrected` | 0.0084 | **0.0000** | 0.0389 | 0.0002 |
+| betonflade **armA** | **0.0508** | 0.0092 | **0.1959** | 0.0110 |
+| solceller `rgb` | 0.7525 | 0.7687 | 0.1044 | 0.7494 |
+| solceller `6ch_corrected` | 0.6446 | 0.7969 | 0.0138 | 0.6137 |
+| solceller **armA** | **0.8044** | 0.8141 | 0.0672 | 0.8030 |
+
+Betonflade does not go to zero — it is six times the corrected-arm value and *exceeds* `rgb` on
+fold 1. Solceller does not collapse — it lands **above** `rgb`. Fold-0 macro-IoU dips from 0.3302 to
+0.3079 but nothing like `6ch_corrected`'s 0.2669.
+
+**`armA − rgb` is a clean single-variable test**: the only change is adding DSM and DTM at full
+measured strength. The location-code hypothesis predicts a substantial drop. The measured cost is
+−0.0078 with a CI straddling zero. **Corrected absolute elevation, on its own, is close to
+harmless**, and the `6ch_corrected` damage is therefore not attributable to it. `armA` sits
++0.0398 above `6ch_corrected` with a CI that excludes zero — the only new interval-supported
+contrast in this set.
+
+**Caveat that must travel with this.** Arm A removes the CIR band entirely rather than
+re-normalising it, so `armA − 6ch_corrected` bundles "no NIR" with 5-versus-6 channels. The clean
+statement is the one against `rgb`; the CIR implication is an inference from the pair, not a second
+single-variable test.
+
+## What the two arms do to the channel chapter
+
+Taken with the 27/8 roster result — correction harm −0.0264 and −0.0452 on ConvNeXt and resnet34 but
+−0.0000 on Swin and −0.0049 on SegFormer — `2026-08-19_channel_axis_findings.md` §4 needs restating
+on two axes at once:
+
+1. the `6ch_corrected` drop is **architecture-conditional**, not a roster-wide property; and
+2. within ConvNeXt it is **not the elevation channels** producing it.
+
+The §4 *mechanism* evidence is untouched: the F8 variance decomposition, the nDSM control and the
+48 % / 96.6 % between-tile shares were all measured independently of any run. What does not survive
+is the causal attribution of the pooled `6ch_corrected` drop to corrected absolute elevation. That
+sentence has to be rewritten, and §4.2 anticipated exactly this outcome and reserved a paragraph
+for it.
+
+## The 31-cell E6 sweep
+
+Snapshot to `results/tables/pre_e6_2026-08-31/` first, then a full sweep at `--procs 5`.
+
+```
+E6 -- 31 cells x 16 routes over 19,314 tiles
+wrote route_cell_cms.npz  (78 KB)  shape (31, 16, 11, 11)
+wrote route_cell_metrics.csv  (496 rows)
+wrote cross_cell_summary.csv  (31 cells)
+VALIDATION PASSED -- route matrices sum exactly to the existing pooled matrices
+```
+
+Additivity verified rather than assumed:
+
+```
+cells before 29  after 31  added ['convnext_upernet_ortorgb', 'convnext_upernet_rgb_dsm_dtm_corrected']
+route_cell_metrics.csv : 464 pre-existing rows compared, 0 differences
+route_cell_cms.npz     : 29 pre-existing cell tensors compared, 0 changed; route order identical
+cross_cell_summary.csv : 29 -> 31 rows, 0 field differences among pre-existing rows
+```
+
+**`cross_cell_summary.csv` row count: 31.**
+
+## Part B re-run — families byte-identical for the third consecutive run
+
+**`wilcoxon_by_family.csv` sha256 `21ab09d5d08132ee`, unchanged.** Two more descriptive cells
+perturbed no family, no p-value, no Holm decision, no fragility flag.
+
+**Descriptive contrasts: 12 of 21 runnable, not 13.** The arithmetic: seven descriptive cells are
+scored (`rgb_ndsm`, four `6ch_corrected`, ConvNeXt `ortorgb`, ConvNeXt `rgb_dsm_dtm_corrected`),
+which supports `rgb_ndsm − rgb` (1), `6ch_corrected` against `6ch` and against `rgb` for four models
+(8), `ortorgb − rgb` for ConvNeXt only (1), and `armA` against `6ch_corrected` and against `rgb` for
+ConvNeXt only (2) — twelve. The remaining nine need the six roster cells still training.
+
+## McNemar
+
+**Not re-run, and correctly so.** The full pass of 2026-08-28 covers the ten declared family pairs
+across seven cells, all of them frozen family members. The new arms are declared descriptive and
+enter no family, so no McNemar pair can change. Verified programmatically: zero overlap between the
+McNemar cell set and the newly scored arms.
+
+## Schedule flag — the arm-A configs run ~25 % slower than bracketed
+
+`unet_resnet34_rgb_dsm_dtm_corrected_fold0` is training at **1:03:01 / 1:03:41 per epoch** against a
+Block-4 estimate of ~45 min. The estimate bracketed arm A between each model's `rgb` and `6ch`; the
+correct bracket is each model's own `6ch_corrected`:
+
+| | 6ch | 6ch_corrected | inflation |
+|---|---:|---:|---:|
+| resnet34 | 49:47 | 1:00:40 | +22 % |
+| Swin | 53:09 | 59:13 | +11 % |
+
+The corrected float32 elevation path costs materially more than the broken-constant one — the same
+rasters, so this is compute and augmentation cost, not I/O. **It is intrinsic, not contention:**
+`unet_resnet34_ortorgb` ran at 29:32–29:34 concurrently with the E6 sweep and the panel rendering,
+dead on its 29:50 baseline.
+
+Revised Block 4: **~145 h ≈ 6.1 days** against the earlier 5.2, moving completion from ~3–4/9 to
+**~5/9**. Still inside the 8/9 scoring cut-off, with the margin narrowing from about four days to
+about three.
+
+## WO-2 — the qualitative pack, built per locked D4
+
+`results/qualitative_pack/`, 626 MB. The 96-tile stratified sample was drawn and **persisted to
+`sample_tiles.csv` before a single panel was rendered**, as D4 requires; a re-run reproduced it to
+an identical SHA-256, so the pack is recoverable from seed 20260825 alone. 192 pass-1 panels plus 24
+pass-2 panels rendered with 0 failures, each 3020 × 1046, carrying an item id and nothing else.
+Keys sealed and unread.
+
+One seed across four documented draws in fixed order (sample, pass-1 shuffle, double-scored subset,
+pass-2 shuffle); separate derived streams would have been tidier but would have deviated from D4's
+"one seed for every random step". Two adjacent same-tile pairs exist in the shuffled order — what a
+plain shuffle produces, reported rather than engineered away.
+
+**Stratum availability, which the incidence table will need:** fold 0 offers 1,719 weak-present
+tiles, fold 2 offers 713, and **fold 1 offers only 239**. The draw was uniform within stratum so it
+is unbiased, but fold 1's sixteen weak-class panels come from a far thinner pool.
+
+**One ambiguity D4 does not resolve, raised rather than decided.** Class 0 is left unpainted, so
+unannotated ground shows as raw imagery — correct, and it makes E4's coverage finding visible. But
+the model predicts everywhere, so predictions exist where no ground truth does, and mode 3 ("a class
+absent or negligible in the tile's ground truth") is undefined there. The instructions carry a
+recommendation — judge only against the annotated footprint, consistent with the quantitative leg
+dropping ignore pixels — explicitly flagged as the author's to confirm or overrule under D4 item 9.
+
+## Files created, 2026-08-31
+
+```
+exploratory_data_analysis/scripts/wo2_qualitative_pack.py
+exploratory_data_analysis/results/qualitative_pack/
+    sample_tiles.csv, scoring_sheet.csv, scoring_sheet_pass2.csv,
+    SEALED_item_key.csv, SEALED_item_key_pass2.csv,
+    legend.png, INSTRUCTIONS.md, pack_provenance.json, build_log.txt,
+    panels/ (192 png), panels_pass2/ (24 png)
+exploratory_data_analysis/results/tables/e6_sweep_2026-08-31.log
+exploratory_data_analysis/results/tables/pre_e6_2026-08-31/  (pre-sweep snapshot, 4 files)
+logs_and_models/spatial_matrix/convnext_upernet/oof_convnext_upernet_ortorgb/pooled_oof_metrics.json
+logs_and_models/spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb_dsm_dtm_corrected/pooled_oof_metrics.json
+```
+
+**Modified:** `verify_git_backup.py` — the `logs_and_models` requirement list is now *discovered*
+from disk rather than hard-coded, so a cell scored after the script was last edited cannot escape
+the backup check. That matters directly for the six roster cells still to land. Also the CRLF fix
+below.
+
+## Correction — the 27/8 backup report over-stated the gap, and this supersedes it
+
+**`verify_git_backup.py` had a false-positive bug and the "MODIFIED (13)" list in the 2026-08-27
+addendum §8 is wrong.** It hashed the raw bytes on disk and compared them to the index blob SHA-1.
+On Windows with `core.autocrlf`, git normalises CRLF to LF before writing the blob, so the committed
+object is not a hash of the working-tree bytes. Every CRLF text file therefore looked modified.
+
+Diagnosed on a file that could not possibly have changed — `oof_convnext_upernet_rgb`'s pooled JSON,
+untouched since 2026-07-11:
+
+```
+size on disk : 28,211   raw  sha1 c43c8ca6...  match: False
+index sha1   : e28cee22...            index-recorded size: 28,211
+LF-normalised: 26,888   blob sha1 e28cee22...  match: TRUE
+```
+
+The index records the working-tree *size* but an LF-normalised *blob*, which is exactly how git
+behaves. The checker now tests both the raw and the LF-normalised hash and accepts a match on
+either, which is what git itself does when deciding whether a file is clean. Binaries are
+unaffected — git does not normalise them, so the raw hash matches and the second candidate never
+fires.
+
+**Corrected state, and this is the list to act on:**
+
+| repo | OK | MODIFIED | UNTRACKED |
+|---|---:|---:|---:|
+| `exploratory_data_analysis` | 13 | 8 | 2 |
+| `logs_and_models` | **28** | **0** | 3 |
+
+`logs_and_models` has **no modified files at all** — all 28 previously-committed pooled JSONs match,
+including `oof_swin_upernet_6ch_corrected`, which the 27/8 report wrongly flagged. Likewise
+`metric_breadth_*`, `label_quality.json`, `boundary_error_profile.csv` and the learning-curve tables
+were committed and are clean; `wilcoxon_by_family.csv` reads OK, independently confirming the
+byte-identical result above.
+
+Everything genuinely outstanding is work created on 28/8 or today:
+
+```
+exploratory_data_analysis
+  UNTRACKED  results/tables/part_b/mcnemar_family_pairs.csv
+  UNTRACKED  results/tables/part_b/mcnemar_provenance.json
+  MODIFIED   results/tables/part_b/{pooled_macro_iou_route_bootstrap.csv,
+             descriptive_contrast_paired_bootstrap.csv, run_provenance.json}
+  MODIFIED   results/tables/{cross_cell_summary.csv, route_cell_metrics.csv, route_cell_cms.npz}
+  MODIFIED   results/findings/2026-08-24_arms_G_A_build_record.md
+  MODIFIED   results/tables/git_backup_verification.json
+logs_and_models
+  UNTRACKED  oof_convnext_upernet_ortorgb/pooled_oof_metrics.json
+  UNTRACKED  oof_convnext_upernet_rgb_dsm_dtm_corrected/pooled_oof_metrics.json
+  UNTRACKED  oof_segformer_b1_6ch_corrected/pooled_oof_metrics.json
+```
+
+Note the qualitative pack is deliberately absent from this list: at 626 MB of PNG it is regenerable
+from `sample_tiles.csv` and the seed, and `*.png` sits outside what these repos carry. The sample,
+sheets, sealed keys and provenance are small and should be committed; the panels need not be.

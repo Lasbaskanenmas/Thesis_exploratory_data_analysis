@@ -1,21 +1,21 @@
 {
-  "generated_utc": "2026-08-27T23:01:42.704100+00:00",
+  "generated_utc": "2026-08-31T11:05:14.129910+00:00",
   "repos": {
     "exploratory_data_analysis": {
       "path": "c:\\thesis\\exploratory_data_analysis",
       "refs": {
         "branch": "main",
-        "local": "851a0f3eca745032a53b4b721d00075a28b55f5f",
-        "remote_origin": "851a0f3eca745032a53b4b721d00075a28b55f5f",
+        "local": "b80c5d3016c85ac36999c3ad45781a83884025d7",
+        "remote_origin": "b80c5d3016c85ac36999c3ad45781a83884025d7",
         "origin_url": "https://github.com/Lasbaskanenmas/Thesis_exploratory_data_analysis.git",
         "in_sync": true
       },
-      "tracked_files": 126,
+      "tracked_files": 132,
       "required": [
         {
           "path": "results/tables/part_b/wilcoxon_by_family.csv",
-          "state": "MODIFIED",
-          "detail": "on disk differs from what is staged/committed -- commit it",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
@@ -41,6 +41,20 @@
           "tracked": true
         },
         {
+          "path": "results/tables/part_b/mcnemar_family_pairs.csv",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
+        },
+        {
+          "path": "results/tables/part_b/mcnemar_provenance.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
+        },
+        {
           "path": "results/findings/2026-08-25_part_b_route_level_statistics.md",
           "state": "OK",
           "detail": "staged content matches disk",
@@ -48,51 +62,86 @@
           "tracked": true
         },
         {
-          "path": "results/tables/metric_breadth_by_cell.csv",
+          "path": "results/findings/2026-08-24_arms_G_A_build_record.md",
           "state": "MODIFIED",
           "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/findings/2026-08-24_E4_label_quality.md",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/findings/2026-08-24_high_ndsm_tiles.md",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/boundary_iou.csv",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/git_backup_verification.json",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/metric_breadth_by_cell.csv",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
         {
           "path": "results/tables/metric_breadth_per_class.csv",
-          "state": "MODIFIED",
-          "detail": "on disk differs from what is staged/committed -- commit it",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
         {
           "path": "results/tables/metric_breadth_binary_collapse.csv",
-          "state": "MODIFIED",
-          "detail": "on disk differs from what is staged/committed -- commit it",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
         {
           "path": "results/tables/label_quality.json",
-          "state": "MODIFIED",
-          "detail": "on disk differs from what is staged/committed -- commit it",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
         {
           "path": "results/tables/boundary_error_profile.csv",
-          "state": "MODIFIED",
-          "detail": "on disk differs from what is staged/committed -- commit it",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
         {
           "path": "results/tables/learning_curve/lc100_per_class.json",
-          "state": "MODIFIED",
-          "detail": "on disk differs from what is staged/committed -- commit it",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
         {
           "path": "results/tables/learning_curve/learning_curve_per_class.csv",
-          "state": "MODIFIED",
-          "detail": "on disk differs from what is staged/committed -- commit it",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
@@ -112,8 +161,8 @@
         },
         {
           "path": "results/tables/route_cell_cms.npz",
-          "state": "OK",
-          "detail": "staged content matches disk",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
           "on_disk": true,
           "tracked": true
         },
@@ -138,9 +187,93 @@
       "tracked_files": 2108,
       "required": [
         {
-          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_6ch_corrected/pooled_oof_metrics.json",
-          "state": "MODIFIED",
-          "detail": "on disk differs from what is staged/committed -- commit it",
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_10ch/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_10ch_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_6ch/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_6ch_corrected/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_6ch_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_ortorgb/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb_dsm_dtm_corrected/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb_ndsm/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_10ch/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_10ch_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_6ch/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
         },
@@ -152,18 +285,123 @@
           "tracked": false
         },
         {
-          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_ortorgb/pooled_oof_metrics.json",
-          "state": "ABSENT",
-          "detail": "not on disk and not tracked",
-          "on_disk": false,
-          "tracked": false
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_6ch_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
         },
         {
-          "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb_dsm_dtm_corrected/pooled_oof_metrics.json",
-          "state": "ABSENT",
-          "detail": "not on disk and not tracked",
-          "on_disk": false,
-          "tracked": false
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_rgb/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_rgb_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_10ch/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_10ch_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_6ch/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_6ch_corrected/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_6ch_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_rgb/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_rgb_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_10ch/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_10ch_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_6ch/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_6ch_corrected/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_6ch_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_rgb/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_rgb_unw/pooled_oof_metrics.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
         }
       ]
     },

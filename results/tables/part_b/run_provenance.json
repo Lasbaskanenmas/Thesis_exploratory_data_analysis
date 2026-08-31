@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-25T10:02:10.688279+00:00",
+  "generated_utc": "2026-08-31T11:02:32.770688+00:00",
   "declaration_version": "2026-08-25",
   "declaration_status": "LOCKED",
   "per_route_metric": "macro_iou_present_classes",
@@ -90,15 +90,15 @@
   "descriptive_cells_scored": [
     "convnext_upernet_rgb_ndsm",
     "convnext_upernet_6ch_corrected",
-    "unet_resnet34_6ch_corrected"
+    "swin_upernet_6ch_corrected",
+    "segformer_b1_6ch_corrected",
+    "unet_resnet34_6ch_corrected",
+    "convnext_upernet_ortorgb",
+    "convnext_upernet_rgb_dsm_dtm_corrected"
   ],
   "descriptive_cells_skipped_not_yet_scored": [
-    "convnext_upernet_ortorgb",
-    "convnext_upernet_rgb_dsm_dtm_corrected",
-    "segformer_b1_6ch_corrected",
     "segformer_b1_ortorgb",
     "segformer_b1_rgb_dsm_dtm_corrected",
-    "swin_upernet_6ch_corrected",
     "swin_upernet_ortorgb",
     "swin_upernet_rgb_dsm_dtm_corrected",
     "unet_resnet34_ortorgb",
@@ -118,16 +118,6 @@
       "convnext_upernet_rgb"
     ],
     [
-      "unet_resnet34_6ch_corrected",
-      "unet_resnet34_6ch"
-    ],
-    [
-      "unet_resnet34_6ch_corrected",
-      "unet_resnet34_rgb"
-    ]
-  ],
-  "descriptive_contrasts_skipped": [
-    [
       "swin_upernet_6ch_corrected",
       "swin_upernet_6ch"
     ],
@@ -144,9 +134,27 @@
       "segformer_b1_rgb"
     ],
     [
+      "unet_resnet34_6ch_corrected",
+      "unet_resnet34_6ch"
+    ],
+    [
+      "unet_resnet34_6ch_corrected",
+      "unet_resnet34_rgb"
+    ],
+    [
       "convnext_upernet_ortorgb",
       "convnext_upernet_rgb"
     ],
+    [
+      "convnext_upernet_rgb_dsm_dtm_corrected",
+      "convnext_upernet_6ch_corrected"
+    ],
+    [
+      "convnext_upernet_rgb_dsm_dtm_corrected",
+      "convnext_upernet_rgb"
+    ]
+  ],
+  "descriptive_contrasts_skipped": [
     [
       "swin_upernet_ortorgb",
       "swin_upernet_rgb"
@@ -158,14 +166,6 @@
     [
       "unet_resnet34_ortorgb",
       "unet_resnet34_rgb"
-    ],
-    [
-      "convnext_upernet_rgb_dsm_dtm_corrected",
-      "convnext_upernet_6ch_corrected"
-    ],
-    [
-      "convnext_upernet_rgb_dsm_dtm_corrected",
-      "convnext_upernet_rgb"
     ],
     [
       "swin_upernet_rgb_dsm_dtm_corrected",

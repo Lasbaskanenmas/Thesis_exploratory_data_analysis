@@ -48,7 +48,14 @@ REQUIRED = {
         "results/tables/part_b/pooled_macro_iou_route_bootstrap.csv",
         "results/tables/part_b/descriptive_contrast_paired_bootstrap.csv",
         "results/tables/part_b/run_provenance.json",
+        "results/tables/part_b/mcnemar_family_pairs.csv",
+        "results/tables/part_b/mcnemar_provenance.json",
         "results/findings/2026-08-25_part_b_route_level_statistics.md",
+        "results/findings/2026-08-24_arms_G_A_build_record.md",
+        "results/findings/2026-08-24_E4_label_quality.md",
+        "results/findings/2026-08-24_high_ndsm_tiles.md",
+        "results/tables/boundary_iou.csv",
+        "results/tables/git_backup_verification.json",
         "results/tables/metric_breadth_by_cell.csv",
         "results/tables/metric_breadth_per_class.csv",
         "results/tables/metric_breadth_binary_collapse.csv",
@@ -61,14 +68,22 @@ REQUIRED = {
         "results/tables/route_cell_cms.npz",
         "2026-08-25_pre_declarations.md",
     ],
-    "logs_and_models": [
-        f"spatial_matrix/{d}/oof_{c}/pooled_oof_metrics.json"
-        for d, c in [("swin_upernet", "swin_upernet_6ch_corrected"),
-                     ("segformer_b1", "segformer_b1_6ch_corrected"),
-                     ("convnext_upernet", "convnext_upernet_ortorgb"),
-                     ("convnext_upernet", "convnext_upernet_rgb_dsm_dtm_corrected")]
-    ],
+    # Every scored cell's pooled JSON, discovered rather than listed, so a cell that lands after
+    # this file was last edited cannot quietly escape the backup check.
+    "logs_and_models": None,
 }
+
+MATRIX_ROOT = Path(r"c:\thesis\logs_and_models\spatial_matrix")
+
+
+def discovered_oof_requirements():
+    """Relative paths of every pooled_oof_metrics.json currently on disk."""
+    out = []
+    for p in sorted(MATRIX_ROOT.glob("*/oof_*/pooled_oof_metrics.json")):
+        if p.parents[1].name.startswith("_"):
+            continue
+        out.append(p.relative_to(MATRIX_ROOT.parent).as_posix())
+    return out
 
 
 def read_index(repo: Path):
@@ -107,9 +122,27 @@ def read_index(repo: Path):
     return out
 
 
-def blob_sha1(path: Path):
-    data = path.read_bytes()
+def _blob(data: bytes) -> str:
     return hashlib.sha1(b"blob %d\x00" % len(data) + data).hexdigest()
+
+
+def blob_sha1_candidates(path: Path):
+    """Every blob SHA-1 this working-tree file could legitimately have in the index.
+
+    On Windows with `core.autocrlf`, git normalises CRLF to LF when it writes the blob, so the
+    committed object is NOT a hash of the bytes on disk. The first version of this module hashed the
+    raw bytes only and therefore reported every CRLF text file as MODIFIED -- 28 frozen
+    `pooled_oof_metrics.json` files that had not been touched since July, among others. Checking the
+    LF-normalised form as well is what git itself does when deciding whether a file is clean.
+
+    Binary files are unaffected: git does not normalise them, so the raw hash is the one that
+    matches and the extra candidate simply never fires.
+    """
+    data = path.read_bytes()
+    out = [_blob(data)]
+    if b"\r\n" in data:
+        out.append(_blob(data.replace(b"\r\n", b"\n")))
+    return out
 
 
 def refs(repo: Path):
@@ -174,7 +207,9 @@ def main():
         print(f"  pushed          : {'YES - local tip == origin tip' if rf['in_sync'] else 'NO / UNKNOWN - local tip differs from the last known origin tip'}")
         print(f"  tracked files   : {len(idx):,}")
 
-        req = REQUIRED.get(name, [])
+        req = REQUIRED.get(name)
+        if req is None:
+            req = discovered_oof_requirements() if name == "logs_and_models" else []
         if req:
             print(f"\n  required files ({len(req)}):")
         rows = []
@@ -190,7 +225,7 @@ def main():
             elif entry is None:
                 state, detail = "UNTRACKED", "on disk but NOT in the backup"
             else:
-                same = blob_sha1(disk) == entry[0]
+                same = entry[0] in blob_sha1_candidates(disk)
                 state = "OK" if same else "MODIFIED"
                 detail = "staged content matches disk" if same else \
                          "on disk differs from what is staged/committed -- commit it"

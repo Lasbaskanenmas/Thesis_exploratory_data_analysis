@@ -92,9 +92,15 @@ def main():
         model_dir = hit[0].parent
         dirs = {}
         for f in range(3):
-            d = model_dir / f"{cell}_fold{f}" / "models" / "example_dataset"
+            # Job folders put the fold BEFORE the weighting suffix: an unweighted cell named
+            # `convnext_upernet_rgb_unw` trained as `convnext_upernet_rgb_fold0_unw`, not
+            # `convnext_upernet_rgb_unw_fold0`. Getting this wrong silently points at a
+            # non-existent directory, which is why it is an explicit branch and not an f-string.
+            job = (f"{cell[:-len('_unw')]}_fold{f}_unw" if cell.endswith("_unw")
+                   else f"{cell}_fold{f}")
+            d = model_dir / job / "models" / "example_dataset"
             if not d.is_dir():
-                sys.exit(f"missing predictions: {d}")
+                sys.exit(f"missing predictions for cell {cell} fold {f}: {d}")
             dirs[f] = str(d)
         celldirs[cell] = dirs
     order = sorted(celldirs)

@@ -1,23 +1,27 @@
 {
-  "generated_utc": "2026-08-23T13:13:02.120677+00:00",
+  "generated_utc": "2026-08-31T11:00:45.475107+00:00",
   "cells": [
     "convnext_upernet_10ch",
     "convnext_upernet_10ch_unw",
     "convnext_upernet_6ch",
     "convnext_upernet_6ch_corrected",
     "convnext_upernet_6ch_unw",
+    "convnext_upernet_ortorgb",
     "convnext_upernet_rgb",
+    "convnext_upernet_rgb_dsm_dtm_corrected",
     "convnext_upernet_rgb_ndsm",
     "convnext_upernet_rgb_unw",
     "segformer_b1_10ch",
     "segformer_b1_10ch_unw",
     "segformer_b1_6ch",
+    "segformer_b1_6ch_corrected",
     "segformer_b1_6ch_unw",
     "segformer_b1_rgb",
     "segformer_b1_rgb_unw",
     "swin_upernet_10ch",
     "swin_upernet_10ch_unw",
     "swin_upernet_6ch",
+    "swin_upernet_6ch_corrected",
     "swin_upernet_6ch_unw",
     "swin_upernet_rgb",
     "swin_upernet_rgb_unw",
@@ -97,12 +101,30 @@
       "n_routes_scored": 16
     },
     {
+      "cell": "convnext_upernet_ortorgb",
+      "route_median_macro_iou": 0.5429081351374536,
+      "route_min": 0.23893443535117312,
+      "route_max": 0.9996140787430277,
+      "route_spread": 0.7606796433918546,
+      "route_std": 0.24430279154860057,
+      "n_routes_scored": 16
+    },
+    {
       "cell": "convnext_upernet_rgb",
       "route_median_macro_iou": 0.490206561830325,
       "route_min": 0.2369291162542489,
       "route_max": 0.9994435601771702,
       "route_spread": 0.7625144439229212,
       "route_std": 0.2335814650821215,
+      "n_routes_scored": 16
+    },
+    {
+      "cell": "convnext_upernet_rgb_dsm_dtm_corrected",
+      "route_median_macro_iou": 0.5089011743508159,
+      "route_min": 0.2140293939637209,
+      "route_max": 0.9997085113191423,
+      "route_spread": 0.7856791173554214,
+      "route_std": 0.2332173304741483,
       "n_routes_scored": 16
     },
     {
@@ -148,6 +170,15 @@
       "route_max": 0.9997920222268846,
       "route_spread": 0.8321824068322581,
       "route_std": 0.25911260759558474,
+      "n_routes_scored": 16
+    },
+    {
+      "cell": "segformer_b1_6ch_corrected",
+      "route_median_macro_iou": 0.3822591996883322,
+      "route_min": 0.14830884264531033,
+      "route_max": 0.999812304813121,
+      "route_spread": 0.8515034621678107,
+      "route_std": 0.2570901205752,
       "n_routes_scored": 16
     },
     {
@@ -202,6 +233,15 @@
       "route_max": 0.999686249710822,
       "route_spread": 0.8017807275708426,
       "route_std": 0.2532323545533257,
+      "n_routes_scored": 16
+    },
+    {
+      "cell": "swin_upernet_6ch_corrected",
+      "route_median_macro_iou": 0.4224540390168018,
+      "route_min": 0.17185032878801332,
+      "route_max": 0.9997639824955115,
+      "route_spread": 0.8279136537074981,
+      "route_std": 0.24911124550187663,
       "n_routes_scored": 16
     },
     {

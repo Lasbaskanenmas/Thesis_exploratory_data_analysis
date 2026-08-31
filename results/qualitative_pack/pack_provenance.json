@@ -1,0 +1,74 @@
+{
+  "generated_utc": "2026-08-31T10:34:00.539454+00:00",
+  "declaration_version": "2026-08-25",
+  "declaration_status": "LOCKED",
+  "seed": 20260825,
+  "seed_usage_order": [
+    "1 stratified per-fold sample",
+    "2 pass-1 item shuffle",
+    "3 double-scored tile subset",
+    "4 pass-2 item shuffle"
+  ],
+  "n_tiles": 96,
+  "n_items": 192,
+  "n_pass2_items": 24,
+  "cells": [
+    "unet_resnet34_rgb",
+    "convnext_upernet_rgb"
+  ],
+  "weak_classes": [
+    "green_roof",
+    "drivhus",
+    "betonflade",
+    "brosten"
+  ],
+  "strata": {
+    "weak_present": 16,
+    "complement": 16
+  },
+  "adjacent_same_tile_pairs": 2,
+  "modes": [
+    {
+      "column": "m1_speckle",
+      "definition": "salt-and-pepper speckle (isolated single-class pixels/specks)"
+    },
+    {
+      "column": "m2_boundary_bleed",
+      "definition": "boundary bleeding (class runs across a visible surface edge)"
+    },
+    {
+      "column": "m3_spurious_patch",
+      "definition": "spurious minority-class patch (false-positive island of a class absent or negligible in the tile's ground truth)"
+    },
+    {
+      "column": "m4_paved_swap",
+      "definition": "paved-class swap (asfalt/fliser/grus/brosten/betonflade confusion over paved ground)"
+    },
+    {
+      "column": "m5_road_continuation",
+      "definition": "road/driveway continuation error (carriageway class extended into entrances, or cut)"
+    },
+    {
+      "column": "m6_veg_occlusion",
+      "definition": "vegetation-occlusion error (surface under canopy mislabelled)"
+    },
+    {
+      "column": "m7_misregistration",
+      "definition": "misregistration echo (prediction pattern visibly offset from image structure)"
+    },
+    {
+      "column": "m8_large_object",
+      "definition": "large-object failure (solar farm, greenhouse, green roof missed, fragmented or hallucinated)"
+    },
+    {
+      "column": "m9_other",
+      "definition": "other (one-line free note)"
+    }
+  ],
+  "blinding": "panels carry an item id only; no tile, route or cell in image or filename",
+  "sealed_keys": [
+    "SEALED_item_key.csv",
+    "SEALED_item_key_pass2.csv"
+  ],
+  "ignore_index_rendering": "class 0 left unpainted, so unannotated ground is visible as raw imagery in the ground-truth panel"
+}

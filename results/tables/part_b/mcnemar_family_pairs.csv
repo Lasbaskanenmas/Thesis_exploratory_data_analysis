@@ -1,0 +1,11 @@
+cell_a,cell_b,b_a_right_b_wrong,c_a_wrong_b_right,discordant_total,favours,chi2,p_chi2,scored_pixels,role
+convnext_upernet_rgb,swin_upernet_rgb,334940275,137827965,472768240,convnext_upernet_rgb,82182471.39298418,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+convnext_upernet_rgb,segformer_b1_rgb,361458174,211374746,572832920,convnext_upernet_rgb,39322172.79004204,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+convnext_upernet_rgb,unet_resnet34_rgb,614587294,171077010,785664304,convnext_upernet_rgb,250363125.9881448,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+swin_upernet_rgb,segformer_b1_rgb,275673131,322702013,598375144,segformer_b1_rgb,3696202.40795323,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+swin_upernet_rgb,unet_resnet34_rgb,452551277,206153303,658704580,swin_upernet_rgb,92168724.70889565,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+segformer_b1_rgb,unet_resnet34_rgb,555476734,262049878,817526612,segformer_b1_rgb,105316839.80850159,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+convnext_upernet_rgb,convnext_upernet_6ch,268983224,194523901,463507125,convnext_upernet_rgb,11961392.465541245,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+convnext_upernet_rgb,convnext_upernet_10ch,201924496,248129150,450053646,convnext_upernet_10ch,4743589.964940333,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+convnext_upernet_6ch,convnext_upernet_10ch,142713654,263377631,406091285,convnext_upernet_10ch,35853502.997801535,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"
+convnext_upernet_rgb,convnext_upernet_rgb_unw,159334465,121145211,280479676,convnext_upernet_rgb,5199731.636519749,0.0,12194633781,"CONTEXT ONLY -- p-value not interpreted, per declaration section 4"

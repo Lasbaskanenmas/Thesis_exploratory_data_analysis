@@ -1,0 +1,423 @@
+{
+  "generated": "2026-08-29 08:39:52",
+  "backend": "gdal",
+  "root": "C:\\thesis\\multi_channel_dataset_creation\\example_dataset",
+  "out": "C:\\thesis\\exploratory_data_analysis\\chapter2_figures",
+  "force": true,
+  "jobs": {
+    "elevation_greenroof": {
+      "tile": "O2021_84_40_1_0039_00062718_2000_3000",
+      "outputs": [
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.1.2.elevation\\DSM_O2021_84_40_1_0039_00062718_2000_3000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.1.2.elevation\\DTM_O2021_84_40_1_0039_00062718_2000_3000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.1.2.elevation\\nDSM_O2021_84_40_1_0039_00062718_2000_3000.png"
+      ],
+      "geotransform_ok": {
+        "rgb": true,
+        "cir": true,
+        "DSM": true,
+        "DTM": true,
+        "OrtoRGB": true,
+        "OrtoCIR": true,
+        "label": true
+      },
+      "label_content_check": "confirmed",
+      "ndsm_clipped_below_0_pct": 0.222,
+      "ndsm_clipped_above_15_pct": 12.306,
+      "stretch_dsm_m": [
+        8.91,
+        27.3
+      ],
+      "stretch_dtm_m": [
+        8.91,
+        27.3
+      ],
+      "stretch_joint": true,
+      "status": "rendered"
+    },
+    "misreg_solar": {
+      "tile": "O2021_82_19_1_0023_00005474_8000_1000",
+      "outputs": [
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.3.misregistration\\rgb_O2021_82_19_1_0023_00005474_8000_1000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.3.misregistration\\DTM_O2021_82_19_1_0023_00005474_8000_1000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.3.misregistration\\DSM_O2021_82_19_1_0023_00005474_8000_1000.png"
+      ],
+      "geotransform_ok": {
+        "rgb": true,
+        "cir": true,
+        "DSM": false,
+        "DTM": true,
+        "OrtoRGB": true,
+        "OrtoCIR": true,
+        "label": true
+      },
+      "exhibit_as_expected": true,
+      "label_content_check": "confirmed",
+      "stretch_dtm_m": [
+        9.97,
+        10.12
+      ],
+      "stretch_dsm_m": [
+        10.57,
+        16.3
+      ],
+      "status": "rendered"
+    },
+    "overlay_O2021_84_40_1_0039_00062718_2000_3000": {
+      "tile": "O2021_84_40_1_0039_00062718_2000_3000",
+      "purpose": "green roof scene, the only overlay carrying green_roof, and it also carries rooftop solceller",
+      "outputs": [
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\rgb_O2021_84_40_1_0039_00062718_2000_3000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\labels_O2021_84_40_1_0039_00062718_2000_3000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\overlay_O2021_84_40_1_0039_00062718_2000_3000.png"
+      ],
+      "geotransform_ok": {
+        "rgb": true,
+        "cir": true,
+        "DSM": true,
+        "DTM": true,
+        "OrtoRGB": true,
+        "OrtoCIR": true,
+        "label": true
+      },
+      "label_mapping_status": "confirmed",
+      "ignore_share_pct": 45.68,
+      "status": "rendered"
+    },
+    "overlay_O2023_82_24_1_0012_00000540_1000_5000": {
+      "tile": "O2023_82_24_1_0012_00000540_1000_5000",
+      "purpose": "sparse annotation at 76.7 per cent unlabelled, and the scene where ground resembling ubefestet is left unlabelled",
+      "outputs": [
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\rgb_O2023_82_24_1_0012_00000540_1000_5000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\labels_O2023_82_24_1_0012_00000540_1000_5000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\overlay_O2023_82_24_1_0012_00000540_1000_5000.png"
+      ],
+      "geotransform_ok": {
+        "rgb": true,
+        "cir": true,
+        "DSM": true,
+        "DTM": true,
+        "OrtoRGB": true,
+        "OrtoCIR": true,
+        "label": true
+      },
+      "label_mapping_status": "confirmed",
+      "ignore_share_pct": 76.67,
+      "status": "rendered"
+    },
+    "overlay_O2021_82_19_1_0023_00005474_8000_1000": {
+      "tile": "O2021_82_19_1_0023_00005474_8000_1000",
+      "purpose": "ground-mounted solar park, settles whether solceller covers the panels alone or the whole installation including the strips between rows",
+      "outputs": [
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\rgb_O2021_82_19_1_0023_00005474_8000_1000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\labels_O2021_82_19_1_0023_00005474_8000_1000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\overlay_O2021_82_19_1_0023_00005474_8000_1000.png"
+      ],
+      "geotransform_ok": {
+        "rgb": true,
+        "cir": true,
+        "DSM": false,
+        "DTM": true,
+        "OrtoRGB": true,
+        "OrtoCIR": true,
+        "label": true
+      },
+      "label_mapping_status": "confirmed",
+      "ignore_share_pct": 3.04,
+      "status": "rendered"
+    },
+    "overlay_O2021_82_21_1_0004_00002040_4000_2000": {
+      "tile": "O2021_82_21_1_0004_00002040_4000_2000",
+      "purpose": "industrial yard, already in the chapter as fig:scene-urban",
+      "outputs": [
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\rgb_O2021_82_21_1_0004_00002040_4000_2000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\labels_O2021_82_21_1_0004_00002040_4000_2000.png",
+        "C:\\thesis\\exploratory_data_analysis\\chapter2_figures\\2.2.label-overlay\\overlay_O2021_82_21_1_0004_00002040_4000_2000.png"
+      ],
+      "geotransform_ok": {
+        "rgb": true,
+        "cir": true,
+        "DSM": true,
+        "DTM": true,
+        "OrtoRGB": true,
+        "OrtoCIR": true,
+        "label": true
+      },
+      "label_mapping_status": "confirmed",
+      "ignore_share_pct": 16.27,
+      "status": "rendered"
+    }
+  },
+  "geotransform_checks": {
+    "O2021_84_40_1_0039_00062718_2000_3000": {
+      "rgb": {
+        "origin": [
+          720075.0,
+          6175436.0
+        ],
+        "match_rgb": true
+      },
+      "cir": {
+        "origin": [
+          720075.0,
+          6175436.0
+        ],
+        "match_rgb": true
+      },
+      "DSM": {
+        "origin": [
+          720075.0,
+          6175436.0
+        ],
+        "match_rgb": true
+      },
+      "DTM": {
+        "origin": [
+          720075.0,
+          6175436.0
+        ],
+        "match_rgb": true
+      },
+      "OrtoRGB": {
+        "origin": [
+          720075.0,
+          6175436.0
+        ],
+        "match_rgb": true
+      },
+      "OrtoCIR": {
+        "origin": [
+          720075.0,
+          6175436.0
+        ],
+        "match_rgb": true
+      },
+      "label": {
+        "origin": [
+          720075.0,
+          6175436.0
+        ],
+        "match_rgb": true
+      },
+      "rgb_origin": [
+        720075.0,
+        6175436.0
+      ]
+    },
+    "O2021_82_19_1_0023_00005474_8000_1000": {
+      "rgb": {
+        "origin": [
+          455467.0,
+          6216781.0
+        ],
+        "match_rgb": true
+      },
+      "cir": {
+        "origin": [
+          455467.0,
+          6216781.0
+        ],
+        "match_rgb": true
+      },
+      "DSM": {
+        "origin": [
+          455065.0,
+          6216935.0
+        ],
+        "match_rgb": false
+      },
+      "DTM": {
+        "origin": [
+          455467.0,
+          6216781.0
+        ],
+        "match_rgb": true
+      },
+      "OrtoRGB": {
+        "origin": [
+          455467.0,
+          6216781.0
+        ],
+        "match_rgb": true
+      },
+      "OrtoCIR": {
+        "origin": [
+          455467.0,
+          6216781.0
+        ],
+        "match_rgb": true
+      },
+      "label": {
+        "origin": [
+          455467.0,
+          6216781.0
+        ],
+        "match_rgb": true
+      },
+      "rgb_origin": [
+        455467.0,
+        6216781.0
+      ]
+    },
+    "O2023_82_24_1_0012_00000540_1000_5000": {
+      "rgb": {
+        "origin": [
+          574638.0,
+          6223313.0
+        ],
+        "match_rgb": true
+      },
+      "cir": {
+        "origin": [
+          574638.0,
+          6223313.0
+        ],
+        "match_rgb": true
+      },
+      "DSM": {
+        "origin": [
+          574638.0,
+          6223313.0
+        ],
+        "match_rgb": true
+      },
+      "DTM": {
+        "origin": [
+          574638.0,
+          6223313.0
+        ],
+        "match_rgb": true
+      },
+      "OrtoRGB": {
+        "origin": [
+          574638.0,
+          6223313.0
+        ],
+        "match_rgb": true
+      },
+      "OrtoCIR": {
+        "origin": [
+          574638.0,
+          6223313.0
+        ],
+        "match_rgb": true
+      },
+      "label": {
+        "origin": [
+          574638.0,
+          6223313.0
+        ],
+        "match_rgb": true
+      },
+      "rgb_origin": [
+        574638.0,
+        6223313.0
+      ]
+    },
+    "O2021_82_21_1_0004_00002040_4000_2000": {
+      "rgb": {
+        "origin": [
+          496092.0,
+          6220666.0
+        ],
+        "match_rgb": true
+      },
+      "cir": {
+        "origin": [
+          496092.0,
+          6220666.0
+        ],
+        "match_rgb": true
+      },
+      "DSM": {
+        "origin": [
+          496092.0,
+          6220666.0
+        ],
+        "match_rgb": true
+      },
+      "DTM": {
+        "origin": [
+          496092.0,
+          6220666.0
+        ],
+        "match_rgb": true
+      },
+      "OrtoRGB": {
+        "origin": [
+          496092.0,
+          6220666.0
+        ],
+        "match_rgb": true
+      },
+      "OrtoCIR": {
+        "origin": [
+          496092.0,
+          6220666.0
+        ],
+        "match_rgb": true
+      },
+      "label": {
+        "origin": [
+          496092.0,
+          6220666.0
+        ],
+        "match_rgb": true
+      },
+      "rgb_origin": [
+        496092.0,
+        6220666.0
+      ]
+    }
+  },
+  "label_mapping": {
+    "O2021_84_40_1_0039_00062718_2000_3000": {
+      "observed_value_counts": {
+        "0": 456806,
+        "1": 256787,
+        "4": 144536,
+        "5": 100110,
+        "8": 23844,
+        "10": 17917
+      },
+      "values_above_10": [],
+      "status": "confirmed"
+    },
+    "O2021_82_19_1_0023_00005474_8000_1000": {
+      "observed_value_counts": {
+        "0": 30400,
+        "3": 19336,
+        "4": 56035,
+        "10": 894229
+      },
+      "values_above_10": [],
+      "status": "confirmed"
+    },
+    "O2023_82_24_1_0012_00000540_1000_5000": {
+      "observed_value_counts": {
+        "0": 766731,
+        "1": 82602,
+        "2": 58038,
+        "3": 936,
+        "4": 27021,
+        "6": 616,
+        "8": 64056
+      },
+      "values_above_10": [],
+      "status": "confirmed"
+    },
+    "O2021_82_21_1_0004_00002040_4000_2000": {
+      "observed_value_counts": {
+        "0": 162683,
+        "1": 483308,
+        "2": 276134,
+        "3": 49411,
+        "4": 19455,
+        "7": 5691,
+        "10": 3318
+      },
+      "values_above_10": [],
+      "status": "confirmed"
+    }
+  }
+}
