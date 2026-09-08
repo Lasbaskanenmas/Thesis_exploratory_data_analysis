@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-31T11:05:14.129910+00:00",
+  "generated_utc": "2026-09-07T21:06:06.758697+00:00",
   "repos": {
     "exploratory_data_analysis": {
       "path": "c:\\thesis\\exploratory_data_analysis",
       "refs": {
         "branch": "main",
-        "local": "b80c5d3016c85ac36999c3ad45781a83884025d7",
-        "remote_origin": "b80c5d3016c85ac36999c3ad45781a83884025d7",
+        "local": "52e659f8e02b0dd00e28569bdfa2ce99b550c9c5",
+        "remote_origin": "52e659f8e02b0dd00e28569bdfa2ce99b550c9c5",
         "origin_url": "https://github.com/Lasbaskanenmas/Thesis_exploratory_data_analysis.git",
         "in_sync": true
       },
-      "tracked_files": 132,
+      "tracked_files": 388,
       "required": [
         {
           "path": "results/tables/part_b/wilcoxon_by_family.csv",
@@ -42,17 +42,17 @@
         },
         {
           "path": "results/tables/part_b/mcnemar_family_pairs.csv",
-          "state": "UNTRACKED",
-          "detail": "on disk but NOT in the backup",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
-          "tracked": false
+          "tracked": true
         },
         {
           "path": "results/tables/part_b/mcnemar_provenance.json",
-          "state": "UNTRACKED",
-          "detail": "on disk but NOT in the backup",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
-          "tracked": false
+          "tracked": true
         },
         {
           "path": "results/findings/2026-08-25_part_b_route_level_statistics.md",
@@ -91,29 +91,29 @@
         },
         {
           "path": "results/tables/git_backup_verification.json",
+          "state": "OK",
+          "detail": "staged content matches disk",
+          "on_disk": true,
+          "tracked": true
+        },
+        {
+          "path": "results/tables/metric_breadth_by_cell.csv",
           "state": "MODIFIED",
           "detail": "on disk differs from what is staged/committed -- commit it",
           "on_disk": true,
           "tracked": true
         },
         {
-          "path": "results/tables/metric_breadth_by_cell.csv",
-          "state": "OK",
-          "detail": "staged content matches disk",
-          "on_disk": true,
-          "tracked": true
-        },
-        {
           "path": "results/tables/metric_breadth_per_class.csv",
-          "state": "OK",
-          "detail": "staged content matches disk",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
           "on_disk": true,
           "tracked": true
         },
         {
           "path": "results/tables/metric_breadth_binary_collapse.csv",
-          "state": "OK",
-          "detail": "staged content matches disk",
+          "state": "MODIFIED",
+          "detail": "on disk differs from what is staged/committed -- commit it",
           "on_disk": true,
           "tracked": true
         },
@@ -179,12 +179,12 @@
       "path": "c:\\thesis\\logs_and_models",
       "refs": {
         "branch": "main",
-        "local": "adc81bf26fa6c17a25ea374cb57f7107e810f201",
-        "remote_origin": "adc81bf26fa6c17a25ea374cb57f7107e810f201",
+        "local": "36fa6416323ea1d68fe6e2c07fde59c6bdc177c7",
+        "remote_origin": "36fa6416323ea1d68fe6e2c07fde59c6bdc177c7",
         "origin_url": "https://github.com/Lasbaskanenmas/Thesis_logs_and_models.git",
         "in_sync": true
       },
-      "tracked_files": 2108,
+      "tracked_files": 2638,
       "required": [
         {
           "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_10ch/pooled_oof_metrics.json",
@@ -223,10 +223,10 @@
         },
         {
           "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_ortorgb/pooled_oof_metrics.json",
-          "state": "UNTRACKED",
-          "detail": "on disk but NOT in the backup",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
-          "tracked": false
+          "tracked": true
         },
         {
           "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb/pooled_oof_metrics.json",
@@ -237,10 +237,10 @@
         },
         {
           "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb_dsm_dtm_corrected/pooled_oof_metrics.json",
-          "state": "UNTRACKED",
-          "detail": "on disk but NOT in the backup",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
-          "tracked": false
+          "tracked": true
         },
         {
           "path": "spatial_matrix/convnext_upernet/oof_convnext_upernet_rgb_ndsm/pooled_oof_metrics.json",
@@ -279,10 +279,10 @@
         },
         {
           "path": "spatial_matrix/segformer_b1/oof_segformer_b1_6ch_corrected/pooled_oof_metrics.json",
-          "state": "UNTRACKED",
-          "detail": "on disk but NOT in the backup",
+          "state": "OK",
+          "detail": "staged content matches disk",
           "on_disk": true,
-          "tracked": false
+          "tracked": true
         },
         {
           "path": "spatial_matrix/segformer_b1/oof_segformer_b1_6ch_unw/pooled_oof_metrics.json",
@@ -292,11 +292,25 @@
           "tracked": true
         },
         {
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_ortorgb/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
+        },
+        {
           "path": "spatial_matrix/segformer_b1/oof_segformer_b1_rgb/pooled_oof_metrics.json",
           "state": "OK",
           "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
+        },
+        {
+          "path": "spatial_matrix/segformer_b1/oof_segformer_b1_rgb_dsm_dtm_corrected/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
         },
         {
           "path": "spatial_matrix/segformer_b1/oof_segformer_b1_rgb_unw/pooled_oof_metrics.json",
@@ -341,11 +355,25 @@
           "tracked": true
         },
         {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_ortorgb/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
+        },
+        {
           "path": "spatial_matrix/swin_upernet/oof_swin_upernet_rgb/pooled_oof_metrics.json",
           "state": "OK",
           "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
+        },
+        {
+          "path": "spatial_matrix/swin_upernet/oof_swin_upernet_rgb_dsm_dtm_corrected/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
         },
         {
           "path": "spatial_matrix/swin_upernet/oof_swin_upernet_rgb_unw/pooled_oof_metrics.json",
@@ -390,11 +418,25 @@
           "tracked": true
         },
         {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_ortorgb/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
+        },
+        {
           "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_rgb/pooled_oof_metrics.json",
           "state": "OK",
           "detail": "staged content matches disk",
           "on_disk": true,
           "tracked": true
+        },
+        {
+          "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_rgb_dsm_dtm_corrected/pooled_oof_metrics.json",
+          "state": "UNTRACKED",
+          "detail": "on disk but NOT in the backup",
+          "on_disk": true,
+          "tracked": false
         },
         {
           "path": "spatial_matrix/unet_resnet34/oof_unet_resnet34_rgb_unw/pooled_oof_metrics.json",
@@ -409,12 +451,12 @@
       "path": "c:\\thesis\\ML_sdfi_fastai2",
       "refs": {
         "branch": "thesis/spatial-matrix-2026",
-        "local": "f466a69c6b9bb1690d68fec0fa729c1f8beaccfd",
-        "remote_origin": "f466a69c6b9bb1690d68fec0fa729c1f8beaccfd",
+        "local": "29c50f25e2fecf4c39b558aa714320488292c6a8",
+        "remote_origin": "29c50f25e2fecf4c39b558aa714320488292c6a8",
         "origin_url": "https://github.com/Lasbaskanenmas/Thesis_ML_sdfi_fastai2.git",
         "in_sync": true
       },
-      "tracked_files": 298,
+      "tracked_files": 354,
       "required": []
     }
   }

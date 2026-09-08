@@ -1,5 +1,23 @@
 # Qualitative error analysis — scoring instructions (locked declaration D4)
 
+> ## READ THIS FIRST — the §4.6 drop is in force, 2026-09-07
+>
+> The Great Plan 3.1 §4.6 pre-agreed reduction has been invoked. **Score the 64-tile pack, not the
+> 96-tile one.** Full terms in `results/findings/2026-09-07_D4_amendment_section_4_6_drop.md`.
+>
+> | use this | not this |
+> |---|---|
+> | `panels_64/` — 128 items | ~~`panels/` — 192 items~~ |
+> | `scoring_sheet_64.csv` | ~~`scoring_sheet.csv`~~ |
+> | `panels_pass2_64/` + `scoring_sheet_pass2_16.csv` | ~~`panels_pass2/` + `scoring_sheet_pass2.csv`~~ |
+>
+> The 96-tile files stay on disk untouched as the parent record. The 64 are a subset of them, so
+> nothing about the draw changed. **128 items is roughly 2 hours** at the intended pace, then 16
+> pass-2 items at least 24 hours later.
+>
+> Everything below still applies unchanged — the same nine modes, the same blinding, the same
+> dominant-mode tag, the same fixed exemplar rule. Only the counts differ.
+
 **Everything in this pack was generated from `2026-08-25_pre_declarations.md`, Status LOCKED, seed
 20260825. The sample was drawn and written to `sample_tiles.csv` before a single panel was
 rendered. Re-running the builder reproduces the sample to an identical SHA-256, so the pack is

@@ -1430,3 +1430,157 @@ logs_and_models
 Note the qualitative pack is deliberately absent from this list: at 626 MB of PNG it is regenerable
 from `sample_tiles.csv` and the seed, and `*.png` sits outside what these repos carry. The sample,
 sheets, sealed keys and provenance are small and should be committed; the panels need not be.
+
+---
+
+# Closing addendum, 2026-09-07 — the roster is complete at 37 cells
+
+**All six remaining roster cells trained, inferred, scored, swept and analysed. `cross_cell_summary.csv`
+stands at 37 rows, the number Plan 3.1 §11.5 set as the end state. This closes the Option 2
+completion and, with it, the compute half of the thesis.**
+
+Completeness was verified before anything was scored, not assumed: every cell showed 10 epochs, a
+final `.pth`, and prediction counts of exactly 6,439 / 6,437 / 6,438. That check is why the 27/8
+session caught two arms that had never been launched, and it is worth keeping in any successor
+work order.
+
+## Arm G — the base swap, and the strongest KDS-facing result in the thesis
+
+| model | `rgb` | `ortorgb` | Δ macro-IoU | 95 % CI | acc `rgb` → `ortorgb` |
+|---|---:|---:|---:|---|---:|
+| ConvNeXt | 0.3586 | 0.3574 | −0.0012 | [−0.0346, +0.0736] | 0.9336 → **0.9409** |
+| **Swin** | 0.2982 | **0.3479** | **+0.0497** | **[+0.0151, +0.1065]** | 0.9175 → **0.9378** |
+| SegFormer | 0.2976 | 0.3103 | +0.0128 | [−0.0005, +0.0474] | 0.9213 → **0.9319** |
+| resnet34 | 0.2695 | 0.2962 | +0.0267 | [−0.0009, +0.0809] | 0.8973 → **0.9242** |
+
+**The spring leaf-off orthophoto is better on three of four architectures by macro-IoU, level on the
+fourth, and better on all four by overall accuracy.** Swin's interval excludes zero; SegFormer's and
+resnet34's stop just short of it (upper bounds −0.0005 and −0.0009 from the boundary), which is a
+consistent direction rather than four independent coin flips.
+
+§4.8 readmitted this arm precisely because the headline "carrying both acquisitions earns its keep"
+silently assumes the skråfoto-derived base is load-bearing. **It is not.** The base the production
+pipeline actually uses is the weaker of the two single sources on every architecture tested. The
+recommendation shifts from "carry both" toward "the spring orthophoto may suffice as the base",
+which is the cost story §4.8 anticipated.
+
+The §4.8 scoping sentence still governs and must travel with every statement of this: the swap
+bundles product, season, acquisition year and world-state drift into one variable, so the measured
+quantity is the bundled product contrast, not a seasonal effect.
+
+## Arm A — the decomposition, and the verdict is architecture-conditional
+
+| model | armA − `rgb` | 95 % CI | armA − `6ch_corrected` | 95 % CI |
+|---|---:|---|---:|---|
+| ConvNeXt | −0.0078 | [−0.0249, +0.0440] | **+0.0398** | **[+0.0074, +0.0765]** |
+| Swin | +0.0009 | [−0.0262, +0.0314] | +0.0035 | [−0.0361, +0.0332] |
+| SegFormer | −0.0050 | [−0.0179, +0.0240] | **+0.0288** | **[+0.0028, +0.0468]** |
+| **resnet34** | **−0.0599** | **[−0.1058, −0.0007]** | +0.0071 | [−0.0294, +0.0297] |
+
+§4.2 pre-committed to the reading: reproduce the fold-0 collapse and the betonflade zero and the
+attribution is single-variable; fail to and NIR is implicated. **The full roster gives both answers,
+on different architectures.**
+
+On ConvNeXt and SegFormer, adding corrected elevation to RGB costs almost nothing (−0.0078, −0.0050,
+both intervals straddling zero) while sitting well above the bundled `6ch_corrected` arm with
+intervals that exclude zero. There, corrected elevation alone is not the cause and the CIR band is
+implicated. On Swin nothing moves anywhere — there is no damage to explain. **On resnet34 it
+inverts**: armA lands beside `6ch_corrected` (+0.0071, straddling) and 0.0599 below `rgb` with an
+interval excluding zero, so corrected elevation alone accounts for essentially all of that cell's
+damage.
+
+**resnet34 is the production architecture**, so the branch that matters for the KDS-facing statement
+is the one where elevation *is* the culprit. The thesis cannot assert a single mechanism across the
+roster; it has to say the location-code effect appears where a model is able to exploit it, and that
+capability differs by architecture.
+
+The standing caveat: arm A removes the CIR band rather than re-normalising it, so `armA −
+6ch_corrected` bundles "no NIR" with 5-versus-6 channels. The clean single-variable statement is
+`armA − rgb`.
+
+## What this does to `2026-08-19_channel_axis_findings.md` §4
+
+Three separate results now bear on that section's causal attribution, and none of them edits it —
+the file stays as the record of what was known on 19/8, per project practice.
+
+1. The correction harm is **architecture-conditional**: −0.0264 ConvNeXt, −0.0452 resnet34,
+   −0.0000 Swin, −0.0049 SegFormer, with only resnet34's intervals excluding zero.
+2. Within ConvNeXt and SegFormer the harm is **not attributable to corrected elevation**.
+3. Within resnet34 it **is**.
+
+§4's mechanism evidence — the F8 variance decomposition, the nDSM control, the 48 % / 96.6 %
+between-tile shares — is untouched, because all of it was measured independently of any run. What
+does not survive is the roster-wide causal reading of the pooled `6ch_corrected` drop. §4.2 reserved
+a paragraph for exactly this outcome.
+
+## Final artifact state
+
+```
+E6 -- 37 cells x 16 routes over 19,314 tiles
+route_cell_cms.npz      shape (37, 16, 11, 11)
+route_cell_metrics.csv  592 rows
+cross_cell_summary.csv  37 cells
+VALIDATION PASSED -- route matrices sum exactly to the existing pooled matrices
+```
+
+Additivity verified for the fourth time:
+
+```
+cells before 31  after 37  added the six roster cells
+route_cell_metrics.csv : 496 pre-existing rows compared, 0 differences
+route_cell_cms.npz     : 31 pre-existing cell tensors compared, 0 changed; route order identical
+cross_cell_summary.csv : 31 -> 37 rows, 0 field differences among pre-existing rows
+```
+
+**Part B, final run: the confirmatory families are byte-identical for the fourth consecutive run,
+sha256 `21ab09d5d08132ee`.** Thirteen of thirteen descriptive cells scored, **21 of 21 declared
+contrasts run**. Six contrasts have intervals excluding zero: resnet34's two `6ch_corrected`
+contrasts, Swin's `ortorgb − rgb`, ConvNeXt's and SegFormer's `armA − 6ch_corrected`, and resnet34's
+`armA − rgb`.
+
+**Metric breadth extended to 37 cells**, cross-check exact on all 37 for macro-IoU, macro-F1,
+overall accuracy and evaluated pixels.
+
+**The Part B figure now exists.** Plan 3.1 §5.2 item 6 asked for "one statistics table artifact per
+family + one figure (paired route differences)"; the tables have existed since 25/8 and the figure
+had never been made. `results/figures/13_partb_paired_route_differences.{png,pdf}` plots every
+route's paired difference per declared pair, with the median and 95 % paired bootstrap interval, the
+Holm decision by fill, and the sign-test wins in the margin. It plots all sixteen dots rather than a
+summary because the paired test's evidence *is* the sign pattern — two pairs can share a median and
+differ entirely in how consistently they win, and D2's fragility rule turns on that.
+
+## Files created, 2026-09-07
+
+```
+exploratory_data_analysis/scripts/partb_figure.py
+exploratory_data_analysis/results/figures/13_partb_paired_route_differences.{png,pdf}
+exploratory_data_analysis/results/tables/e6_sweep_2026-09-07.log
+exploratory_data_analysis/results/tables/pre_e6_2026-09-07/  (pre-sweep snapshot, 4 files)
+logs_and_models/spatial_matrix/{unet_resnet34,swin_upernet,segformer_b1}/
+    oof_*_ortorgb/pooled_oof_metrics.json
+    oof_*_rgb_dsm_dtm_corrected/pooled_oof_metrics.json          (6 cells)
+```
+
+**Regenerated:** `route_cell_cms.npz` (37), `route_cell_metrics.csv` (592), `cross_cell_summary.csv`
+(37), `route_cell_provenance.json`, the three `metric_breadth_*` tables, and the four `part_b/`
+outputs.
+
+## What remains, and none of it is compute
+
+The experiment list is closed and no further GPU work is required. Open items, in priority order
+against the 9/9 freeze:
+
+1. **The qualitative leg is stalled.** `scoring_sheet.csv` is 0 of 192 filled and
+   `scoring_sheet_pass2.csv` 0 of 24. §5.3 scheduled this for 31/8–1/9 and §4.6 lists it under
+   "never dropped". Everything downstream — incidence table, self-consistency, exemplar panels — is
+   minutes of VM work once the sheets return, but pass 2 must follow pass 1 by 24 h. This is the
+   binding constraint on the qualitative section.
+2. **The mode-3 scoping question** raised on 31/8 is still unanswered: whether modes are judged
+   against the annotated footprint only. Needed before scoring starts.
+3. **§9-I, the HF model push**, has grown from 9 checkpoints to **39, 36.4 GB**, plus 59 logs and 12
+   oof JSONs. Answered "[Yes]" in the plan, never executed.
+4. **§9-H, the binary sealed/unsealed mapping**, still unconfirmed.
+5. **§5.5 reference canon**, including the two attributions flagged here as unverified — Wang Z.
+   2023 for the worst-case metric and Cheng et al. 2021 for the Boundary IoU `d` convention. Both
+   quantities are correct; only the attributions are unchecked.
+6. **The commit and push.** git is absent from this VM, so it cannot be done here.

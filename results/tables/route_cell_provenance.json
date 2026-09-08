@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-31T11:00:45.475107+00:00",
+  "generated_utc": "2026-09-07T21:01:09.905487+00:00",
   "cells": [
     "convnext_upernet_10ch",
     "convnext_upernet_10ch_unw",
@@ -16,21 +16,27 @@
     "segformer_b1_6ch",
     "segformer_b1_6ch_corrected",
     "segformer_b1_6ch_unw",
+    "segformer_b1_ortorgb",
     "segformer_b1_rgb",
+    "segformer_b1_rgb_dsm_dtm_corrected",
     "segformer_b1_rgb_unw",
     "swin_upernet_10ch",
     "swin_upernet_10ch_unw",
     "swin_upernet_6ch",
     "swin_upernet_6ch_corrected",
     "swin_upernet_6ch_unw",
+    "swin_upernet_ortorgb",
     "swin_upernet_rgb",
+    "swin_upernet_rgb_dsm_dtm_corrected",
     "swin_upernet_rgb_unw",
     "unet_resnet34_10ch",
     "unet_resnet34_10ch_unw",
     "unet_resnet34_6ch",
     "unet_resnet34_6ch_corrected",
     "unet_resnet34_6ch_unw",
+    "unet_resnet34_ortorgb",
     "unet_resnet34_rgb",
+    "unet_resnet34_rgb_dsm_dtm_corrected",
     "unet_resnet34_rgb_unw"
   ],
   "routes": [
@@ -191,12 +197,30 @@
       "n_routes_scored": 16
     },
     {
+      "cell": "segformer_b1_ortorgb",
+      "route_median_macro_iou": 0.4039214054031579,
+      "route_min": 0.2266509595522275,
+      "route_max": 0.9996093809557017,
+      "route_spread": 0.7729584214034743,
+      "route_std": 0.2606703585281329,
+      "n_routes_scored": 16
+    },
+    {
       "cell": "segformer_b1_rgb",
       "route_median_macro_iou": 0.4432358622162629,
       "route_min": 0.22629888769028667,
       "route_max": 0.9993578431856315,
       "route_spread": 0.7730589554953449,
       "route_std": 0.2423431766989482,
+      "n_routes_scored": 16
+    },
+    {
+      "cell": "segformer_b1_rgb_dsm_dtm_corrected",
+      "route_median_macro_iou": 0.4720516547041911,
+      "route_min": 0.21117291159120322,
+      "route_max": 0.9962492010325744,
+      "route_spread": 0.7850762894413712,
+      "route_std": 0.24385055935483838,
       "n_routes_scored": 16
     },
     {
@@ -254,12 +278,30 @@
       "n_routes_scored": 16
     },
     {
+      "cell": "swin_upernet_ortorgb",
+      "route_median_macro_iou": 0.45671469312675783,
+      "route_min": 0.22856521784475486,
+      "route_max": 0.9996058077213836,
+      "route_spread": 0.7710405898766288,
+      "route_std": 0.2495281824966681,
+      "n_routes_scored": 16
+    },
+    {
       "cell": "swin_upernet_rgb",
       "route_median_macro_iou": 0.4781830511681793,
       "route_min": 0.21425648273443995,
       "route_max": 0.9956150977386306,
       "route_spread": 0.7813586150041906,
       "route_std": 0.24479340842888306,
+      "n_routes_scored": 16
+    },
+    {
+      "cell": "swin_upernet_rgb_dsm_dtm_corrected",
+      "route_median_macro_iou": 0.4764216471518181,
+      "route_min": 0.20907466839716835,
+      "route_max": 0.9901830657331779,
+      "route_spread": 0.7811083973360096,
+      "route_std": 0.24727682253932526,
       "n_routes_scored": 16
     },
     {
@@ -317,12 +359,30 @@
       "n_routes_scored": 16
     },
     {
+      "cell": "unet_resnet34_ortorgb",
+      "route_median_macro_iou": 0.3840459516643552,
+      "route_min": 0.2268634398058077,
+      "route_max": 0.9935241414008507,
+      "route_spread": 0.766660701595043,
+      "route_std": 0.2586041637890162,
+      "n_routes_scored": 16
+    },
+    {
       "cell": "unet_resnet34_rgb",
       "route_median_macro_iou": 0.38887289449405277,
       "route_min": 0.20100611410249478,
       "route_max": 0.9986472822377732,
       "route_spread": 0.7976411681352784,
       "route_std": 0.2694127466856046,
+      "n_routes_scored": 16
+    },
+    {
+      "cell": "unet_resnet34_rgb_dsm_dtm_corrected",
+      "route_median_macro_iou": 0.4266738415753739,
+      "route_min": 0.11097745878170322,
+      "route_max": 0.9995425088912407,
+      "route_spread": 0.8885650501095376,
+      "route_std": 0.26862244644520816,
       "n_routes_scored": 16
     },
     {

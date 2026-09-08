@@ -1,0 +1,26 @@
+{
+  "generated_utc": "2026-09-07T21:21:17.760444+00:00",
+  "authority": "Great Plan 3.1 section 4.6 pre-agreed drop, invoked by the author 2026-09-07",
+  "parent_sample": "sample_tiles.csv (96 tiles), untouched",
+  "method": "prefix of the parent per-(fold, stratum) draw order; no new randomness",
+  "n_tiles": 64,
+  "per_fold_per_stratum": {
+    "0": 11,
+    "1": 11,
+    "2": 10
+  },
+  "fold_totals": {
+    "0": 22,
+    "1": 22,
+    "2": 20
+  },
+  "weak_total": 32,
+  "complement_total": 32,
+  "pass1_items": 128,
+  "pass2_tiles": 8,
+  "pass2_items": 16,
+  "double_scored_share": "12.5 % held constant, per section 4.6 wording",
+  "panels_rendered": 0,
+  "blinding": "no item -> (tile, cell) mapping is disclosed by this module or its outputs",
+  "d4_item_9": "this is a departure from D4's n = 96 and is recorded as a dated amendment"
+}
