@@ -1,22 +1,37 @@
 # Qualitative error analysis — scoring instructions (locked declaration D4)
 
-> ## READ THIS FIRST — the §4.6 drop is in force, 2026-09-07
+> ## READ THIS FIRST — 2026-09-08
 >
-> The Great Plan 3.1 §4.6 pre-agreed reduction has been invoked. **Score the 64-tile pack, not the
-> 96-tile one.** Full terms in `results/findings/2026-09-07_D4_amendment_section_4_6_drop.md`.
+> **D4 is scored as locked: 96 tiles, 192 pass-1 items.** Use `panels/` and `scoring_sheet.csv`,
+> then `panels_pass2/` and `scoring_sheet_pass2.csv` at least 24 hours later.
 >
-> | use this | not this |
-> |---|---|
-> | `panels_64/` — 128 items | ~~`panels/` — 192 items~~ |
-> | `scoring_sheet_64.csv` | ~~`scoring_sheet.csv`~~ |
-> | `panels_pass2_64/` + `scoring_sheet_pass2_16.csv` | ~~`panels_pass2/` + `scoring_sheet_pass2.csv`~~ |
+> A §4.6 reduction to 64 tiles was invoked on 7/9 and **withdrawn on 8/9 before any item was
+> scored** — it saved about an hour and cost a third of the sample. Its artifacts are quarantined
+> under `withdrawn_2026-09-08_section_4_6_drop/`; **do not score from that folder.** Record:
+> `results/findings/2026-09-08_D4_section_4_6_drop_invoked_and_withdrawn.md`.
 >
-> The 96-tile files stay on disk untouched as the parent record. The 64 are a subset of them, so
-> nothing about the draw changed. **128 items is roughly 2 hours** at the intended pace, then 16
-> pass-2 items at least 24 hours later.
+> Everything below applies unchanged. Pass 1 is **192 items, roughly 3.2 hours**, best split into
+> two blocks.
 >
-> Everything below still applies unchanged — the same nine modes, the same blinding, the same
-> dominant-mode tag, the same fixed exemplar rule. Only the counts differ.
+> ## SCORING RULE — settled 2026-09-08, Option A
+>
+> **Score only where the GROUND TRUTH panel is painted. The annotated footprint is the scoring
+> region for all nine modes.** Predictions on unannotated ground trigger nothing.
+>
+> This keeps the qualitative leg on the same pixels as every number in the thesis, and it preserves
+> what mode 3 is for — the false positives the route metric misses sit on *annotated* ground.
+> Full reasoning: `results/findings/2026-09-08_D4_amendment_mode_scoping_rule.md`.
+>
+> Two practical consequences:
+>
+> 1. **Anything striking in unannotated ground goes to `m9_other` with a note.** D4 already allows
+>    this. It is captured, but it is not incidence and will not be counted as such.
+> 2. **`dominant_mode` may be `not_assessable`**, with all nine modes left `0`, when a tile has too
+>    little painted ground to judge. Use it rather than recording nine zeros and `none`, which would
+>    read as "no errors found". **One tile has 27 annotated pixels of 1,000,000** and will certainly
+>    be unassessable; a second has 9,053 px. Seven are under 5 % and **22 of the 96 are under 20 %**,
+>    so you will meet this. Those items leave the denominator and every incidence figure is reported
+>    as "x of N assessable", with the excluded count stated.
 
 **Everything in this pack was generated from `2026-08-25_pre_declarations.md`, Status LOCKED, seed
 20260825. The sample was drawn and written to `sample_tiles.csv` before a single panel was
