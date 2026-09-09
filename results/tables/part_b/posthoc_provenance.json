@@ -1,0 +1,22 @@
+{
+  "generated_utc": "2026-09-09T03:23:52.491101+00:00",
+  "status": "POST-HOC EXPLORATORY -- not pre-registered, supports no claim",
+  "authorised_by": "author instruction 2026-09-08, after results were seen",
+  "pre_registered": [
+    "the 21 contrasts (D1, locked 2026-08-25)",
+    "per-route metric (D3)",
+    "route and tie rules (D2)",
+    "seed and bootstrap (declaration s4)"
+  ],
+  "post_hoc": [
+    "the decision to compute significance tests on these contrasts at all"
+  ],
+  "family_structure": "ONE family of all 21 declared contrasts; Holm alpha 0.05, sharpest threshold 0.05/21 = 0.00238. Chosen because any narrower grouping would itself be a post-hoc, data-informed selection.",
+  "declaration_version": "2026-08-25",
+  "declaration_status": "LOCKED",
+  "n_contrasts": 21,
+  "n_holm_reject": 0,
+  "n_prereg_ci_excludes_zero": 6,
+  "confirmatory_layer_untouched": true,
+  "confirmatory_sha256_before": "21ab09d5d08132eebafc037ac352966ef139535b8d9ee789db78bedee14dcbcb"
+}
