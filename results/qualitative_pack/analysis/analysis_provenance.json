@@ -1,0 +1,26 @@
+{
+  "generated_utc": "2026-09-11T21:16:24.181751+00:00",
+  "declaration": "2026-08-25_pre_declarations.md, LOCKED",
+  "amendments": [
+    "2026-09-08_D4_amendment_mode_scoping_rule.md",
+    "2026-09-08_D4_section_4_6_drop_invoked_and_withdrawn.md"
+  ],
+  "n_tiles": 96,
+  "n_pass1_items": 192,
+  "n_pass2_items": 24,
+  "cells": [
+    "convnext_upernet_rgb",
+    "unet_resnet34_rgb"
+  ],
+  "not_assessable": {
+    "unet_resnet34_rgb": 1,
+    "convnext_upernet_rgb": 1
+  },
+  "assessable_n": {
+    "unet_resnet34_rgb": 95,
+    "convnext_upernet_rgb": 95
+  },
+  "dominant_mode_agreement": 0.5416666666666666,
+  "validation": "passed: row counts, 0/1 modes, closed vocabulary, dominance consistency",
+  "note_themes_status": "post-hoc thematic coding of free-text notes; not declared modes"
+}

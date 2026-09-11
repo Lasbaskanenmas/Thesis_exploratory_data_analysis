@@ -1,0 +1,10 @@
+mode,consequence,convnext_upernet_rgb_count,convnext_upernet_rgb_n,convnext_upernet_rgb_pct,unet_resnet34_rgb_count,unet_resnet34_rgb_n,unet_resnet34_rgb_pct
+m1_speckle,false imperviousness change signals; noise in parcel-level statistics,4,95,0.042105263157894736,20,95,0.21052631578947367
+m2_boundary_bleed,systematic area misestimation at parcel scale,52,95,0.5473684210526316,43,95,0.45263157894736844
+m3_spurious_patch,false imperviousness change signals; noise in parcel-level statistics,36,95,0.37894736842105264,57,95,0.6
+m4_paved_swap,wrong surface-type input to drainage coefficients,31,95,0.3263157894736842,44,95,0.4631578947368421
+m5_road_continuation,connectivity and access-surface errors in municipal use,43,95,0.45263157894736844,42,95,0.4421052631578947
+m6_veg_occlusion,connectivity and access-surface errors in municipal use,12,95,0.12631578947368421,10,95,0.10526315789473684
+m7_misregistration,geometric distrust of the product,0,95,0.0,0,95,0.0
+m8_large_object,wrong classification of the installations policy monitoring targets,3,95,0.031578947368421054,5,95,0.05263157894736842
+m9_other,see per-item notes; no pre-declared consequence,9,95,0.09473684210526316,10,95,0.10526315789473684

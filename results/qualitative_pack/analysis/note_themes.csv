@@ -1,0 +1,5 @@
+tag,count,item_ids,status
+miss,12,0016 0023 0030 0033 0044 0045 0047 0057 0058 0072 0075 0131,POST-HOC thematic coding of free text; not a declared mode
+unannot,3,0001 0098 0184,POST-HOC thematic coding of free text; not a declared mode
+label,2,0002 0003,POST-HOC thematic coding of free text; not a declared mode
+mismatch,2,0006 0077,POST-HOC thematic coding of free text; not a declared mode

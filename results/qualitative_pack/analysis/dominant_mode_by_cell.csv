@@ -1,0 +1,11 @@
+dominant_mode,convnext_upernet_rgb_count,convnext_upernet_rgb_n,unet_resnet34_rgb_count,unet_resnet34_rgb_n
+m1_speckle,0,95,11,95
+m2_boundary_bleed,33,95,23,95
+m3_spurious_patch,8,95,22,95
+m4_paved_swap,11,95,6,95
+m5_road_continuation,6,95,5,95
+m6_veg_occlusion,7,95,3,95
+m7_misregistration,0,95,0,95
+m8_large_object,0,95,0,95
+m9_other,4,95,1,95
+none,26,95,24,95
