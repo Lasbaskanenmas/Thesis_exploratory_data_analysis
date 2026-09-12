@@ -212,5 +212,69 @@
     "tost_equivalence",
     "bayesian_reanalysis"
   ],
-  "source": "c:\\thesis\\exploratory_data_analysis\\results\\tables\\route_cell_metrics.csv"
+  "source": "c:\\thesis\\exploratory_data_analysis\\results\\tables\\route_cell_metrics.csv",
+  "posthoc_additions": [
+    {
+      "date_utc": "2026-09-12T21:43:30.863768+00:00",
+      "added_to": "descriptive_contrast_paired_bootstrap.csv",
+      "rows_added": [
+        {
+          "cell_a": "convnext_upernet_6ch",
+          "cell_b": "convnext_upernet_rgb"
+        },
+        {
+          "cell_a": "convnext_upernet_10ch",
+          "cell_b": "convnext_upernet_rgb"
+        }
+      ],
+      "status": "POST HOC relative to the 2026-08-25 locked declaration. These two pairs are NOT in `descriptive_contrasts`. They were tested in Family 2 (Wilcoxon on the median route difference), which is a different estimand, and were never given a pooled-difference bootstrap. Added for the Chapter 5 channel table. They support no confirmatory claim and enter no Holm family.",
+      "estimator": "partb_statistics.bootstrap_paired_pooled_diff -- the same function, parameters and seed as the 21 declared contrasts",
+      "B": 10000,
+      "seed": 20260825,
+      "ci": 0.95,
+      "ignore_index": 0,
+      "report_only": [
+        9
+      ],
+      "source_matrices": "c:\\thesis\\exploratory_data_analysis\\results\\tables\\route_cell_cms.npz",
+      "evaluated_pixels_pooled": 12194633781,
+      "n_routes": 16,
+      "declaration_unchanged": true,
+      "declaration_sha256": "47073a25313b90730d102266b4a7da17a61713655293c1107ec61ff7c1dbc9d9",
+      "script": "C:\\thesis\\exploratory_data_analysis\\scripts\\partb_posthoc_channel_contrasts.py",
+      "script_sha256": "357b2503b72da5fbb8affa9124ddfef4e2a8f759c87562ea115d276835f7a283",
+      "git_hash": "UNAVAILABLE -- git is not installed on this VM; script sha256 given instead",
+      "reproduction_check": {
+        "pair": [
+          "convnext_upernet_rgb_ndsm",
+          "convnext_upernet_rgb"
+        ],
+        "result": "PASS",
+        "difference_on_disk": 0.0039076517216528606,
+        "difference_recomputed": 0.0039076517216528606,
+        "ci_low_on_disk": -0.005003725908777588,
+        "ci_low_recomputed": -0.005003725908777588,
+        "ci_high_on_disk": 0.01843435351321603,
+        "ci_high_recomputed": 0.01843435351321603
+      },
+      "results": [
+        {
+          "cell_a": "convnext_upernet_6ch",
+          "cell_b": "convnext_upernet_rgb",
+          "difference": -0.02120752844830398,
+          "ci_low": -0.04561004689331855,
+          "ci_high": 0.00011455179259844775,
+          "excludes_zero": false
+        },
+        {
+          "cell_a": "convnext_upernet_10ch",
+          "cell_b": "convnext_upernet_rgb",
+          "difference": -0.013978037706162849,
+          "ci_low": -0.06527528942257657,
+          "ci_high": 0.058260201268071896,
+          "excludes_zero": false
+        }
+      ]
+    }
+  ]
 }
