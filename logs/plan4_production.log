@@ -1,0 +1,15 @@
+Tue 10/13/2026  3:37:16.30 production winner: convnext_upernet_rgb 
+WRITE  convnext_upernet_rgb_fullpool.ini                    from convnext_upernet_rgb_fold0.ini
+WRITE  infer_convnext_upernet_rgb_fullpool.ini              from infer_convnext_upernet_rgb_fold0.ini
+
+wrote 2 configs
+
+=== G-prod: full-pool production config for convnext_upernet_rgb ===
+  [PASS] convnext_upernet_rgb_fullpool train: exactly ['job_name', 'path_to_valid_txt'] differ from fold 0  --  differ: ['job_name', 'path_to_valid_txt']
+  [PASS] convnext_upernet_rgb_fullpool valid list is the naive monitor
+  [PASS] infer_convnext_upernet_rgb_fullpool: exactly ['job_name', 'model_to_load', 'output_folder', 'path_to_all_benchmarkset_txt'] differ  --  differ: ['job_name', 'model_to_load', 'output_folder', 'path_to_all_benchmarkset_txt']
+  [PASS] monitor list holds 25 tiles, all in the pool  --  25 tiles
+  [PASS] production trains on 19,289 tiles  --  19289
+
+ALL GATES PASS
+Tue 10/13/2026  3:37:16.86 train convnext_upernet_rgb_fullpool 

@@ -54,6 +54,7 @@ TABLE_GLOBS = [
     ("ndsm_clamped_stats.json", "results/tables/"),
     ("corrected_channel_constants.json", "results/tables/"),
     ("gate_arms_G_A_ortorgb_batch_stats.json", "results/tables/"),
+    ("per_fold_macro_iou.csv", "results/tables/"),          # added 2026-10-06, Great Plan 4
 ]
 
 
@@ -66,7 +67,7 @@ def desired(include_models):
 
     for name, prefix in TABLE_GLOBS:
         out.append((C.TABLES / name, f"{prefix}{name}"))
-    for sub in ("learning_curve", "part_b"):
+    for sub in ("learning_curve", "part_b", "plan4"):     # plan4 added 2026-10-06
         d = C.TABLES / sub
         if d.is_dir():
             for p in sorted(d.rglob("*")):
@@ -75,6 +76,9 @@ def desired(include_models):
                     out.append((p, f"results/tables/{rel}"))
     for p in sorted(C.FINDINGS.glob("*.md")):
         out.append((p, f"results/findings/{p.name}"))
+    # dated declarations and runbooks live at the EDA root, not in findings (added 2026-10-06)
+    for p in sorted(C.EDA_ROOT.glob("2026-*.md")):
+        out.append((p, f"results/declarations/{p.name}"))
 
     # per-run logs: the 21 missing CSVs live here
     for logf in sorted(list(MATRIX_ROOT.glob("*/*/logs/*_job_dictionary.json")) +

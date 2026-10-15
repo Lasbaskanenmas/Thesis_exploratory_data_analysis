@@ -1,0 +1,15 @@
+=== THE PICK (runs once) ===
+  convnext_upernet_rgb_ndsm                  clean 0.3309  diff +0.0022  CI [-0.0095, +0.0140]  products 3  
+  convnext_upernet_ortorgb                   clean 0.3099  diff -0.0188  CI [-0.0495, +0.0416]  products 1  
+  convnext_upernet_rgb_dsm_dtm_corrected     clean 0.3186  diff -0.0101  CI [-0.0292, +0.0357]  products 3  
+  convnext_upernet_10ch                      clean 0.3137  diff -0.0150  CI [-0.0722, +0.0500]  products 6  
+  convnext_upernet_6ch                       clean 0.3095  diff -0.0192  CI [-0.0505, +0.0055]  products 4  
+  convnext_upernet_6ch_corrected             clean 0.2727  diff -0.0560  CI [-0.0816, +0.0123]  products 4  
+  convnext_upernet_ortorgb_ndsm              clean 0.3209  diff -0.0078  CI [-0.0291, +0.0377]  products 3  
+  convnext_upernet_cir                       clean 0.3186  diff -0.0100  CI [-0.0409, +0.0394]  products 1  
+  convnext_upernet_ortocir                   clean 0.2888  diff -0.0399  CI [-0.0973, +0.0090]  products 1  
+  convnext_upernet_ortocir_ndsm              clean 0.3260  diff -0.0027  CI [-0.0369, +0.0215]  products 3  
+  convnext_upernet_cir_ndsm                  clean 0.3184  diff -0.0103  CI [-0.0338, +0.0282]  products 3  
+
+VERDICT: incumbent stays -> production = convnext_upernet_rgb
+wrote C:\thesis\exploratory_data_analysis\results\tables\plan4\pick_verdict.json

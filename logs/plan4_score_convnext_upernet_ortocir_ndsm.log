@@ -1,0 +1,84 @@
+Mon 10/12/2026  1:49:25.69 scoring convnext_upernet_ortocir_ndsm 
+fold 0: 6,439 held-out tiles, pred = ../logs_and_models/spatial_matrix/convnext_upernet/convnext_upernet_ortocir_ndsm_fold0/models/example_dataset
+fold 1: 6,437 held-out tiles, pred = ../logs_and_models/spatial_matrix/convnext_upernet/convnext_upernet_ortocir_ndsm_fold1/models/example_dataset
+fold 2: 6,438 held-out tiles, pred = ../logs_and_models/spatial_matrix/convnext_upernet/convnext_upernet_ortocir_ndsm_fold2/models/example_dataset
+
+HEADLINE pooled out-of-fold:  Macro-IoU=0.3562 (9/9 classes)  macro-F1=0.4508  acc=0.9238  pixels=12,194,633,781
+    asfalt       IoU=0.5173  support_px=818,756,115
+    fliser       IoU=0.2464  support_px=231,902,162
+    grus         IoU=0.2610  support_px=206,716,845
+    ubefestet    IoU=0.9482  support_px=10,667,088,919
+    green_roof   IoU=0.0188  support_px=1,430,413
+    drivhus      IoU=0.2376  support_px=531,496
+    betonflade   IoU=0.0170  support_px=89,260,373
+    brosten      IoU=0.1314  support_px=120,321,684
+    solceller    IoU=0.8280  support_px=58,625,774
+
+wrote ..\logs_and_models\spatial_matrix\convnext_upernet\oof_convnext_upernet_ortocir_ndsm\pooled_oof_metrics.json
+existing rows : 40  (convnext_upernet_10ch, convnext_upernet_10ch_unw, convnext_upernet_6ch, convnext_upernet_6ch_corrected, convnext_upernet_6ch_unw, convnext_upernet_cir, convnext_upernet_ortocir, convnext_upernet_ortorgb, convnext_upernet_ortorgb_ndsm, convnext_upernet_rgb, convnext_upernet_rgb_dsm_dtm_corrected, convnext_upernet_rgb_ndsm, convnext_upernet_rgb_unw, segformer_b1_10ch, segformer_b1_10ch_unw, segformer_b1_6ch, segformer_b1_6ch_corrected, segformer_b1_6ch_unw, segformer_b1_ortorgb, segformer_b1_rgb, segformer_b1_rgb_dsm_dtm_corrected, segformer_b1_rgb_unw, swin_upernet_10ch, swin_upernet_10ch_unw, swin_upernet_6ch, swin_upernet_6ch_corrected, swin_upernet_6ch_unw, swin_upernet_ortorgb, swin_upernet_rgb, swin_upernet_rgb_dsm_dtm_corrected, swin_upernet_rgb_unw, unet_resnet34_10ch, unet_resnet34_10ch_unw, unet_resnet34_6ch, unet_resnet34_6ch_corrected, unet_resnet34_6ch_unw, unet_resnet34_ortorgb, unet_resnet34_rgb, unet_resnet34_rgb_dsm_dtm_corrected, unet_resnet34_rgb_unw)
+  skip (already present, not rewritten): convnext_upernet_10ch
+  skip (already present, not rewritten): convnext_upernet_10ch_unw
+  skip (already present, not rewritten): convnext_upernet_6ch
+  skip (already present, not rewritten): convnext_upernet_6ch_corrected
+  skip (already present, not rewritten): convnext_upernet_6ch_unw
+  skip (already present, not rewritten): convnext_upernet_cir
+  skip (already present, not rewritten): convnext_upernet_ortocir
+  skip (already present, not rewritten): convnext_upernet_ortorgb
+  skip (already present, not rewritten): convnext_upernet_ortorgb_ndsm
+  skip (already present, not rewritten): convnext_upernet_rgb
+  skip (already present, not rewritten): convnext_upernet_rgb_dsm_dtm_corrected
+  skip (already present, not rewritten): convnext_upernet_rgb_ndsm
+  skip (already present, not rewritten): convnext_upernet_rgb_unw
+  skip (already present, not rewritten): segformer_b1_10ch
+  skip (already present, not rewritten): segformer_b1_10ch_unw
+  skip (already present, not rewritten): segformer_b1_6ch
+  skip (already present, not rewritten): segformer_b1_6ch_corrected
+  skip (already present, not rewritten): segformer_b1_6ch_unw
+  skip (already present, not rewritten): segformer_b1_ortorgb
+  skip (already present, not rewritten): segformer_b1_rgb
+  skip (already present, not rewritten): segformer_b1_rgb_dsm_dtm_corrected
+  skip (already present, not rewritten): segformer_b1_rgb_unw
+  skip (already present, not rewritten): swin_upernet_10ch
+  skip (already present, not rewritten): swin_upernet_10ch_unw
+  skip (already present, not rewritten): swin_upernet_6ch
+  skip (already present, not rewritten): swin_upernet_6ch_corrected
+  skip (already present, not rewritten): swin_upernet_6ch_unw
+  skip (already present, not rewritten): swin_upernet_ortorgb
+  skip (already present, not rewritten): swin_upernet_rgb
+  skip (already present, not rewritten): swin_upernet_rgb_dsm_dtm_corrected
+  skip (already present, not rewritten): swin_upernet_rgb_unw
+  skip (already present, not rewritten): unet_resnet34_10ch
+  skip (already present, not rewritten): unet_resnet34_10ch_unw
+  skip (already present, not rewritten): unet_resnet34_6ch
+  skip (already present, not rewritten): unet_resnet34_6ch_corrected
+  skip (already present, not rewritten): unet_resnet34_6ch_unw
+  skip (already present, not rewritten): unet_resnet34_ortorgb
+  skip (already present, not rewritten): unet_resnet34_rgb
+  skip (already present, not rewritten): unet_resnet34_rgb_dsm_dtm_corrected
+  skip (already present, not rewritten): unet_resnet34_rgb_unw
+
+rows to append: 1
+  cell                                  macro_iou   macro_f1  overall_acc  fold mean  fold std
+  convnext_upernet_ortocir_ndsm            0.3562     0.4508       0.9238     0.3544    0.0213
+
+schema check : all 24 produced fields exist in the header  OK
+
+appended 1 rows -> C:\thesis\exploratory_data_analysis\results\tables\cross_cell_summary.csv
+file now has 41 data rows: convnext_upernet_10ch, convnext_upernet_10ch_unw, convnext_upernet_6ch, convnext_upernet_6ch_corrected, convnext_upernet_6ch_unw, convnext_upernet_ortorgb, convnext_upernet_rgb, convnext_upernet_rgb_dsm_dtm_corrected, convnext_upernet_rgb_ndsm, convnext_upernet_rgb_unw, segformer_b1_10ch, segformer_b1_10ch_unw, segformer_b1_6ch, segformer_b1_6ch_corrected, segformer_b1_6ch_unw, segformer_b1_ortorgb, segformer_b1_rgb, segformer_b1_rgb_dsm_dtm_corrected, segformer_b1_rgb_unw, swin_upernet_10ch, swin_upernet_10ch_unw, swin_upernet_6ch, swin_upernet_6ch_corrected, swin_upernet_6ch_unw, swin_upernet_ortorgb, swin_upernet_rgb, swin_upernet_rgb_dsm_dtm_corrected, swin_upernet_rgb_unw, unet_resnet34_10ch, unet_resnet34_10ch_unw, unet_resnet34_6ch, unet_resnet34_6ch_corrected, unet_resnet34_6ch_unw, unet_resnet34_ortorgb, unet_resnet34_rgb, unet_resnet34_rgb_dsm_dtm_corrected, unet_resnet34_rgb_unw, convnext_upernet_ortorgb_ndsm, convnext_upernet_cir, convnext_upernet_ortocir, convnext_upernet_ortocir_ndsm
+folds [6439, 6437, 6438]   contaminated 1,281 per fold [212, 313, 756]
+cached 1,281 contaminated label rasters in 11.1s
+
+  convnext_upernet_ortocir_ndsm            mIoU 0.3562 -> clean 0.3260 (d=-0.0302)  31s
+
+per-cell JSONs here: 13   combined clean table: 41 cells
+=== build clean route CMs: 1 cells over 18,033 clean tiles ===
+  3,000 / 18,033
+  6,000 / 18,033
+  9,000 / 18,033
+  12,000 / 18,033
+  15,000 / 18,033
+  18,000 / 18,033
+  convnext_upernet_ortocir_ndsm              sum of routes == subtraction CM: EXACT   clean mIoU 0.3260
+cache now holds 11 cells: C:\thesis\exploratory_data_analysis\results\tables\plan4\clean_route_cms.npz
+  uploaded: ..\logs_and_models\spatial_matrix\convnext_upernet\oof_convnext_upernet_ortocir_ndsm\pooled_oof_metrics.json  ->  Lasbaskanenmas/befaestelsesdata-spatial-matrix/results/oof/oof_convnext_upernet_ortocir_ndsm.json
+Mon 10/12/2026  2:04:08.79 SCORED convnext_upernet_ortocir_ndsm 

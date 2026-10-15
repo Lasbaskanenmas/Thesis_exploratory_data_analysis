@@ -1,0 +1,95 @@
+{
+  "generated_utc": "2026-10-07T03:54:41.424660+00:00",
+  "declaration": "c:\\thesis\\exploratory_data_analysis\\2026-10-06_plan4_declarations.md",
+  "declaration_version": "2026-10-06",
+  "incumbent": "convnext_upernet_rgb",
+  "winner": "convnext_upernet_rgb",
+  "incumbent_stays": true,
+  "qualifying": [],
+  "excluded_not_scored": [],
+  "rule": "diff_gt_zero_and_ci_excludes_zero",
+  "tie_break": [
+    "fewest_input_products",
+    "higher_clean_macro_iou"
+  ],
+  "candidates": [
+    {
+      "challenger": "convnext_upernet_rgb_ndsm",
+      "clean_macro_iou": 0.3308743414935757,
+      "incumbent_clean_macro_iou": 0.3286626712072063,
+      "difference": 0.0022116702863693716,
+      "ci_low": -0.00949624542150399,
+      "ci_high": 0.013971244236802433,
+      "input_products": 3,
+      "qualifies": false,
+      "B": 10000,
+      "seed": 20260825,
+      "n_resamples_valid": 10000
+    },
+    {
+      "challenger": "convnext_upernet_ortorgb",
+      "clean_macro_iou": 0.309852358723293,
+      "incumbent_clean_macro_iou": 0.3286626712072063,
+      "difference": -0.01881031248391335,
+      "ci_low": -0.049488166120361436,
+      "ci_high": 0.04157672797080152,
+      "input_products": 1,
+      "qualifies": false,
+      "B": 10000,
+      "seed": 20260825,
+      "n_resamples_valid": 10000
+    },
+    {
+      "challenger": "convnext_upernet_rgb_dsm_dtm_corrected",
+      "clean_macro_iou": 0.31858777666947774,
+      "incumbent_clean_macro_iou": 0.3286626712072063,
+      "difference": -0.010074894537728585,
+      "ci_low": -0.02917091000028578,
+      "ci_high": 0.035668491006642294,
+      "input_products": 3,
+      "qualifies": false,
+      "B": 10000,
+      "seed": 20260825,
+      "n_resamples_valid": 10000
+    },
+    {
+      "challenger": "convnext_upernet_10ch",
+      "clean_macro_iou": 0.31367848503313034,
+      "incumbent_clean_macro_iou": 0.3286626712072063,
+      "difference": -0.014984186174075986,
+      "ci_low": -0.07222017589770886,
+      "ci_high": 0.050002064532190076,
+      "input_products": 6,
+      "qualifies": false,
+      "B": 10000,
+      "seed": 20260825,
+      "n_resamples_valid": 10000
+    },
+    {
+      "challenger": "convnext_upernet_6ch",
+      "clean_macro_iou": 0.3094848451570712,
+      "incumbent_clean_macro_iou": 0.3286626712072063,
+      "difference": -0.019177826050135127,
+      "ci_low": -0.05049462189869132,
+      "ci_high": 0.005498920713467146,
+      "input_products": 4,
+      "qualifies": false,
+      "B": 10000,
+      "seed": 20260825,
+      "n_resamples_valid": 10000
+    },
+    {
+      "challenger": "convnext_upernet_6ch_corrected",
+      "clean_macro_iou": 0.2726983082982756,
+      "incumbent_clean_macro_iou": 0.3286626712072063,
+      "difference": -0.0559643629089307,
+      "ci_low": -0.0815775389410442,
+      "ci_high": 0.01234474890894351,
+      "input_products": 4,
+      "qualifies": false,
+      "B": 10000,
+      "seed": 20260825,
+      "n_resamples_valid": 10000
+    }
+  ]
+}
